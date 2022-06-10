@@ -128,7 +128,7 @@ const NewsletterModal = ({
             <p className={styles.allInfoP}>{text1}</p>
             <div className={styles.formModal} onSubmit={submit}>
               <div className={styles.divAllInfoInput}>
-                <p className={styles.allInfoP}>. . .</p>
+                <p className={styles.allInfoP}></p>
               </div>
               <button
                 onClick={() => handleClick()}

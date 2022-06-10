@@ -1,0 +1,203 @@
+{
+  "flex-layout.col#secondCol": {
+    "children": [
+      "flex-layout.row#menuCollection",
+      "vtex.menu@2.x:menu#menuTagLinks"
+    ],
+    "props": {
+      "blockClass": "secondCol",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.row#menuCollection": {
+    "children": [
+      "flex-layout.col#menuCollectionCol1",
+      "flex-layout.col#menuCollectionCol2",
+      "flex-layout.col#menuCollectionCol3"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass":"menuCollectionsRow"
+    }
+  },
+  "vtex.menu@2.x:menu#menuTagLinks": {
+    "props": {
+      "orientation": "horizontal",
+      "blockClass": "menuTagLinks",
+      "items": [
+        {
+          "id": "submenu-item-custom",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "New Arrivals",
+            "text": "New Arrivals"
+          }
+        },
+        {
+          "id": "submenu-item-custom",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Shoe Care",
+            "text": "Shoe Care"
+          }
+        },
+        {
+          "id": "submenu-item-custom",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Sale",
+            "text": "Sale"
+          }
+        },
+        {
+          "id": "submenu-item-custom",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Editorial",
+            "text": "Editorial"
+          }
+        }
+      ]
+    }
+  },
+  "flex-layout.col#menuCollectionCol1": {
+    "children": [
+      "rich-text#subMenuColumnTitle",
+      // "link#subMenuColumnLink",
+      "vtex.menu@2.x:menu#menuCollection1"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#menuCollectionCol2": {
+    "children": [
+      "rich-text#subMenuColumnTitle",
+      "vtex.menu@2.x:menu#menuCollection1"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#menuCollectionCol3": {
+    "children": [
+      "rich-text#subMenuColumnTitle",
+      "vtex.menu@2.x:menu#menuCollection1"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "vtex.menu@2.x:menu#menuCollection1": {
+    "props": {
+      "blockClass": "subMenuVerticalMenu",
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "submenu-item-custom",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Black Shoes",
+            "text": "Black Shoes"
+          }
+        },
+        {
+          "id": "submenu-item-custom",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Black Shoes",
+            "text": "Black Shoes"
+          }
+        }
+      ]
+    }
+  },
+  "vtex.menu@2.x:menu#menuCollection2": {
+    "props": {
+      "blockClass": "subMenuVerticalMenu",
+      "orientation": "horizontal",
+      "items": [
+        {
+          "id": "submenu-item-custom",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Black Shoes",
+            "text": "Black Shoes"
+          }
+        },
+        {
+          "id": "submenu-item-custom",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Black Shoes",
+            "text": "Black Shoes"
+          }
+        }
+      ]
+    }
+  },
+  "vtex.menu@2.x:menu#menuCollection3": {
+    "props": {
+      "blockClass": "subMenuVerticalMenu",
+      "orientation": "horizontal",
+      "items": [
+        {
+          "id": "submenu-item-custom",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Black Shoes",
+            "text": "Black Shoes"
+          }
+        },
+        {
+          "id": "submenu-item-custom",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Black Shoes",
+            "text": "Black Shoes"
+          }
+        }
+      ]
+    }
+  }
+}

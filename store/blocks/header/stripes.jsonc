@@ -1,0 +1,159 @@
+{
+  "flex-layout.row#stripes": {
+    "children": [
+      "flex-layout.col#stripes"
+    ],
+    "props": {
+      "blockClass": "stripesRow"
+    }
+  },
+  "flex-layout.col#stripes": {
+    "children": [
+      "experimental__visibility-layout#delivery",
+      "experimental__visibility-layout#subscribe"
+    ],
+    "props": {
+      "blockClass": "stripesCol"
+    }
+  },
+  "flex-layout.row#subscribe": {
+    "children": [
+      "link#subscribeHeaderStripe"
+    ],
+    "props": {
+      "blockClass": "subscribeHeaderStripe"
+    }
+  },
+  "experimental__visibility-layout#delivery":{
+    "title": "Delivery",
+    "children":[
+      "flex-layout.row#delivery"
+    ],
+    "props":{
+      "visible":true
+    }
+  },
+
+
+  "flex-layout.row#delivery": {
+    "children": [
+      "rich-text#deliveryHeaderText1",
+      "rich-text#deliveryHeaderText2"
+    ],
+    "props": {
+      "blockClass": "deliveryHeaderStripe",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  // "link#deliveryHeaderStripe": {
+  //   "children":[
+  //     "rich-text#deliveryHeaderText1",
+  //     "rich-text#deliveryHeaderText2"
+  //   ],
+  //   "props": {
+  //     "href": "/benefits",
+  //     "blockClass": ["flex", "deliveryHeaderLink"]
+  //   }
+  // },
+  "link#subscribeHeaderStripe": {
+    "children":[
+      "rich-text#subscribeHeaderText1",
+      "rich-text#subscribeHeaderText2"
+    ],
+    "props": {
+      "href": "/benefits",
+      "blockClass": ["flex", "subscribeHeaderLink"]
+    }
+  },
+  "rich-text#deliveryHeaderText1": {
+    "props": {
+      "text": "Free delivery in orders over £50",
+      "blockClass": "deliveryHeaderText"
+    }
+  },
+  "rich-text#deliveryHeaderText2": {
+    "props": {
+      "text": "48 Hour Delivery",
+      "blockClass": ["deliveryHeaderText", "blue"]
+    }
+  },
+  "rich-text#subscribeHeaderText1": {
+    "props": {
+      "text": "Get £10 off when you subscribe to our newsletter. ",
+      "blockClass": "subscribeHeaderText"
+    }
+  },
+  "rich-text#subscribeHeaderText2": {
+    "props": {
+      "text": "SIGN UP NOW",
+      "blockClass": ["subscribeHeaderText", "blue"]
+    }
+  },
+  // Above Hero Banner
+  "flex-layout.row#stripeStyles": {
+    "children": [
+      "flex-layout.col#stripeStyle"
+    ],
+    "props": {
+      "blockClass": "stylesStripe"
+    }
+  },
+  "experimental__visibility-layout#subscribe":{
+    "title": "Subscribe",
+    "children":[
+      "flex-layout.row#subscribe"
+    ],
+    "props":{
+      "visible":true
+    }
+  },
+  "experimental__visibility-layout#stripeStyle":{
+    "title": "Stripe",
+    "children":[
+      "flex-layout.row#stripeStyles"
+    ],
+    "props":{
+      "visible":true
+    }
+  },
+  "flex-layout.col#stripeStyle": {
+    "children": [
+      "rich-text#styleHeader",
+      "flex-layout.row#stylesStripeLink"
+    ]
+  },
+  "rich-text#styleHeader": {
+    "props": {
+      "text": "20% Off Selected Styles",
+      "blockClass": "styleStripeText",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#stylesStripeLink": {
+    "children": [
+      "link#styleHeader1",
+      "link#styleHeader2"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "link#styleHeader1": {
+    "props": {
+      "label": "Shop Women's",
+      "href": "/women",
+      "blockClass": "styleHeaderLink"
+    }
+  },
+  "link#styleHeader2": {
+    "props": {
+      "label": "Shop Men's",
+      "href": "/men",
+      "blockClass": "styleHeaderLink"
+    }
+  }
+}

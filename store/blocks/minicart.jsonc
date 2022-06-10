@@ -1,0 +1,172 @@
+{
+  "minicart.v2": {
+    "children": ["minicart-base-content"]
+  },
+  "minicart-base-content": {
+    "title": "Minicart",
+    "blocks": [
+      "minicart-empty-state"
+    ],
+    "children": [
+      "rich-text#test",
+      "minicart-product-list",
+      "flex-layout.row#minicart-footer"
+    ]
+  },
+  "rich-text#test": {
+    "title": "Minicart Upper Text",
+    "props": {
+      "text": "Good news! Our home delivery service is operating as normal - Please assign a safe place delivery location in the checkout or through our carriers in-transit options to ensure any personal contact is kept to a minimum. Your safety is our priority.",
+      "blockClass": "minicartUpperText"
+    }
+  },
+  "flex-layout.row#minicart-footer": {
+    "props": {
+      "blockClass": "minicart-footer"
+    },
+    "children": ["flex-layout.col#minicart-footer"]
+  },
+  "flex-layout.col#minicart-footer": {
+    "children": [
+      "minicart-summary",
+      "minicart-checkout-button",
+      "rich-text#minicartText"
+    ]
+  },
+  "rich-text#minicartText": {
+    "title": "Minicart Text",
+    "props": {
+      "text": "Free Shipping on Orders over £ 50",
+      "blockClass": "minicartText",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "minicart-product-list": {
+    "blocks": ["product-list#minicart"]
+  },
+  "product-list#minicart": {
+    "blocks": ["product-list-content-mobile"]
+  },
+  "minicart-summary": {
+    "blocks": ["checkout-summary.compact#minicart"]
+  },
+
+  "checkout-summary.compact#minicart": {
+    "children": ["summary-totalizers#minicart"],
+    "props": {
+      "totalizersToShow": ["Items", "Discounts"]
+    }
+  },
+  "summary-totalizers#minicart": {
+    "props": {
+      "showTotal": true,
+      "showDeliveryTotal": false
+    }
+  },
+  "minicart-empty-state": {
+    "children": ["flex-layout.row#empty-state"]
+  },
+  "flex-layout.row#empty-state": {
+    "children": ["flex-layout.col#empty-state"]
+  },
+  "flex-layout.col#empty-state": {
+    "children": [
+      "icon-cart#minicart-empty-state",
+      "rich-text#minicart-default-empty-state"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "rowGap": 5
+    }
+  },
+  "icon-cart#minicart-empty-state": {
+    "props": {
+      "size": 64,
+      "blockClass": "minicart-empty-state"
+    }
+  },
+  "rich-text#minicart-default-empty-state": {
+    "title": "Minicart Empty Text",
+    "props": {
+      "text": "Your cart is empty."
+    }
+  },
+  "product-list-content-mobile": {
+    "children": [
+      "flex-layout.row#list-row.mobile"
+    ]
+  },
+  "flex-layout.row#list-row.mobile": {
+    "children": [
+      "flex-layout.col#image.mobile",
+      "flex-layout.col#main-container.mobile"
+    ],
+    "props": {
+      "fullWidth": true,
+      "paddingBottom": "6",
+      "paddingTop": "5",
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": "true",
+      "blockClass": "cartSummaryItem"
+    }
+  },
+  "flex-layout.col#image.mobile": {
+    "children": [
+      "product-list-image"
+    ],
+    "props": {
+      "marginRight": "5"
+    }
+  },
+  "flex-layout.col#main-container.mobile": {
+    "children": [
+      "flex-layout.row#top.mobile",
+      "flex-layout.row#bottom.mobile"
+    ],
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.row#bottom.mobile": {
+    "children": [
+      "price#mobile",
+      "quantity-selector",
+      "remove-button"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto",
+      "blockClass": "product-list-bottom"
+    }
+  },
+  "flex-layout.row#top.mobile": {
+    "children": [
+      "flex-layout.col#product-description"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": "true"
+    }
+  },
+  "price#mobile": {
+    "props": {
+      "textAlign": "left"
+    }
+  },
+  "flex-layout.col#product-description": {
+    "children": [
+      "flex-layout.row#product-name"
+    ],
+    "props": {
+      "width": "grow",
+      "preventVerticalStretch": "true"
+    }
+  },
+  "flex-layout.row#product-name": {
+    "children": [
+      "vtex.product-list:product-name"
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "flex-layout.row#showWomen": {
+    "title": "Womens Section",
+    "children": [
+      "image#promoImage",
+      "flex-layout.col#showWomen"
+    ],
+    "props": {
+      "blockClass": ["grid", "col2", "shelfAndImage"],
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.row#showWomenMobile": {
+    "title": "Womens Section",
+    "children": [
+      "image#promoImage",
+      "flex-layout.col#showWomenMobile"
+    ],
+    "props": {
+      "blockClass": ["grid", "col2", "shelfAndImage"],
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.col#showWomen": {
+    "children": [
+      "rich-text#sectionTitle",
+      "rich-text#sectionSubTitle",
+      "slider-layout#sizeSliderWoman",
+      "list-context.product-list#halfShelf"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "SectionsFlexCol"
+    }
+  },
+  "flex-layout.col#showWomenMobile": {
+    "children": [
+      "rich-text#sectionSubTitle",
+      "slider-layout#sizeSliderWoman",
+      "rich-text#sectionTitle",
+      "list-context.product-list#halfShelf"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "SectionsFlexCol"
+    }
+  },
+  "image#promoImage": {
+    "title": "Section Image",
+    "props": {
+      "src": "assets/images/womenBanner.png",
+      "blockClass": "promoImage"
+    }
+  },
+  "list-context.product-list#halfShelf": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#shelf"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#shelf": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": false,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "shelfContainer"
+    }
+  },
+  "list-context.product-list#halfShelfMobile": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#shelfMobile"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#shelfMobile": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": false,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "shelfContainer"
+    }
+  }
+}

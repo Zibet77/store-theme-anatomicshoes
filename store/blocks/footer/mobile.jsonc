@@ -1,0 +1,112 @@
+{
+  "footer-layout.mobile": {
+    "title": "Footer Mobile",
+    "children": [
+      "flex-layout.row#footerMobileRow",
+      "flex-layout.row#footerMenusMobile",
+      "flex-layout.row#paymentMobile",
+      "flex-layout.row#networkMobile",
+      "flex-layout.row#footerStriperRights"
+    ]
+  },
+  "footer-layout.mobile#product": {
+    "title": "Footer Mobile Product",
+    "children": [
+      "flex-layout.row#footerMenusMobile",
+      "flex-layout.row#paymentMobile",
+      "flex-layout.row#networkMobile",
+      "flex-layout.row#footerStriperRights--product"
+    ],
+    "props": {
+      "marginBottom": 10
+    }
+  },
+  "flex-layout.row#footerMobileRow": {
+    "title": "Footer Menu",
+    "children": [
+      "flex-layout.col#footerMobileCol"
+    ],
+    "props": {
+      "blockClass": "footerMobileRow1"
+    }
+  },
+  "flex-layout.col#footerMobileCol": {
+    "children": [
+      "flex-layout.row#left"
+    ]
+  },
+  "flex-layout.row#footerMenusMobile": {
+    "children": [
+      "flex-layout.row#right1",
+      "flex-layout.row#right2"
+    ],
+    "props": {
+      "preventLayoutOnMobile": true,
+      "blockClass": "footerMenusMobile"
+    }
+  },
+  "flex-layout.row#paymentMobile": {
+    "title": "Payments",
+    "children":[
+      "rich-text#paymentText",
+      "flex-layout.row#acceptedPayments"
+    ],
+    "props": {
+      "preventLayoutOnMobile": true,
+      "blockClass": "paymentMobile"
+    }
+  },
+  "flex-layout.row#networkMobile": {
+    "title": "Networks",
+    "children": [
+      "rich-text#networks",
+      "flex-layout.row#networks.mobile"
+    ],
+    "props": {
+      "preventLayoutOnMobile": true,
+      "blockClass": "networkMobile"
+    }
+  },
+  "flex-layout.row#networks.mobile": {
+    "title": "Networks Links",
+    "children": [
+      "image#facebook",
+      "image#instagram",
+      "image#twitter"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "networks"
+    }
+  },
+  "image#facebook": {
+    "title": "Networks Icon",
+    "props": {
+      "src": "assets/svgs/facebook-f.svg",
+      "link" : {
+        "url": "https://www.facebook.com/AnatomicShoes",
+        "openNewTab": true
+      }
+    }
+  },
+  "image#instagram": {
+    "title": "Networks Icon",
+    "props": {
+      "src": "assets/svgs/instagram.svg",
+      "link" : {
+        "url": "https://www.instagram.com/anatomicco/",
+        "openNewTab": true
+      }
+    }
+  },
+  "image#twitter": {
+    "title": "Networks Icon",
+    "props": {
+      "src": "assets/svgs/twitter.svg",
+      "link" : {
+        "url": "https://twitter.com/AnatomicCo",
+        "openNewTab": true
+      }
+    }
+  }
+}

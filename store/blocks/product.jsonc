@@ -1,0 +1,125 @@
+{
+  "store.product": {
+    "children": [
+      "responsive-layout.desktop#product",
+      "responsive-layout.mobile#product"
+    ],
+    "parent": {
+      "footer": "footer#product"
+    }
+  },
+  "breadcrumb#product": {
+    "title": "Breadcrumb",
+    "props": {
+      "blockClass": "productPage",
+      "showOnMobile": true
+    }
+  },
+  "responsive-layout.desktop#product": {
+    "title": "Desktop Product Page",
+    "children": [
+      "breadcrumb#product",
+      "flex-layout.row#productRow",
+      "__fold__",
+      "__fold__.experimentalLazyAssets",
+      "tab-layout#productPage",
+      "seo-text",
+      "flex-layout.row#buyTogether",
+      "flex-layout.row#customersView",
+      "flex-layout.row#goodCompany"
+    ]
+  },
+  "responsive-layout.mobile#product": {
+    "title": "Mobile Product Page",
+    "children": [
+      "breadcrumb#product",
+      "flex-layout.row#productRow--mobile",
+      "flex-layout.row#disclosuresProduct",
+      "seo-text",
+      "flex-layout.row#buyTogetherMobile",
+      "flex-layout.row#customersView",
+      "flex-layout.row#videoAndImageProduct",
+      "flex-layout.row#shopBySize"
+    ],
+    "props": {
+      "blockClass": "productPageTeste"
+    }
+  },
+  "flex-layout.row#SEOText": {
+    "children": [
+      "flex-layout.col#SEOText"
+    ],
+    "props": {
+      "text": "Title",
+      "blockClass": "SEOBlock"
+    }
+  },
+  "flex-layout.col#SEOText": {
+    "children": [
+      "rich-text#SEOTitle",
+      "rich-text#SEOParagraph"
+    ]
+  },
+  "rich-text#SEOTitle": {
+    "props": {
+      "text": "Title",
+      "blockClass": "SEOTitle"
+    }
+  },
+  "rich-text#SEOParagraph": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "blockClass": "SEOParagraph"
+    }
+  },
+  "flex-layout.row#shopBySize": {
+    "title": "Shop By Size",
+    "children": ["flex-layout.col#shopBySize"],
+    "props": {
+      "blockClass": "shopBySize"
+    }
+  },
+  "flex-layout.col#shopBySize": {
+    "children": ["rich-text#sectionSubTitle", "slider-layout#sizeSlider"]
+  },
+  "flex-layout.row#buyTogether": {
+    "title": "Product Buy Together",
+    "children": ["flex-layout.col#buyTogether"],
+    "props": {
+      "blockClass": "buyTogether"
+    }
+  },
+  "flex-layout.row#buyTogetherMobile": {
+    "title": "Product Buy Together",
+    "children": ["buy-together#mobile"],
+    "props": {
+      "blockClass": "buyTogether"
+    }
+  },
+  "flex-layout.col#buyTogether": {
+    "children": ["buy-together"]
+  },
+  "buy-together": {
+    "blocks": [
+      "product-summary.shelf#buyTogether",
+      "add-to-cart-button#buyTogether"
+    ],
+    "props": {
+      "title": "Buy Together"
+    }
+  },
+  "buy-together#mobile": {
+    "blocks": ["product-summary.shelf#buyInline", "add-to-cart-button"],
+    "props": {
+      "title": "Buy Together"
+    }
+  },
+  "add-to-cart-button#buyTogether": {
+    "props": {
+      "blockClass": "buyTogether"
+    }
+  },
+  "footer#product": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile#product"]
+  }
+}

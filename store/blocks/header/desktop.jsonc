@@ -1,0 +1,87 @@
+{
+  "header-layout.desktop": {
+    "title": "Header Desktop",
+    "children": [
+      "sticky-layout#desktop",
+      "link#whatsapp"
+    ]
+  },
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#mainHeader",
+      "flex-layout.row#menu",
+      "flex-layout.row#stripes"
+    ]
+  },
+  "flex-layout.row#mainHeader": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "headerRow"
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "search-bar#desktop",
+      "flex-layout.row#headerButtons",
+      "flex-layout.row#currency"
+    ]
+  },
+
+  "flex-layout.row#menu": {
+    "title": "Menu Desktop",
+    "props": {
+      "blockClass": "headerMenu"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#megaMenu"
+    ]
+  },
+
+  "flex-layout.row#headerButtons": {
+    "props": {
+      "blockClass": "headerButtons"
+    },
+    "children": [
+      "login#desktop",
+      "link#location",
+      "minicart.v2"
+    ]
+  },
+  "currency-selector#currency": {
+    "props": {
+      "layout": "dropdown"
+    }
+  },
+  "flex-layout.row#currency": {
+    "children": [
+      "currency-selector#currency"
+    ]
+  },
+  "link#location": {
+    "title": "Location Link",
+    "children": [
+      "image#location"
+    ],
+    "props": {
+      "href": "/location",
+      "blockClass": "locationPin"
+    }
+  },
+  "image#location": {
+    "props": {
+      "src": "assets/svgs/locationPin.svg"
+    }
+  },
+  "login#desktop": {
+    "props": {
+      "hideIconLabel": true,
+      "blockClass": "login-header"
+    }
+  }
+}

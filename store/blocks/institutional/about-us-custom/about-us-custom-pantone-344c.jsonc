@@ -1,0 +1,259 @@
+{
+  "store.custom#inst-about-us-template-pantone-344c": {
+    "blocks": [
+      "responsive-layout.desktop#inst-about-us-custom-pantone-344c",
+      "responsive-layout.mobile#inst-about-us-custom-pantone-344c"
+    ]
+  },
+  "responsive-layout.desktop#inst-about-us-custom-pantone-344c": {
+    "children": [
+      "flex-layout.row#about-us-content-custom-pantone-344c",
+      "experimental__visibility-layout#twoBanners",
+      "experimental__visibility-layout#videoAndImage",
+      "experimental__visibility-layout#goodCompany"
+    ]
+  },
+  "responsive-layout.mobile#inst-about-us-custom-pantone-344c": {
+    "children": [
+      "flex-layout.row#about-us-content-mobile-custom-pantone-344c"
+    ]
+  },
+  "flex-layout.row#about-us-content-custom-pantone-344c": {
+    "children" : ["flex-layout.col#about-us-col-custom-pantone-344c"],
+    "props": {
+      "blockClass": "about-us-row"
+    }
+  },
+  "flex-layout.row#about-us-content-mobile-custom-pantone-344c": {
+    "children" : ["flex-layout.col#about-us-col-mobile-custom-pantone-344c"],
+    "props": {
+      "blockClass": "about-us-row"
+    }
+  },
+  "flex-layout.col#about-us-col-custom-pantone-344c": {
+    "children": [
+      "stack-layout#banner-stack",
+      "stack-layout#paragraph-stack",
+      "experimental__visibility-layout#rowBannersCustomPantone344C-1",
+      "experimental__visibility-layout#rowBannersCustomPantone344C-2",
+      "experimental__visibility-layout#rowBannersCustomPantone344C-3",
+      "experimental__visibility-layout#rowBannersCustomPantone344C-4",
+      "experimental__visibility-layout#rowBannersCustomPantone344C-5",
+      "experimental__visibility-layout#rowBannersCustomPantone344C-6",
+      "experimental__visibility-layout#rowBannersCustomPantone344C-7",
+      "experimental__visibility-layout#rowBannersCustomPantone344C-8",
+      "experimental__visibility-layout#rowBannersCustomPantone344C-9",
+      "experimental__visibility-layout#rowBannersCustomPantone344C-10",
+      "experimental__visibility-layout#rowBannersCustomPantone344C-11",
+      "experimental__visibility-layout#rowBannersCustomPantone344C-12"
+    ],
+    "props": {
+      "blockClass": "about-us"
+    }
+  },
+  "flex-layout.col#about-us-col-mobile-custom-pantone-344c": {
+    "children": [
+      "experimental__visibility-layout#banner-stack-mobile",
+      "experimental__visibility-layout#paragraph-stack",
+      "experimental__visibility-layout#rowBannersCustomPantone344C-1",
+      "experimental__visibility-layout#rowBannersCustomPantone344C-2",
+      "experimental__visibility-layout#rowBannersCustomPantone344C-3",
+      "experimental__visibility-layout#rowBannersCustomPantone344C-4",
+      "experimental__visibility-layout#rowBannersCustomPantone344C-5",
+      "experimental__visibility-layout#rowBannersCustomPantone344C-6",
+      "experimental__visibility-layout#rowBannersCustomPantone344C-7",
+      "experimental__visibility-layout#rowBannersCustomPantone344C-8",
+      "experimental__visibility-layout#rowBannersCustomPantone344C-9",
+      "experimental__visibility-layout#rowBannersCustomPantone344C-10",
+      "experimental__visibility-layout#rowBannersCustomPantone344C-11",
+      "experimental__visibility-layout#rowBannersCustomPantone344C-12"
+    ],
+    "props": {
+      "blockClass": "about-us"
+    }
+  },
+
+  "flex-layout.row#rowBannersCustomPantone344C-1": {
+    "children": [
+      "anatomic-image#block-image",
+      "stack-layout#pantone-344c"
+    ],
+    "props": {
+      "blockClass": "rowBanners"
+    }
+  },
+  "flex-layout.row#rowBannersCustomPantone344C-2": {
+    "children": [
+      "anatomic-image#block-image",
+      "stack-layout#pantone-344c"
+    ],
+    "props": {
+      "blockClass": ["rowBanners", "reverse"]
+   }
+  },
+  "flex-layout.row#rowBannersCustomPantone344C-3": {
+    "children": [
+      "anatomic-image#block-image",
+      "stack-layout#pantone-344c"
+    ],
+    "props": {
+      "blockClass": "rowBanners"
+    }
+  },
+  "flex-layout.row#rowBannersCustomPantone344C-4": {
+    "children": [
+      "anatomic-image#block-image",
+      "stack-layout#pantone-344c"
+    ],
+    "props": {
+      "blockClass": ["rowBanners", "reverse"]
+   }
+  },
+  "flex-layout.row#rowBannersCustomPantone344C-5": {
+    "children": [
+      "anatomic-image#block-image",
+      "stack-layout#pantone-344c"
+    ],
+    "props": {
+      "blockClass": "rowBanners"
+    }
+  },
+  "flex-layout.row#rowBannersCustomPantone344C-6": {
+    "children": [
+      "anatomic-image#block-image",
+      "stack-layout#pantone-344c"
+    ],
+    "props": {
+      "blockClass": ["rowBanners", "reverse"]
+   }
+  },
+  "flex-layout.row#rowBannersCustomPantone344C-7": {
+    "children": [
+      "anatomic-image#block-image",
+      "stack-layout#pantone-344c"
+    ],
+    "props": {
+      "blockClass": "rowBanners"
+    }
+  },
+  "flex-layout.row#rowBannersCustomPantone344C-8": {
+    "children": [
+      "anatomic-image#block-image",
+      "stack-layout#pantone-344c"
+    ],
+    "props": {
+      "blockClass": ["rowBanners", "reverse"]
+   }
+  },
+  "flex-layout.row#rowBannersCustomPantone344C-9": {
+    "children": [
+      "anatomic-image#block-image",
+      "stack-layout#pantone-344c"
+    ],
+    "props": {
+      "blockClass": "rowBanners"
+    }
+  },
+  "flex-layout.row#rowBannersCustomPantone344C-10": {
+    "children": [
+      "anatomic-image#block-image",
+      "stack-layout#pantone-344c"
+    ],
+    "props": {
+      "blockClass": ["rowBanners", "reverse"]
+   }
+  },
+  "flex-layout.row#rowBannersCustomPantone344C-11": {
+    "children": [
+      "anatomic-image#block-image",
+      "stack-layout#pantone-344c"
+    ],
+    "props": {
+      "blockClass": "rowBanners"
+    }
+  },
+  "flex-layout.row#rowBannersCustomPantone344C-12": {
+    "children": [
+      "anatomic-image#block-image",
+      "stack-layout#pantone-344c"
+    ],
+    "props": {
+      "blockClass": ["rowBanners", "reverse"]
+   }
+  },
+
+  // Visibility Layout
+
+  "experimental__visibility-layout#rowBannersCustomPantone344C-1": {
+    "children": ["flex-layout.row#rowBannersCustomPantone344C-1"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#rowBannersCustomPantone344C-2": {
+    "children": ["flex-layout.row#rowBannersCustomPantone344C-2"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#rowBannersCustomPantone344C-3": {
+    "children": ["flex-layout.row#rowBannersCustomPantone344C-3"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#rowBannersCustomPantone344C-4": {
+    "children": ["flex-layout.row#rowBannersCustomPantone344C-4"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#rowBannersCustomPantone344C-5": {
+    "children": ["flex-layout.row#rowBannersCustomPantone344C-5"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#rowBannersCustomPantone344C-6": {
+    "children": ["flex-layout.row#rowBannersCustomPantone344C-6"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#rowBannersCustomPantone344C-7": {
+    "children": ["flex-layout.row#rowBannersCustomPantone344C-7"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#rowBannersCustomPantone344C-8": {
+    "children": ["flex-layout.row#rowBannersCustomPantone344C-8"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#rowBannersCustomPantone344C-9": {
+    "children": ["flex-layout.row#rowBannersCustomPantone344C-9"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#rowBannersCustomPantone344C-10": {
+    "children": ["flex-layout.row#rowBannersCustomPantone344C-10"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#rowBannersCustomPantone344C-11": {
+    "children": ["flex-layout.row#rowBannersCustomPantone344C-11"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#rowBannersCustomPantone344C-12": {
+    "children": ["flex-layout.row#rowBannersCustomPantone344C-12"],
+    "props": {
+      "visible": true
+    }
+  }
+}

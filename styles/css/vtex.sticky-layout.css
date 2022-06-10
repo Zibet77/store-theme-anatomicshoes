@@ -1,0 +1,13 @@
+.container--sticky-header {
+  background: #fff;
+}
+
+.container--searchStickyBtn {
+  z-index: 999999;
+}
+
+@media (max-width: 64rem) {
+  .container--mobileStickyHeader {
+    background: #fff;
+  }
+}

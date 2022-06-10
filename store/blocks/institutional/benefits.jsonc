@@ -1,0 +1,80 @@
+{
+  "store.custom#int-benefits": {
+    "blocks": [
+      "responsive-layout.desktop#inst-benefits",
+      "responsive-layout.mobile#inst-benefits"
+    ]
+  },
+  "responsive-layout.desktop#inst-benefits": {
+    "children": [
+      "flex-layout.row#benefits-content",
+      "flex-layout.row#goodCompany"
+    ]
+  },
+  "responsive-layout.mobile#inst-benefits": {
+    "title": "Benefits Mobile",
+    "children": [
+      "flex-layout.row#benefits-content",
+      "flex-layout.row#goodCompany"
+    ]
+  },
+  "flex-layout.row#benefits-content": {
+    "children": [
+      "flex-layout.col#benefitsLeft",
+      "flex-layout.col#benefitsRight"
+    ],
+    "props": {
+      "blockClass": "instBenefitsRow"
+    }
+  },
+  "flex-layout.col#benefitsLeft": {
+    "title": "Benefits Left Block",
+    "children": [
+      "rich-text#benefits-title",
+      "rich-text#benefits-joinGroup",
+      "rich-text#benefits-unorderedList",
+      "rich-text#benefits-more"
+    ],
+    "props": {
+      "blockClass": "benefitsLeft",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#benefits-title": {
+    "title": "Benefits Left Block Title",
+    "props": {
+      "blockClass": ["pseudoBlue", "benefitsTitle"],
+      "text": "### Benefits"
+    }
+  },
+  "rich-text#benefits-joinGroup": {
+    "title": "Benefits Left Block Subtitle",
+    "props": {
+      "text": "Join our Anatomic Shoes group",
+      "blockClass": "benefitsSubtitle"
+    }
+  },
+  "rich-text#benefits-unorderedList": {
+    "title": "Benefits Left Block Items",
+    "props": {
+      "text": "* Item Unlock your 15% off welcome offer now\r* Free shipping perks\r* Birthday treats\r* Exclusive deals \r* Early access to special collections",
+      "blockClass": "benefitsList"
+    }
+  },
+  "rich-text#benefits-more": {
+    "title": "Benefits Left Block More",
+    "props": {
+      "text": "And even more surpises! Plus, It's FREE to join...",
+      "blockClass": "benefitsMore"
+    }
+  },
+  "flex-layout.col#benefitsRight": {
+    "title": "Benefits Right Block",
+    "children": [
+      "form"
+    ],
+    "props": {
+      "blockClass": "benefitsRight"
+    }
+  }
+}

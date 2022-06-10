@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Inter"), local("Inter-Light"), url("assets/fonts/Inter-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Inter"), local("Inter-Regular"), url("assets/fonts/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Inter Medium"), local("Inter-Medium"), url("assets/fonts/Inter-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Inter Bold"), local("Inter-SemiBold"), url("assets/fonts/Inter-SemiBold.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Inter"), local("Inter-Bold"), url("assets/fonts/Inter-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Gotham"), local("Gotham-Bold"), url("assets/fonts/Gotham-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Gotham"), local("Gotham-Light"), url("assets/fonts/Gotham-Light.otf") format("opentype");
+}

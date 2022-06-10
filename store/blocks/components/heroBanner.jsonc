@@ -1,0 +1,50 @@
+{
+  "list-context.image-list#hero": {
+    "title": "Hero Banner",
+    "children": ["slider-layout#hero"],
+    "props": {
+      "height": 368,
+      "images": [
+        {
+          "image": "assets/images/HeroBanner.png",
+          "description": "something something"
+        },
+        {
+          "image": "assets/images/HeroBanner.png",
+          "description": "something something"
+        }
+      ]
+    }
+  },
+  "list-context.image-list#heroMobile": {
+    "title": "Hero Banner",
+    "children": ["slider-layout#hero"],
+    "props": {
+      "height": 460,
+      "images": [
+        {
+          "image": "assets/images/heroBannerMobile.png",
+          "description": "something something"
+        },
+        {
+          "image": "assets/images/heroBannerMobile.png",
+          "description": "something something"
+        }
+      ],
+      "blockClass": "heroMobile"
+    }
+  },
+  "slider-layout#hero": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "always",
+      "blockClass": "heroCarousel"
+    }
+  }
+}

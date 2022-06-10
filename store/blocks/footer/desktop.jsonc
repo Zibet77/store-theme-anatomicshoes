@@ -1,0 +1,219 @@
+{
+  "footer-layout.desktop": {
+    "title": "Footer Desktop",
+    "children": [
+      "flex-layout.row#footer",
+      "flex-layout.row#footerStriperRights"
+    ]
+  },
+  "flex-layout.row#footer": {
+    "children": [
+      "flex-layout.row#left",
+      "flex-layout.row#right1",
+      "flex-layout.row#right2",
+      "flex-layout.col#right3"
+    ],
+    "props": {
+      "blockClass": "footer",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.row#left": {
+    "title": "Left Block",
+    "children": [
+      "flex-layout.col#left"
+    ],
+    "props": {
+      "blockClass": "leftRow"
+    }
+  },
+  "flex-layout.col#left": {
+    "children": [
+      "rich-text#leftTitle",
+      "rich-text#joinGroup",
+      "rich-text#unorderedList",
+      "link#submitGroup",
+      "link#seeBenefits"
+    ]
+  },
+  "rich-text#leftTitle": {
+    "title": "Left Block Title",
+    "props": {
+      "text": "### Benefits",
+      "blockClass": ["leftTitle", "pseudoBlue"]
+    }
+  },
+  "rich-text#joinGroup": {
+    "title": "Left Block Subtitle",
+    "props": {
+      "text": "Join our Anatomic Shoes group",
+      "blockClass": "joinGroup"
+    }
+  },
+  "rich-text#unorderedList": {
+    "title": "Left Block Items",
+    "props": {
+      "text": "* Item Unlock your 15% off welcome offer now\r* Free shipping perks\r* Birthday treats\r* Exclusive deals \r* Early access to special collections",
+      "blockClass": "footerList"
+    }
+  },
+  "link#submitGroup": {
+    "title": "Left Block Submit",
+    "props": {
+      "href": "/benefits",
+      "label": "submit",
+      "blockClass": "footerSubmit"
+    }
+  },
+  "link#seeBenefits": {
+    "title": "Left Block See Benefits",
+    "props": {
+      "href": "/benefits",
+      "label": "See all benefits",
+      "blockClass": "footerSeeAll"
+    }
+  },
+  "flex-layout.row#right1": {
+    "title": "Right Block I",
+    "children": [
+      "vtex.menu@2.x:menu#footerMenu1"
+    ],
+    "props": {
+      "blockClass": "footerMenuRow"
+    }
+  },
+  "flex-layout.row#right2": {
+    "title": "Right Block II",
+    "children": [
+      "vtex.menu@2.x:menu#footerMenu2"
+    ],
+    "props": {
+      "blockClass": "footerMenuRow2"
+    }
+  },
+  "flex-layout.col#right3": {
+    "title": "Right Block III",
+    "children": [
+      "flex-layout.col#payments",
+      "flex-layout.col#networks"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "footerNetworkPayment"
+    }
+  },
+  "flex-layout.col#payments": {
+    "title": "Payments",
+    "children": [
+      "rich-text#paymentText",
+      "flex-layout.row#acceptedPayments"
+    ]
+  },
+  "rich-text#paymentText": {
+    "title": "Payments Text",
+    "props": {
+      "text": "Pay with credit card",
+      "blockClass": "footerText"
+    }
+  },
+  "flex-layout.row#acceptedPayments": {
+    "title": "Payments Options",
+    "children": [
+      "image#visa",
+      "image#mastercard",
+      "image#dinners",
+      "image#klarna",
+      "image#paypal"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "acceptedPayments"
+    }
+  },
+  "image#visa": {
+    "title": "Payments Icon",
+    "props": {
+      "src": "assets/svgs/visa.svg"
+    }
+  },
+  "image#mastercard": {
+    "title": "Payments Icon",
+    "props": {
+      "src": "assets/svgs/mastercard.svg"
+    }
+  },
+  "image#dinners": {
+    "title": "Payments Icon",
+    "props": {
+      "src": "assets/svgs/dinners.svg"
+    }
+  },
+  "image#klarna": {
+    "title": "Payments Icon",
+    "props": {
+      "src": "assets/svgs/klarna.svg"
+    }
+  },
+  "image#paypal": {
+    "title": "Payments Icon",
+    "props": {
+      "src": "assets/svgs/paypal.svg"
+    }
+  },
+  "flex-layout.col#networks": {
+    "title": "Networks",
+    "children": [
+      "rich-text#networks",
+      "flex-layout.row#networks"
+    ]
+  },
+  "rich-text#networks": {
+    "title": "Networks Text",
+    "props": {
+      "text": "Follow Us",
+      "blockClass": "footerText"
+    }
+  },
+  "flex-layout.row#networks": {
+    "title": "Networks Links",
+    "children": [
+      "image#facebook",
+      "image#instagram",
+      "image#twitter"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "networks"
+    }
+  },
+  "image#facebook": {
+    "title": "Networks Icon",
+    "props": {
+      "src": "assets/svgs/facebook-f.svg",
+      "link" : {
+        "url": "https://www.facebook.com/AnatomicShoes",
+        "openNewTab": true
+      }
+    }
+  },
+  "image#instagram": {
+    "title": "Networks Icon",
+    "props": {
+      "src": "assets/svgs/instagram.svg",
+      "link" : {
+        "url": "https://www.instagram.com/anatomicco/",
+        "openNewTab": true
+      }
+    }
+  },
+  "image#twitter": {
+    "title": "Networks Icon",
+    "props": {
+      "src": "assets/svgs/twitter.svg",
+      "link" : {
+        "url": "https://twitter.com/AnatomicCo",
+        "openNewTab": true
+      }
+    }
+  }
+}

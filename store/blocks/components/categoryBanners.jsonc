@@ -1,0 +1,79 @@
+{
+  "flex-layout.row#categoryBanners": {
+    "title": "Category Banners",
+    "children": [
+      "link#bootsCategory",
+      "link#womensCategory",
+      "link#kidsCategory",
+      "link#shoesCategory"
+    ],
+    "props": {
+      "blockClass": "categoryBanners",
+      "preventHorizontalStretch": true
+    }
+  },
+  "link#bootsCategory": {
+    "title": "Category Banners Link",
+    "children": [
+      "image#bootsCategory"
+    ],
+    "props": {
+      "href": "/"
+    }
+  },
+  "link#womensCategory": {
+    "title": "Category Banners Link",
+    "children": [
+      "image#womensCategory"
+    ],
+    "props": {
+      "href": "/"
+    }
+  },
+  "link#kidsCategory": {
+    "title": "Category Banners Link",
+    "children": [
+      "image#kidsCategory"
+    ],
+    "props": {
+      "href": "/"
+    }
+  },
+  "link#shoesCategory": {
+    "title": "Category Banners Link",
+    "children": [
+      "image#shoesCategory"
+    ],
+    "props": {
+      "href": "/"
+    }
+  },
+  "image#bootsCategory": {
+    "title": "Category Banners Link",
+    "props": {
+      "src": "assets/images/bootsCategory.png",
+      "blockClass": "categoryImage"
+    }
+  },
+  "image#womensCategory": {
+    "title": "Category Banners Link",
+    "props": {
+      "src": "assets/images/womanCategory.png",
+      "blockClass": "categoryImage"
+    }
+  },
+  "image#kidsCategory": {
+    "title": "Category Banners Link",
+    "props": {
+      "src": "assets/images/kidsCategory.png",
+      "blockClass": "categoryImage"
+    }
+  },
+  "image#shoesCategory": {
+    "title": "Category Banners Link",
+    "props": {
+      "src": "assets/images/shoesCategory.png",
+      "blockClass": "categoryImage"
+    }
+  }
+}

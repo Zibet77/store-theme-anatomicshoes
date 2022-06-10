@@ -1,0 +1,100 @@
+:global(.vtex-pageHeader__container) :global(.vtex-button) {
+  color: var(--blue-original);
+  font-weight: 600;
+}
+
+:global(.vtex-pageHeader__container) :global(.vtex-button):hover {
+  background-color: transparent;
+}
+
+:global(.vtex-pageHeader__container) :global(.vtex-pageHeader__title) {
+  color: var(--blue-marine);
+  font-weight: 600;
+}
+
+:global(.vtex-pageHeader__container) :global(.vtex-pageHeader__children) :global(.vtex-button) {
+  background-color: var(--blue-marine);
+  border-radius: 0;
+  border-width: 0;
+  color: #FFFFFF;
+  text-transform: none;
+}
+
+.menuLinks .menu-link {
+  color: var(--blue-marine);
+}
+
+.boxContainerBody .dataEntryLabel {
+  color: #5C666F;
+}
+
+.boxContainerBody .dataEntryChildren {
+  color: #B7C0D2;
+}
+
+.boxContainerFooter :global(.vtex-button) {
+  color: var(--blue-original);
+  font-weight: 600;
+}
+
+.boxContainerFooter :global(.vtex-button):hover {
+  background-color: transparent;
+}
+
+.newsletterBoxContainer .newsletterContainerTitle {
+  color: #5C666F;
+}
+
+.newsletterBoxContainer .newsletterContainerMessage {
+  color: #B7C0D2;
+}
+
+.newsletterBoxContainer :global(.vtex-checkbox__label) {
+  color: #5C666F;
+}
+
+.boxContainerBody :global(.vtex-input__label),
+.boxContainerBody :global(.vtex-dropdown__label) {
+  color: #5C666F;
+}
+
+.boxContainerBody :global(.vtex-profile-form-3-x-toggleBusinessButtonWrapper) :global(.vtex-button) {
+  background-color: var(--blue-original);
+  border-radius: 0;
+}
+
+.boxContainerBody :global(.vtex-button) {
+  background-color: var(--blue-marine);
+  border-width: 0;
+  border-radius: 0;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-transform: none;
+}
+
+/* Orders */
+:global(.vtex-account__page) :global(.vtex-my-orders-app-3-x-orderHeader) {
+  background-color: #F8FAFC;
+}
+
+:global(.vtex-account__page) :global(.vtex-my-orders-app-3-x-orderHeaderValue) {
+  color: var(--blue-marine);
+}
+
+:global(.vtex-account__page) :global(.vtex-my-orders-app-3-x-detailsBtn) {
+  background: var(--blue-marine);
+  border-radius: 0;
+  color: #FFFFFF;
+}
+
+:global(.vtex-account__page) :global(.vtex-my-orders-app-3-x-orderProductShipping) {
+  color: #5C666F;
+}
+
+:global(.vtex-account__page) :global(.vtex-my-orders-app-3-x-orderProductName) {
+  color: var(--blue-original);
+}
+
+:global(.vtex-account__page) :global(.vtex-my-orders-app-3-x-orderProductQuantityValue) {
+  color: var(--blue-marine);
+}

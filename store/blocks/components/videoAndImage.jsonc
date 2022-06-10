@@ -1,0 +1,147 @@
+{
+  "flex-layout.row#videoAndImage": {
+    "title": "Video and Image",
+    "children": [
+      "flex-layout.col#video",
+      "flex-layout.col#image"
+    ],
+    "props": {
+      "blockClass": "videoAndImage",
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.row#videoAndImageProduct": {
+    "title": "Product Video and Image",
+    "children": [
+      "flex-layout.col#videoProduct",
+      "flex-layout.col#image"
+    ],
+    "props": {
+      "blockClass": "videoAndImage",
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.row#goodCompany": {
+    "children": [
+      "flex-layout.col#goodCompany"
+    ],
+    "props": {
+      "blockClass": "goodCompany"
+    }
+  },
+  "flex-layout.col#goodCompany": {
+    "title": "Good Company",
+    "children": [
+      "rich-text#goodCompany",
+      "rich-text#goodCompanyParagraph"
+    ]
+  },
+  "rich-text#goodCompany": {
+    "title": "Good Company Title",
+    "props": {
+      "text": "In Good Company",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["pseudoBlue", "goodTitle"]
+    }
+  },
+  "rich-text#goodCompanyParagraph": {
+    "title": "Good Company Text",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "We don't just make shoes, we make people feel more sociable, by producing comfortable shoes that give them the fit and = freedom they want.",
+      "blockClass": "goodParagraph"
+    }
+  },
+  "flex-layout.col#video": {
+    "title": "Video",
+    "children": [
+      "image#anatomicCompany",
+      "rich-text#textVideo",
+      "video#anatomic"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#videoProduct": {
+    "title": "Video Box",
+    "children": [
+      "image#anatomicCompany",
+      "rich-text#textVideo",
+      "video#anatomic",
+      "flex-layout.row#footerMobileRow"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "image#anatomicCompany": {
+    "title": "Video Box Image",
+    "props": {
+      "src": "assets/images/anatomicCompany.png",
+      "blockClass": "anatomicImage"
+    }
+  },
+  "flex-layout.col#image": {
+    "title": "Image Box",
+    "children": [
+      "image#instagramHeart",
+      "rich-text#textImage",
+      "flex-layout.row#image",
+      "image#placeholderMobile"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "imageAlignFix"
+    }
+  },
+  "image#instagramHeart": {
+    "props": {
+      "src": "assets/images/instagramHeart.png",
+      "blockClass": "instagramImage"
+    }
+  },
+  "rich-text#textVideo": {
+    "title": "Video Box Text",
+    "props": {
+      "text": "Here at Anatomic & Co, we specialise in hight quality, handmade men's shoes for all occasions. We take the very best of refined British style and the latest Brazilian shoe making technology to bring you some of the finest footwear money can buy.",
+      "blockClass": ["textVideo", "sectionImageVideoText"]
+    }
+  },
+  "rich-text#textImage": {
+    "props": {
+      "text": "The most sociable shoe brand in the world. Specialists in high-quality men’s footwear. Designed in the UK, Hand-crafted in Brazil.",
+      "blockClass": ["textImage", "sectionImageVideoText"]
+    }
+  },
+  "video#anatomic": {
+    "title": "Video",
+    "props": {
+      "width": "100%",
+      "height": "368px",
+      "loop": false,
+      "autoPlay": false,
+      "muted": false,
+      "src": "https://www.youtube.com/watch?v=wygFqZXMIco",
+      "blockClass": "video"
+    }
+  },
+  "flex-layout.row#image":{
+    "children" : ["image#placeholder"]
+  },
+  "image#placeholder": {
+    "props": {
+      "src": "assets/images/imagePlaceholder.png",
+      "blockClass": ["desktop"]
+    }
+  },
+  "image#placeholderMobile": {
+    "props": {
+      "src": "assets/images/imagePlaceholderMobile.png",
+      "maxWidth": "100%",
+      "blockClass": ["mobile"]
+    }
+  }
+}

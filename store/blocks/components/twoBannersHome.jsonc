@@ -1,0 +1,24 @@
+{
+  "flex-layout.row#twoBanners": {
+    "title": "Banners",
+    "children": [
+      "image#bannerOne",
+      "image#bannerTwo"
+    ],
+    "props": {
+      "blockClass": "twoBannerContainer"
+    }
+  },
+  "image#bannerOne": {
+    "title": "Banner One",
+    "props": {
+      "src": "assets/images/BannerOne.png"
+    }
+  },
+  "image#bannerTwo": {
+    "title": "Banner Two",
+    "props": {
+      "src": "assets/images/BannerTwo.png"
+    }
+  }
+}

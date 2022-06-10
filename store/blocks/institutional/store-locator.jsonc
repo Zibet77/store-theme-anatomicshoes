@@ -1,0 +1,43 @@
+{
+  "store.custom#inst-store-locator": {
+    "blocks": [
+      "rich-text#store-locator-breadcrumb",
+      "rich-text#store-locator-title",
+      "rich-text#store-locator-subtitle",
+      "flex-layout.row#store-locator",
+      "flex-layout.row#goodCompany"
+    ]
+  },
+  "rich-text#store-locator-breadcrumb": {
+    "props": {
+      "blockClass": "storeLocatorBreadcrumb",
+      "text": "[Anatomic Shoes > ](/) Store Locator",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#store-locator-title": {
+    "props": {
+      "blockClass": ["pseudoBlue", "storeLocatorTitle"],
+      "text": "### Store Locator",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#store-locator-subtitle": {
+    "props": {
+      "blockClass": "storeLocatorSubtitle",
+      "text": "Search By Town / postcode:",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#store-locator": {
+    "children": [
+      "store-locator-page"
+    ],
+    "props": {
+      "blockClass": "storeLocatorRow"
+    }
+  }
+}

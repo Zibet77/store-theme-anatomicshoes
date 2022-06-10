@@ -1,0 +1,92 @@
+{
+  "flex-layout.col#firstCol": {
+    "children": [
+      "rich-text#subMenuColumnTitle",
+      "vtex.menu@2.x:menu#firstColMenu"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#subMenuColumnTitle": {
+    "props": {
+      "text": "Men's Shoes",
+      "blockClass": "subMenuColumnTitle"
+    }
+  },
+  "link#subMenuColumnLink": {
+    "props": {
+      "label": "View All Shoes",
+      "href": "#",
+      "blockClass": "subMenuColumnLink"
+    }
+  },
+  "vtex.menu@2.x:menu#firstColMenu": {
+    "props": {
+      "blockClass": "subMenuVerticalMenu",
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "submenu-item-custom",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Black Shoes",
+            "text": "Black Shoes"
+          }
+        },
+        {
+          "id": "submenu-item-custom",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Brogues",
+            "text": "Brogues"
+          }
+        },
+        {
+          "id": "submenu-item-custom",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Brogues",
+            "text": "Brogues"
+          }
+        },
+        {
+          "id": "submenu-item-custom",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Brogues",
+            "text": "Brogues"
+          }
+        },
+        {
+          "id": "submenu-item-custom",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Brogues",
+            "text": "Brogues"
+          }
+        }
+      ]
+    }
+  }
+}

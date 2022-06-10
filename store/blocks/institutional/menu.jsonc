@@ -1,0 +1,210 @@
+{
+  "drawer#institutional": {
+    "children": [
+      "menu#drawer-institutional"
+    ],
+    "props": {
+      "blockClass": "institutionalMenu",
+      "isFullWidth": true
+    }
+  }, 
+  "menu#drawer-institutional": {
+    "children": [
+      "menu-item#inst-menu-1",
+      "menu-item#inst-menu-2",
+      "menu-item#inst-menu-3",
+      "menu-item#inst-menu-4",
+      "menu-item#inst-menu-5",
+      "menu-item#inst-menu-6",
+      "menu-item#inst-menu-7",
+      "menu-item#inst-menu-8",
+      "menu-item#inst-menu-9",
+      "menu-item#inst-menu-10",
+      "menu-item#inst-menu-11",
+      "menu-item#inst-menu-12",
+      "menu-item#inst-menu-13",
+      "menu-item#inst-menu-14",
+      "menu-item#inst-menu-15"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "institutionalMenu"
+    }
+  },
+  "menu-item#inst-menu-1": {
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Contact Us",
+        "text": "Contact Us"
+      }
+    }
+  },
+  "menu-item#inst-menu-2": {
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "About Us",
+        "text": "About Us"
+      }
+    }
+  },
+  "menu-item#inst-menu-3": {
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "How our shoes are made",
+        "text": "How our shoes are made"
+      }
+    }
+  },
+  "menu-item#inst-menu-4": {
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "In good company",
+        "text": "In good company"
+      }
+    }
+  },
+  "menu-item#inst-menu-5": {
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Sizing",
+        "text": "Sizing"
+      }
+    }
+  },
+  "menu-item#inst-menu-6": {
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "So comfortable",
+        "text": "So comfortable"
+      }
+    }
+  },
+  "menu-item#inst-menu-7": {
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Stockists",
+        "text": "Stockists"
+      }
+    }
+  },
+  "menu-item#inst-menu-8": {
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Security and Privacy",
+        "text": "Security and Privacy"
+      }
+    }
+  },
+  "menu-item#inst-menu-9": {
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Terms and Conditions",
+        "text": "Terms and Conditions"
+      }
+    }
+  },
+  "menu-item#inst-menu-10": {
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shoe Care",
+        "text": "Shoe Care"
+      }
+    }
+  },
+  "menu-item#inst-menu-11": {
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Request a Catalogue",
+        "text": "Request a Catalogue"
+      }
+    }
+  },
+  "menu-item#inst-menu-12": {
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "International Delivery",
+        "text": "International Delivery"
+      }
+    }
+  },
+  "menu-item#inst-menu-13": {
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Returns",
+        "text": "Returns"
+      }
+    }
+  },
+  "menu-item#inst-menu-14": {
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Delivery",
+        "text": "Delivery"
+      }
+    }
+  },
+  "menu-item#inst-menu-15": {
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Sitemap",
+        "text": "Sitemap"
+      }
+    }
+  },
+  "menu-item#inst-menu-16": {
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Corona Virus Customer Information",
+        "text": "Corona Virus Customer Information"
+      }
+    }
+  }
+}

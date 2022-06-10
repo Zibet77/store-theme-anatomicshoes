@@ -1,0 +1,175 @@
+{
+  "disclosure-layout#menu-mobile-item-1": {
+    "children": [
+      "disclosure-trigger#item1",
+      "disclosure-trigger#close1",
+      "disclosure-content#item1"
+    ],
+    "props": {
+      "blockClass": "disclosureMenu"
+    }
+  },
+  "disclosure-layout#menu-mobile-item-2": {
+    "children": [
+      "disclosure-trigger#item2",
+      "disclosure-trigger#close1",
+      "disclosure-content#item2"
+    ],
+    "props": {
+      "blockClass": "disclosureMenu"
+    }
+  },
+  "disclosure-layout#menu-mobile-item-3": {
+    "children": [
+      "disclosure-trigger#item3",
+      "disclosure-trigger#close1",
+      "disclosure-content#item3"
+    ],
+    "props": {
+      "blockClass": "disclosureMenu"
+    }
+  },
+  "disclosure-layout#menu-mobile-item-5": {
+    "children": [
+      "disclosure-trigger#item5",
+      "disclosure-trigger#close1",
+      "disclosure-content#item5"
+    ],
+    "props": {
+      "blockClass": "disclosureMenu"
+    }
+  },
+  "disclosure-content#item1": {
+    "children": [
+      "flex-layout.row#subMenuHeader",
+      "flex-layout.col#fourthCol",
+      "menu-item#menu-item-1",
+      "menu-item#menu-item-2",
+      "menu-item#menu-item-3",
+      "menu-item#menu-item-4",
+      "flex-layout.col#thirdCol",
+      "vtex.menu@2.x:menu#menuTagLinks",
+      "flex-layout.row#footerMobileRow",
+      "flex-layout.row#contactUsMenu"
+    ],
+    "props": {
+      "blockClass": "disclosureMenuContent"
+    }
+  },
+  "disclosure-content#item2": {
+    "children": [
+      "flex-layout.row#subMenuHeader",
+      "flex-layout.col#fourthCol",
+      "menu-item#menu-item-1",
+      "menu-item#menu-item-2",
+      "menu-item#menu-item-3",
+      "menu-item#menu-item-4",
+      "flex-layout.col#thirdCol",
+      "vtex.menu@2.x:menu#menuTagLinks",
+      "flex-layout.row#footerMobileRow",
+      "flex-layout.row#contactUsMenu"
+    ],
+    "props": {
+      "blockClass": "disclosureMenuContent"
+    }
+  },
+  "disclosure-content#item3": {
+    "children": [
+      "flex-layout.row#subMenuHeader",
+      "flex-layout.col#fourthCol",
+      "menu-item#menu-item-1",
+      "menu-item#menu-item-2",
+      "menu-item#menu-item-3",
+      "menu-item#menu-item-4",
+      "flex-layout.col#thirdCol",
+      "vtex.menu@2.x:menu#menuTagLinks",
+      "flex-layout.row#footerMobileRow",
+      "flex-layout.row#contactUsMenu"
+    ],
+    "props": {
+      "blockClass": "disclosureMenuContent"
+    }
+  },
+  "disclosure-content#item4": {
+    "children": [
+      "flex-layout.row#subMenuHeader",
+      "flex-layout.col#fourthCol",
+      "menu-item#menu-item-1",
+      "menu-item#menu-item-2",
+      "menu-item#menu-item-3",
+      "menu-item#menu-item-4",
+      "flex-layout.col#thirdCol",
+      "vtex.menu@2.x:menu#menuTagLinks",
+      "flex-layout.row#footerMobileRow",
+      "flex-layout.row#contactUsMenu"
+    ],
+    "props": {
+      "blockClass": "disclosureMenuContent"
+    }
+  },
+  "disclosure-content#item5": {
+    "children": [
+      "rich-text#trigger-item-5",
+      "flex-layout.row#submenuInstitutional"
+    ],
+    "props": {
+      "blockClass": ["disclosureMenuContent", "institutional"]
+    }
+  },
+  "disclosure-trigger#item1": {
+    "children": ["rich-text#trigger-item-1"],
+    "props": {
+      "blockClass": "disclosureMenuTrigger"
+    }
+  },
+  "disclosure-trigger#item2": {
+    "children": ["rich-text#trigger-item-2"],
+    "props": {
+      "blockClass": "disclosureMenuTrigger"
+    }
+  },
+  "disclosure-trigger#item3": {
+    "children": ["rich-text#trigger-item-3"],
+    "props": {
+      "blockClass": "disclosureMenuTrigger"
+    }
+  },
+  "disclosure-trigger#item5": {
+    "children": ["rich-text#trigger-item-5"],
+    "props": {
+      "blockClass": "disclosureMenuTrigger"
+    }
+  },
+  "rich-text#trigger-item-1": {
+    "props": {
+      "text": "Men's"
+    }
+  },
+  "rich-text#trigger-item-2": {
+    "props": {
+      "text": "Women's"
+    }
+  },
+  "rich-text#trigger-item-3": {
+    "props": {
+      "text": "Kids"
+    }
+  },
+  "rich-text#trigger-item-5": {
+    "props": {
+      "text": "Inside Anatomic",
+      "blockClass": "institutionalTitle"
+    }
+  },
+  "disclosure-trigger#close1": {
+    "children": ["image#closeIcon"],
+    "props": {
+      "blockClass": "closeButton"
+    }
+  },
+  "image#closeIcon": {
+    "props": {
+      "src": "assets/svgs/chevronRightBlue.svg"
+    }
+  }
+}

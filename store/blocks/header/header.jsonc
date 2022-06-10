@@ -1,0 +1,48 @@
+{
+  "header": {
+    "title": "Header",
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "title": "Header",
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "link#whatsapp": {
+    "title": "Whatsapp Link",
+    "children": [
+      "image#wppLogo"
+    ],
+    "props": {
+      "label": "",
+      "href": "https://wa.link/046bh8",
+      "blockClass": "whatsapp",
+      "target": "_blank"
+    }
+  },
+  "image#wppLogo": {
+    "props": {
+      "src": "assets/svgs/whatsapp.svg"
+    }
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/images/logo_full.png",
+      "height": "20",
+      "blockClass": "logoSize"
+    }
+  }
+}

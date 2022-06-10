@@ -1,0 +1,56 @@
+{
+  "experimental__visibility-layout#toggleVisibilityShowcase": {
+    "children": ["flex-layout.row##toggleVisibilityShowcase"],
+    "props": {
+    "visible": "true",
+    "blockClass": "sectionBannerAbout"
+     }
+     },
+  "flex-layout.row##toggleVisibilityShowcase": {
+    "children": [
+      "flex-layout.col#VisibilityShowcaseShelfCol"
+    ],
+    "props": {
+      "blockClass": "rowVisibilityShowcase"
+    }
+  },
+  "flex-layout.col#VisibilityShowcaseShelfCol": {
+    "children": [
+      "rich-text#shelfSectionTitleVisibility",
+      "list-context.product-list#VisibilityShowcase"
+    ]
+  },
+  "rich-text#shelfSectionTitleVisibility": {
+    "title": "Title",
+    "props": {
+      "text": "### Visibility Showcase",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "shelfSectionTitleVisibilityShowcase"
+    }
+  },
+  "list-context.product-list#VisibilityShowcase": {
+    "title": "Collection",
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#VisibilityShowcase"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#VisibilityShowcase": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": false,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "shelfContainer"
+    }
+  }
+}

@@ -1,0 +1,139 @@
+.cartIcon {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.minicartIconContainer::before {
+  content: url("assets/svgs/cartIcon.svg");
+}
+
+.openIconContainer :global(.vtex-button) {
+  outline: none;
+}
+
+.openIconContainer :global(.vtex-button):hover {
+  background: none;
+}
+
+.openIconContainer :global(.vtex-button__label){
+  padding: 0!important;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.minicartQuantityBadge {
+  background-color: #0890CD;
+  border: 2px solid #fff;
+  font-size: 12px;
+  font-weight: 500;
+}
+.closeIconContainer {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 24px;
+}
+
+.closeIconContainer::before {
+  content: "My basket";
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 500;
+  color: var(--blue-marine);
+  order: 2;
+}
+
+.minicartTitle,
+.closeIcon {
+  display: none;
+  opacity: 0;
+}
+
+.closeIconButton {
+  margin-left: auto;
+  padding-right: 0;
+  display: flex;
+  order: 3;
+}
+
+.closeIconButton::before {
+  content: url("assets/svgs/closeMinicart.svg");
+}
+
+.closeIconContainer::after {
+  content: "";
+  background-image: url("assets/svgs/cartIconMinicart.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  width: 14px;
+  height: 16px;
+  order: 1;
+  margin-right: 12px;
+}
+
+.minicartCheckoutButton {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.minicartCheckoutButton :global(.vtex-button){
+  border-radius: 0px;
+  border: none;
+  height: 50px;
+  background: var(--blue-marine);
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: initial;
+  order: 3;
+}
+
+.minicartSummary {
+  padding-bottom: 1rem;
+}
+
+.minicartSideBarContentWrapper {
+  height: 100%!important;
+}
+
+.childrenContainer {
+  height: calc(100vh - 70px);
+}
+
+@media (max-width: 64rem) {
+
+  .drawer {
+    width: 100%!important;
+    max-width: 100%!important;
+    z-index: 999999 !important;
+  }
+
+  .openIconContainer {
+    padding: 0;
+  }
+
+  .minicartWrapperContainer {
+    padding-left: 24px;
+    margin-left: 16px;
+    border-left: 1px solid rgba(92, 102, 111, 0.12);
+  }
+
+  .minicartContainer :global(.vtex-button){
+    min-height: initial;
+    height: auto;
+  }
+
+  .minicartIconContainer::before {
+    content: "";
+    height: 16px;
+    width: 14px;
+    display: block;
+    background-image: url("assets/svgs/cartIcon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

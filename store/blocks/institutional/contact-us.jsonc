@@ -1,0 +1,114 @@
+{
+  "store.custom#inst-contact": {
+    "blocks": [
+      "responsive-layout.desktop#inst-contact",
+      "responsive-layout.mobile#inst-contact"
+    ]
+  },
+  "responsive-layout.desktop#inst-contact": {
+    "children": [
+      "flex-layout.row#contact-content",
+      "flex-layout.row#goodCompany"
+    ]
+  },
+  "responsive-layout.mobile#inst-contact": {
+    "children": [
+      "flex-layout.row#contact-content",
+      "flex-layout.row#goodCompany"
+    ]
+  },
+  "flex-layout.row#contact-content": {
+    "children": [
+      "flex-layout.col#contactLeft",
+      "flex-layout.col#contactRight"
+    ],
+    "props": {
+      "blockClass": "instBenefitsRow"
+    }
+  },
+  "flex-layout.row#sticky-menu-row": {
+    "children": [
+      "sticky-layout#institutional-menu"
+    ],
+    "props": {
+      "blockClass": "institutionalSticky"
+    }
+  },
+  "flex-layout.col#contactLeft": {
+    "children": [
+      "flex-layout.row#contact-left-header",
+      "rich-text#contact-gotQuestion",
+      "rich-text#contact-intro-content",
+      "flex-layout.row#sticky-menu-row"
+    ],
+    "props": {
+      "blockClass": "benefitsLeft",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.row#contact-left-header": {
+    "children": [
+      "drawer#institutional",
+      "rich-text#contact-title"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "contactHeader"
+    }
+  }, 
+  "rich-text#contact-title": {
+    "props": {
+      "blockClass": ["pseudoBlue", "contactTitle"],
+      "text": "### Contact Us"
+    }
+  },
+  "rich-text#contact-gotQuestion": {
+    "props": {
+      "text": "GOT A QUESTION?",
+      "blockClass": ["joinGroup", "contactQuestion"]
+    }
+  },
+  "rich-text#contact-intro-content": {
+    "props": {
+      "text": "We are always happy to hear from you. \nPlease do not hesitate to contact us with any questions, feedback or suggestions about our range of stylish and comfortable footwear. You can also take a look at our Help page to see if we can answer your question right away.",
+      "blockClass": ["contactIntroContent"],
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  },
+  "flex-layout.col#contactRight": {
+    "children": [
+      "form#contact",
+      "rich-text#contact-head-office-title",
+      "rich-text#contact-head-office-content-mob",
+      "rich-text#contact-head-office-content"
+    ],
+    "props": {
+      "blockClass": ["benefitsRight", "contactRight"]
+    }
+  },
+  "rich-text#contact-head-office-title": {
+    "props": {
+      "text": "Head Office",
+      "blockClass": ["pseudoBlue", "contactHeadTitle"],
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#contact-head-office-content-mob": {
+    "props": {
+      "text": "Anatomic Shoes \nUnit 1 \nStadium Industrial Estate  \nCradock Road  \nBedfordshire  \nLuton \nLU4 0JF  \nUnited Kingdom\n\n\nT 44 2031150002",
+      "blockClass": ["contactContent", "contactContentMob"],
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#contact-head-office-content": {
+    "props": {
+      "text": "Anatomic Shoes:  Unit 1 \nStadium Industrial Estate  -  Cradock Road  -  Bedfordshire  -  Luton \nLU4 0JF  -  United Kingdom\n\n\nT 44 2031150002",
+      "blockClass": "contactContent",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  }
+}

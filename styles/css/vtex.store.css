@@ -1,0 +1,22 @@
+:not(:global(.vtex-fake)),
+:global(.vtex-store__template) {
+  /* Colors */
+
+  --ice-white: #E8F0F0;
+  --blue-marine: #34425E;
+  --blue-original: #0890CD;
+  --custom-black: #1D1F23;
+  --text-style: #5C666F;
+  --icon-gray: #B7C0D2;
+  --pantone-299c: #00A3E0;
+  --pantone-319c: #2DCCD3;
+  --pantone-715c: #F68D2E;
+  --pantone-631c: #3EB1C8;
+  --pantone-344c: #A0DAB3;
+  --pantone-cool-gray-10c: #63666A;
+  --white: #fff;
+}
+
+:global(.vtex-product-context-provider) :global(.vtex-flex-layout-0-x-flexRow--subscribeHeaderStripe){
+  display: none;
+}

@@ -1,0 +1,219 @@
+.container {
+  max-width: 280px !important;
+  border-radius: 0px;
+}
+
+.element {
+  position: relative;
+}
+
+.element :global(.vtex-wish-list-1-x-wishlistIconContainer) {
+  position: absolute;
+  z-index: 5;
+  right: 0;
+}
+
+.hoverImage {
+  z-index: 0;
+}
+
+.element :global(.vtex-button) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #34425e;
+  border-radius: 0px;
+  padding: 0px 16px;
+  height: 40px;
+  border: none;
+  margin-top: auto;
+  font-size: 16px;
+}
+
+.summaryContainer :global(.vtex-button) :global(.vtex-add-to-cart-button-0-x-buttonText) {
+  font-size: 16px;
+}
+
+/* .element :global(.vtex-button)::after {
+  content: url("assets/svgs/basketIcon.svg");
+} */
+.element :global(.vtex-button__label) {
+  padding: 0;
+  width: auto;
+}
+
+.element .nameContainer {
+  padding: 0;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+}
+
+.element .nameContainer .productNameContainer {
+  text-align: left;
+}
+
+.productNameContainer {
+  min-height: 44px;
+}
+
+.element .productBrandContainer {
+  text-align: left;
+  max-width: 78px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #34425e;
+  font-weight: 400;
+  margin-right: auto;
+}
+
+.element .imageContainer {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.element .productBrand {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Inter, sans-serif;
+  color: #34425e;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.imageWrapper--imageInlineCard .imageContainer,
+.element .imageWrapper--imageInlineCard {
+  margin: 0;
+  margin-bottom: 0;
+}
+
+.container--buyTogetherCard .productBrand {
+  font-size: 14px;
+}
+
+.element--inlineSummary :global(.vtex-modal-layout-0-x-triggerContainer),
+.element--productCard :global(.vtex-modal-layout-0-x-triggerContainer) {
+  background-color: var(--blue-marine);
+  color: #fff;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 16px;
+}
+
+.element--inlineSummary :global(.vtex-rich-text-0-x-wrapper),
+.element--productCard :global(.vtex-rich-text-0-x-wrapper) {
+  width: 100%;
+}
+
+.element--inlineSummary :global(.vtex-rich-text-0-x-paragraph),
+.element--productCard :global(.vtex-rich-text-0-x-paragraph) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  color: #fff;
+  position: relative;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+.element--inlineSummary :global(.vtex-modal-layout-0-x-triggerContainer)::after,
+.element--productCard :global(.vtex-modal-layout-0-x-triggerContainer)::after {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='18' viewBox='0 0 16 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.22863 1L1 4.2V15.4C1 15.8243 1.15653 16.2313 1.43517 16.5314C1.7138 16.8314 2.09171 17 2.48575 17H12.886C13.2801 17 13.658 16.8314 13.9366 16.5314C14.2153 16.2313 14.3718 15.8243 14.3718 15.4V4.2L12.1432 1H3.22863Z' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M1 4.19995H14.3718' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10.6574 7.3999C10.6574 8.2486 10.3443 9.06253 9.78704 9.66264C9.22977 10.2628 8.47396 10.5999 7.68586 10.5999C6.89777 10.5999 6.14196 10.2628 5.58469 9.66264C5.02742 9.06253 4.71436 8.2486 4.71436 7.3999' stroke='%230890CD' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  width: 16px;
+  height: 18px;
+  display: block;
+  margin-left: 1rem;
+}
+
+.element :global(.vtex-store-components-3-x-skuSelectorTextContainer) {
+  display: none;
+}
+
+.element :global(.vtex-store-components-3-x-skuSelectorSubcontainer) {
+  margin: 0;
+}
+
+.container--productCard .imageNormal {
+  width: 248px;
+  height: 210px;
+  object-fit: contain;
+}
+
+.element--productCard {
+  display: grid;
+  grid-template-rows: 0 246px auto 46px 40px;
+}
+
+:global(.vtex-product-specification-badges-0-x-groupContainer--badges-summary-product) {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  z-index: 1;
+  margin: 0;
+  display: inline-flex;
+}
+
+:global(.vtex-product-specification-badges-0-x-groupContainer--badges-summary-product)::before {
+  content: "";
+  height: 16px;
+  width: 16px;
+  background: #fff;
+  transform: translate(-59%, -50%) rotate(45deg);
+  position: absolute;
+  top: 50%;
+}
+
+:global(.vtex-product-specification-badges-0-x-badgeText--badges-summary-product--new-in) {
+  margin: 0;
+  background: #2d9cdb;
+  color: #fff;
+  padding: 3px 5px 3px 16px;
+  font-size: 14px;
+}
+
+@media (max-width: 64rem) {
+  :global(.vtex-product-specification-badges-0-x-badgeText--badges-summary-product--new-in) {
+    font-size: 10px;
+  }
+
+  :global(.vtex-product-specification-badges-0-x-groupContainer--badges-summary-product) {
+    right: 0px;
+    top: 12px;
+  }
+
+  .element--productCard :global(.vtex-rich-text-0-x-paragraph) {
+    font-size: 12px;
+  }
+
+  .container--productCard .imageNormal {
+    height: 160px;
+  }
+
+  .element :global(.vtex-button) {
+    max-width: 186px;
+    margin: auto;
+  }
+
+  .element .nameContainer {
+    justify-content: center;
+  }
+
+  .element .productBrand {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .element--productCard {
+    grid-template-rows: 0 176px auto 46px 40px;
+  }
+}

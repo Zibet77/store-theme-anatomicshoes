@@ -1,0 +1,21 @@
+.summarySmallDisclaimer {
+  display: none;
+  opacity: 0;
+}
+
+.summaryItemLabel {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #5C666F;
+}
+
+.summarySmallContent .summaryItemContainer:last-child {
+  display: none;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--blue-marine)
+}

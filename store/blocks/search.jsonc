@@ -1,0 +1,419 @@
+{
+  "store.search": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "maxItemsPerPage": 12,
+        "skusFilter": "ALL_AVAILABLE",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+
+  "store.search#brand": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 12,
+        "skusFilter": "ALL_AVAILABLE",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+
+  "store.search#department": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "maxItemsPerPage": 12,
+        "skusFilter": "ALL_AVAILABLE",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+
+  "store.search#category": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "maxItemsPerPage": 12,
+        "skusFilter": "ALL_AVAILABLE",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+
+  "store.search#subcategory": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "maxItemsPerPage": 12,
+        "skusFilter": "ALL_AVAILABLE",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+
+  "search-result-layout": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+
+  "search-result-layout.desktop": {
+    "title": "[DESKTOP] Search Layout",
+    "children": [
+      "flex-layout.row#searchbread",
+      "flex-layout.row#searchHeader",
+      "flex-layout.row#result",
+      "flex-layout.row#goodCompany"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": false,
+      "defaultGalleryLayout": "grid",
+      "blockClass": "searchLayout",
+      "hiddenFacets": {
+        "priceRange": true
+      }
+    }
+  },
+  "flex-layout.row#searchHeader": {
+    "title": "[DESKTOP] Header",
+    "children": [
+      "flex-layout.col#searchHeaderLeftCol",
+      "stack-layout#searchHeaderRight"
+    ],
+    "props": {
+      "blockClass": "searchHeader"
+    }
+  },
+  "flex-layout.col#searchHeaderLeftCol": {
+    "children": ["flex-layout.col#searchHeaderLeft", "flex-layout.row#buttons"],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "searchHeaderLeftCol"
+    }
+  },
+  "flex-layout.row#searchHeaderMobile": {
+    "title": "[MOBILE] Header",
+    "children": ["flex-layout.col#searchHeaderMobile2"]
+  },
+  "flex-layout.col#searchHeaderMobile2": {
+    "children": [
+      "flex-layout.row#shelfAndBanner"
+    ]
+  },
+  "flex-layout.row#shelfAndBanner": {
+    "title": "seoAndBanner",
+    "children": [
+      //esse componente
+      "flex-layout.col#searchHeaderLeftColMobile",
+      "stack-layout#searchHeaderRight"
+    ],
+    "props": {
+      "blockClass": "shelfAndBanner",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+  "flex-layout.col#searchHeaderLeftColMobile": {
+    "children": ["flex-layout.col#searchHeaderLeftMobile"],
+    "props": {
+      "preventVerticalStretch": false,
+    
+      "blockClass": "searchHeaderLeftCol"
+    }
+  },
+
+  "flex-layout.col#searchHeaderLeftMobile": {
+    "children": [
+      "flex-layout.row#titleAndGrid",
+      "rich-text#departmentSeoText",
+      "vtex.menu@2.x:menu#categoryHeaderItems"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "searchHeaderLeft"
+    }
+  },
+  "flex-layout.col#searchHeaderLeft": {
+    "children": [
+      "flex-layout.row#titleAndGrid",
+      "rich-text#departmentSeoText",
+      "vtex.menu@2.x:menu#categoryHeaderItems"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "searchHeaderLeft"
+    }
+  },
+  "rich-text#departmentSeoText": {
+    "props": {
+      "text": "We’ve something for everyone! Whether you’re after an Anatomic Wardrobe wing-tip brogue for classic cool; an Anatomic Weekend loafer to wear to a lazy Sunday pub lunch or an Anatomic Ease slip on boot for wider width comfort, we tick all the boxes!",
+      "blockClass": "departmentSeoText"
+    }
+  },
+  "flex-layout.row#titleAndGrid": {
+    "children": ["search-title.v2", "gallery-layout-switcher"],
+    "props": {
+      "blockClass": "titleAndView",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "stack-layout#searchHeaderRight": {
+    "children": [
+      "image#bannerSearchHeader",
+      "flex-layout.row#searchHeaderRightLink"
+    ],
+    "props": {
+      "blockClass": "searchHeaderRightStack"
+    }
+  },
+  "image#bannerSearchHeader": {
+    "props": {
+      "src": "assets/images/bannerSearchHeader.png",
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#searchHeaderRightLink": {
+    "children": ["link#searchHeaderRightLink1", "link#searchHeaderRightLink2"],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "searchHeaderRightLinks"
+    }
+  },
+  "link#searchHeaderRightLink1": {
+    "props": {
+      "label": "Link 1",
+      "href": "#",
+      "blockClass": "searchHeaderRightLink"
+    }
+  },
+  "link#searchHeaderRightLink2": {
+    "props": {
+      "label": "Link 2",
+      "href": "#",
+      "blockClass": "searchHeaderRightLink"
+    }
+  },
+  "flex-layout.row#searchbread": {
+    "children": ["breadcrumb.search"],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "breadcrumb.search": {
+    "props": {
+      "blockClass": "breadSearch",
+      "showOnMobile": true
+    }
+  },
+  "flex-layout.row#result": {
+    "children": ["flex-layout.col#content"],
+    "props": {
+      "preventHorizontalStretch": true,
+      "fullWidth": true,
+      "blockClass": "searchResult"
+    }
+  },
+  "flex-layout.col#filter": {
+    "children": ["filter-navigator.v3"],
+    "props": {
+      "blockClass": "filterCol"
+    }
+  },
+  "filter-navigator.v3": {
+    "props": {
+      "layout": "desktop",
+      "initiallyCollapsed": true
+    }
+  },
+  "flex-layout.col#content": {
+    "children": [
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#products",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "width": "grow",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.row#searchinfo": {
+    "children": [
+      "flex-layout.col#productCount",
+      "flex-layout.row#orderByAndSwitcher"
+    ]
+  },
+  "flex-layout.row#orderByAndSwitcher": {
+    "children": ["order-by.v2"],
+    "props": {
+      "horizontalAlign": "right",
+      "preventHorizontalStretch": true,
+      "blockClass": "orderByAndSwitcher",
+      "colGap": 3
+    }
+  },
+  "flex-layout.col#productCount": {
+    "children": ["total-products.v2"],
+    "props": {
+      "blockClass": "productCountCol"
+    }
+  },
+  "flex-layout.row#fetchprevious": {
+    "props": {
+      "marginBottom": 3,
+      "marginTop": 3
+    },
+    "children": ["search-fetch-previous"]
+  },
+  "flex-layout.row#fetchmore": {
+    "props": {
+      "marginTop": 3
+    },
+    "children": ["search-fetch-more"]
+  },
+  "flex-layout.row#products": {
+    "children": ["search-content"],
+    "props": {
+      "blockClass": "searchProducts"
+    }
+  },
+  "search-content": {
+    "blocks": ["gallery", "not-found"]
+  },
+
+  "search-result-layout.mobile": {
+    "title": "[MOBILE] Search Layout",
+    "children": [
+      "sticky-layout#filterAndSort",
+     
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid",
+      "hiddenFacets": {
+        "priceRange": true
+      }
+    }
+  },
+  "flex-layout.row#contentmobile": {
+    "children": ["search-content"],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "blockClass": "searchProducts"
+    }
+  },
+
+  "flex-layout.row#searchinfomobile": {
+    "children": [
+      "flex-layout.col#orderByMobile",
+      "flex-layout.col#filterMobile",
+      "flex-layout.col#switcherMobile"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto",
+      "colJustify": "around"
+    }
+  },
+
+  "flex-layout.col#orderByMobile": {
+    "children": ["order-by.v2"],
+    "props": {
+      "blockClass": "orderByMobileCol"
+    }
+  },
+
+  "flex-layout.row#productCountMobile": {
+    "children": ["total-products.v2"],
+    "props": {
+      "blockClass": "productCountMobileRow"
+    }
+  },
+
+  "flex-layout.col#filterMobile": {
+    "children": ["filter-navigator.v3"],
+    "props": {
+      "blockClass": "filterMobileCol"
+    }
+  },
+  "flex-layout.col#switcherMobile": {
+    "children": ["gallery-layout-switcher"],
+    "props": {
+      "verticalAlign": "middle"
+    }
+  },
+  "search-not-found-layout": {
+    "children": ["flex-layout.row#searchbread", "flex-layout.row#notfound"]
+  },
+
+  "flex-layout.row#notfound": {
+    "children": ["not-found"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+
+  "breadcrumb": {
+    "props": {
+      "showOnMobile": true
+    }
+  },
+
+  "gallery": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "(min-width:1300px)": 4,
+            "desktop": 3,
+            "tablet": 3,
+            "phone": 2
+          }
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 1
+        }
+      ],
+      "ListSummary": "product-summary.shelf#listLayout",
+      "GridSummary": "product-summary.shelf"
+    }
+  },
+  "gallery-layout-switcher": {
+    "children": ["gallery-layout-option#grid", "gallery-layout-option#list"]
+  },
+  "gallery-layout-option#grid": {
+    "props": {
+      "name": "grid",
+      "blockClass": "grid"
+    },
+    "children": ["icon-grid"]
+  },
+  "gallery-layout-option#list": {
+    "props": {
+      "name": "list",
+      "blockClass": "list"
+    },
+    "children": ["icon-inline-grid"]
+  }
+}

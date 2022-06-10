@@ -1,0 +1,48 @@
+{
+  "vtex.menu@2.x:submenu#generic": {
+    "children": [
+      "flex-layout.row#subMenuHeader",
+      "flex-layout.row#subMenuContent"
+    ],
+    "props": {
+      "isOpen": true,
+      "blockClass": "megaSubMenu"
+    }
+  },
+  "flex-layout.row#subMenuHeader": {
+    "children": [
+      "rich-text#subMenuHeaderTitle",
+      "link#subMenuHeaderLink"
+    ],
+    "props": {
+      "blockClass": ["subMenuHeaderRow"],
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "left"
+    }
+  },
+  "rich-text#subMenuHeaderTitle": {
+    "props": {
+      "text": "### Shop Men's",
+      "blockClass": "subMenuHeaderTitle"
+    }
+  },
+  "link#subMenuHeaderLink": {
+    "props": {
+      "label": "Shop All",
+      "href": "#",
+      "blockClass": "subMenuHeaderLink"
+    }
+  },
+  "flex-layout.row#subMenuContent": {
+    "children": [
+      "flex-layout.col#firstCol",
+      "flex-layout.col#secondCol",
+      "flex-layout.col#thirdCol",
+      "flex-layout.col#fourthCol"
+    ],
+    "props": {
+      "blockClass": "subMenuContentRow",
+      "preventHorizontalStretch": true
+    }
+  }
+}

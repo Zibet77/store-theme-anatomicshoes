@@ -1,0 +1,138 @@
+{
+  "menu-item#menu-item-1": {
+    "props": {
+      "id": "menu-item-mens-shoes",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Men's Shoes",
+        "text": "Men's Shoes"
+      },
+      "blockClass": "drawerMobileMenuItem"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#submenu-item-1"
+    ]
+  },
+  "menu-item#menu-item-2": {
+    "props": {
+      "id": "menu-item-mens-shoes",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Boots",
+        "text": "Boots"
+      },
+      "blockClass": "drawerMobileMenuItem"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#submenu-item-1"
+    ]
+  },
+  "menu-item#menu-item-3": {
+    "props": {
+      "id": "menu-item-mens-shoes",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Colletions",
+        "text": "Colletions"
+      },
+      "blockClass": "drawerMobileMenuItem"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#submenu-item-1"
+    ]
+  },
+  "menu-item#menu-item-4": {
+    "props": {
+      "id": "menu-item-mens-shoes",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Accessories",
+        "text": "Accessories"
+      },
+      "blockClass": ["drawerMobileMenuItem", "last"]
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#submenu-item-1"
+    ]
+  },
+  "vtex.menu@2.x:submenu#submenu-item-1": {
+    "children": [
+      "vtex.menu@2.x:menu#submenu-item-1"
+    ],
+    "props": {
+      "blockClass": "drawerMobileSubMenu"
+    }
+  },
+  "vtex.menu@2.x:menu#submenu-item-1": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "drawerMobileSubMenu-MenuItem",
+      "items": [
+        {
+          "id": "submenu-item-1",
+          "type": "custom",
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "View All Shoes",
+            "text": "View All Shoes"
+          }
+        },
+        {
+          "id": "submenu-item-2",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Black Shoes",
+            "text": "Black Shoes"
+          }
+        },
+        {
+          "id": "submenu-item-3",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Brogues",
+            "text": "Brogues"
+          }
+        },
+        {
+          "id": "submenu-item-4",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Loafers",
+            "text": "Loafers"
+          }
+        }
+      ]
+    }
+  }
+}

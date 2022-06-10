@@ -1,0 +1,26 @@
+{
+  "store.custom#inst-contact": {
+    "path": "/contact-us"
+  },
+  "store.custom#int-benefits": {
+    "path": "/benefits"
+  },
+  "store.custom#inst-about-us": {
+    "path": "/about-us"
+  },
+  "store.custom#inst-store-locator": {
+    "path": "/store-locator"
+  },
+  "store.custom#site-map": {
+    "path": "/sitemap"
+  },
+  "store.custom#international-delivery": {
+    "path": "/inst-delivery"
+  },
+  "store.custom#custom-search-result": {
+    "path": "/custom-query"
+  },
+  "store.custom#sizing-guide": {
+    "path": "/sizing-guide"
+  }
+}

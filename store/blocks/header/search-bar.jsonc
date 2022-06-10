@@ -1,0 +1,56 @@
+{
+  "search-bar#desktop": {
+    "blocks": ["autocomplete-result-list.v2#default"],
+    "props": {
+      "blockClass": "searchDesktop",
+      "placeholder": "Looking for something?",
+      "displayMode": "search-button"
+    }
+  },
+  "autocomplete-result-list.v2#default": {
+    "blocks": ["product-summary.shelf#autocomplete"],
+    "props": {
+      "simulationBehavior": "skip",
+      "maxSuggestedProducts": 1,
+      "maxSuggestedTerms": 3,
+      "maxTopSearches": 3,
+      "autocompleteWidth": 100,
+      "hideTitles": true,
+      "isMobile": true,
+      "customBreakpoints": {
+        "md": {
+          "maxSuggestedProducts": 6
+        }
+      }
+    }
+  },
+  "product-summary.shelf#autocomplete": {
+    "children": [
+      "flex-layout.row#autocompleteSummary"
+    ]
+  },
+  "flex-layout.row#autocompleteSummary": {
+    "children": [
+      "product-summary-image#autocomplete",
+      "flex-layout.col#autocompleteSummary"
+    ]
+  },
+  "flex-layout.col#autocompleteSummary": {
+    "children": [
+      "product-summary-name",
+      "flex-layout.row#autocompleteSummaryPrices"
+    ]
+  },
+  "flex-layout.row#autocompleteSummaryPrices": {
+    "children": [
+      "product-selling-price",
+      "product-list-price"
+    ]
+  },
+  "product-summary-image#autocomplete": {
+    "props": {
+      "height": 64,
+      "width": 64
+    }
+  }
+}

@@ -1,0 +1,172 @@
+.portalWrapper--login-header .box {
+  left: 50%;
+  transform: translateX(-25%);
+}
+
+.portalWrapper--login-header .contentForm {
+  padding: 0;
+  width: 100%;
+}
+
+.portalWrapper--login-header .contentContainer {
+  width: max-content;
+}
+
+.portalWrapper--login-header .formTitle {
+  display: none;
+}
+
+.portalWrapper--login-header .accountOptions > hr {
+  border-color: #F8FAFC;
+}
+
+.container :global(.vtex-button){
+  padding: 0.75rem;
+  outline: none;
+}
+
+.portalWrapper--login-header .content :global(.vtex-button__label) {
+  padding: 0;
+  width: fit-content;
+}
+
+.portalWrapper--login-header .content :global(.vtex-button__label) > span {
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1rem;
+  text-transform: capitalize;
+}
+
+.portalWrapper--login-header .content :global(.vtex-button):hover {
+  background: transparent;
+}
+
+.portalWrapper--login-header .container :global(.vtex-button):hover {
+  background: transparent;
+}
+
+.container :global(.vtex-button)::before{
+  content: url("assets/svgs/userIcon.svg")
+}
+
+.container :global(.vtex-button__label) {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.portalWrapper--login-header .arrowUp {
+  display: none;
+}
+
+.portalWrapper--login-header .content {
+  background: linear-gradient(90deg, #047BAA 0%, #34425E 100%);
+  color: #fff;
+  width: 100%;
+  padding: 0;
+}
+
+.portalWrapper--login-header .optionsList {
+  margin: 0;
+}
+
+.portalWrapper--login-header .optionsListItem {
+  margin: 0;
+}
+
+.portalWrapper--login-header .optionsListItem:first-child {
+  border-bottom: 1px solid #F8FAFC;
+}
+
+.portalWrapper--login-header .optionsListItem > div {
+  padding: 1rem;
+}
+
+.portalWrapper--login-header .emailPasswordOptionBtn {
+  padding: 1rem;
+}
+
+.portalWrapper--login-header .button {
+  background-color: transparent;
+  padding: 0;
+}
+
+.portalWrapper--login-header .button  > button {
+  background-color: transparent;
+  border: 0 !important;
+}
+
+.portalWrapper--login-header .button > span {
+  color: #fff;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 3rem;
+  text-transform: capitalize;
+}
+
+.portalWrapper--login-header .accountOptions > div {
+  padding: 1rem;
+  margin: 0;
+}
+
+.portalWrapper--login-header .emailVerification {
+  padding: 0;
+}
+
+.portalWrapper--login-header .inputContainer {
+  padding: 1rem;
+}
+
+.portalWrapper--login-header .formFooter {
+  padding: 1rem;
+}
+
+.portalWrapper--login-header .content :global(.vtex-input-prefix__group) {
+  border: 0;
+  border-radius: 0;
+}
+
+.portalWrapper--login-header .content :global(.vtex-input-prefix__group) > :global(.vtex-input__suffix) {
+  padding: .5rem;
+}
+
+.portalWrapper--login-header .content :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
+  background: #fff;
+  border: 0;
+}
+
+.portalWrapper--login-header .forgotPasswordLink {
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.portalWrapper--login-header .dontHaveAccount {
+  color: #fff;
+  padding-bottom: 1rem;
+}
+
+.portalWrapper--login-header .sendButton :global(.vtex-button) {
+  background: transparent;
+  border: 0;
+}
+
+@media (max-width: 64rem){
+  .buttonLink :global(.vtex-button){
+    padding: 0;
+  }
+
+  .container {
+    margin-left: 16px;
+  }
+
+  .container :global(.vtex-button)::before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("assets/svgs/userIcon.svg");
+  }
+}

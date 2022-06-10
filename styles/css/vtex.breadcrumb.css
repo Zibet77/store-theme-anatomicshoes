@@ -1,0 +1,46 @@
+.container--breadSearch,
+.container--productPage {
+  text-align: center;
+}
+
+.homeIcon--breadSearch,
+.arrow--productPage--1 .caretIcon--productPage,
+.homeLink--productPage {
+  display: none;
+  opacity: 0;
+}
+
+.link--breadSearch,
+.link--productPage {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #91A0BF;
+}
+
+.term--productPage {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #0992C9;
+}
+
+.link--breadSearch {
+  text-transform: capitalize;
+}
+
+.arrow--breadSearch:last-child .link{
+  color: #0992C9;
+}
+
+.caretIcon--breadSearch {
+  margin: 0px 8px 0px 4px;
+}
+
+.homeLink--breadSearch::before {
+  content: "Anatomic Shoes";
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #91A0BF;
+}

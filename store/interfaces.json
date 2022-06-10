@@ -1,0 +1,8 @@
+{
+  "seo-text": {
+    "component": "SeoText"
+  },
+  "newsletter-modal": {
+    "component": "NewsletterModal"
+  }
+}

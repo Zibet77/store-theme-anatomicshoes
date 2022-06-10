@@ -1,0 +1,70 @@
+{
+  "sticky-layout#filterAndSort": {
+    "children": [
+      "flex-layout.row#buttons"
+    ],
+    "props": {
+      "position": "bottom",
+      "blockClass": "searchStickyBtn"
+    }
+  },
+  "flex-layout.row#buttons": {
+    "children": [
+      "drawer#filter",
+      "drawer#sort"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "drawer#filter": {
+    "children": [
+      "filter-navigator.v3"
+    ],
+    "blocks": [
+      "drawer-trigger#filter"
+    ],
+    "props": {
+      "blockClass": "filterDrawer"
+    }
+  },
+  "drawer-trigger#filter": {
+    "children": [
+      "rich-text#filterToggle"
+    ],
+    "props": {
+      "blockClass": "filterToggle"
+    }
+  },
+  "rich-text#filterToggle": {
+    "props": {
+      "text": "Show Filter",
+      "blockClass": "filterToggleText"
+    }
+  },
+  "drawer#sort": {
+    "children": [
+      "order-by.v2"
+    ],
+    "blocks": [
+      "drawer-trigger#sort"
+    ],
+    "props": {
+      "blockClass": "sortDrawer"
+    }
+  },
+  "drawer-trigger#sort": {
+    "children": [
+      "rich-text#sortToggle"
+    ],
+    "props": {
+      "blockClass": "sortToggle"
+    }
+  },
+  "rich-text#sortToggle": {
+    "props": {
+      "text": "Sort by",
+      "blockClass": "sortToggleText"
+    }
+  }
+}

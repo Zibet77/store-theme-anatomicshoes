@@ -1,0 +1,14 @@
+.paper--addToCart__modal  {
+  max-width: 326px;
+  width: 100%;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.paper--addToCart__modal :global(.vtex-rich-text-0-x-wrapper--addToCart__sizeText) :global(.vtex-rich-text-0-x-paragraph)  {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #5C666F;
+}

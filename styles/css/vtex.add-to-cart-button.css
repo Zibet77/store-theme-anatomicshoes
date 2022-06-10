@@ -1,0 +1,25 @@
+.buttonText {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  text-transform: initial;
+}
+
+.buttonText--buyTogether {
+  font-size: 16px;
+}
+
+@media (max-width: 64rem) {
+  .buttonDataContainer--skuModalBtn::after {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='18' viewBox='0 0 16 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.22863 1L1 4.2V15.4C1 15.8243 1.15653 16.2313 1.43517 16.5314C1.7138 16.8314 2.09171 17 2.48575 17H12.886C13.2801 17 13.658 16.8314 13.9366 16.5314C14.2153 16.2313 14.3718 15.8243 14.3718 15.4V4.2L12.1432 1H3.22863Z' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M1 4.19995H14.3718' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10.6574 7.3999C10.6574 8.2486 10.3443 9.06253 9.78704 9.66264C9.22977 10.2628 8.47396 10.5999 7.68586 10.5999C6.89777 10.5999 6.14196 10.2628 5.58469 9.66264C5.02742 9.06253 4.71436 8.2486 4.71436 7.3999' stroke='%230890CD' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 18px;
+    margin-left: 1rem;
+    display: block;
+    position: absolute;
+    right: 5%;
+  }
+}

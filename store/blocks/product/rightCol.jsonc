@@ -1,0 +1,102 @@
+{
+  "flex-layout.row#productRight": {
+    "title": "Product Right Block",
+    "children": ["flex-layout.col#productRight"],
+    "props": {
+      "blockClass": "productInfo"
+    }
+  },
+  "flex-layout.row#productRight--mobile": {
+    "children": ["flex-layout.col#productRight--mobile"],
+    "props": {
+      "blockClass": "productInfo"
+    }
+  },
+  "flex-layout.col#productRight--mobile": {
+    "children": [
+      "vtex.store-components:product-name",
+      "product-sku-attributes",
+      "flex-layout.row#aboutBrand",
+      "sku-selector#product",
+      "sku-selector-new",
+      "availability-subscriber",
+      "flex-layout.row#prices",
+      "flex-layout.row#pricesBox",
+      "product-description"
+    ],
+    "props": {
+      "blockClass": ["product__info"]
+    }
+  },
+  "flex-layout.col#productRight": {
+    "children": [
+      "vtex.store-components:product-name",
+      "product-sku-attributes",
+      "flex-layout.row#aboutBrand",
+      "sku-selector#product",
+      "sku-selector-new",
+      "availability-subscriber",
+      "flex-layout.row#prices",
+      "flex-layout.row#addToCartBox",
+      "product-description"
+    ],
+    "props": {
+      "blockClass": ["product__info"]
+    }
+  },
+  "flex-layout.row#aboutBrand": {
+    "children": ["rich-text#aboutBrand", "vtex.store-components:product-brand#abountBrand"],
+    "props": {
+      "blockClass": "aboutBrandBox"
+    }
+  },
+  "rich-text#aboutBrand": {
+    "props": {
+      "text": "Brand:",
+      "blockClass": "aboutBrandText"
+    }
+  },
+  "vtex.store-components:product-brand#abountBrand": {
+    "props": {
+      "displayMode": "logo",
+      "loadingPlaceholder": "logo",
+      "logoWithLink": true
+    }
+  },
+  "product-description": {
+    "props": {
+      "title": "Editor's Note"
+    }
+  },
+  "flex-layout.row#pricesBox": {
+    "children": ["flex-layout.row#prices", "flex-layout.row#addToListBtn"],
+    "props": {
+      "blockClass": "pricesBoxRow"
+    }
+  },
+  "flex-layout.row#prices": {
+    "children": ["product-selling-price", "product-list-price"],
+    "props": {
+      "blockClass": "productPricesRow",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.row#quantityAndTrigger": {
+    "children": ["product-quantity"],
+    "props": {
+      "blockClass": "productQuantityRow"
+    }
+  },
+  "product-quantity": {
+    "props": {
+      "showLabel": false
+    }
+  },
+  "sku-selector#product": {
+    "props": {
+      "visibleVariations": ["Colour"],
+      "blockClass": "skuColorSelector"
+    }
+  }
+}

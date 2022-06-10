@@ -1,0 +1,202 @@
+{
+  "flex-layout.row#showMen": {
+    "title": "Mens Section",
+    "children": [
+      "image#promoImage",
+      "flex-layout.col#showMen"
+    ],
+    "props": {
+      "blockClass": ["grid", "col2", "shelfAndImage"],
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.row#showMenMobile": {
+    "title": "Mens Section",
+    "children": [
+      "image#promoImage",
+      "flex-layout.col#showMenMobile"
+    ],
+    "props": {
+      "blockClass": ["grid", "col2", "shelfAndImage", "mobile"],
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.col#showMen": {
+    "children": [
+      "rich-text#sectionTitle",
+      "rich-text#sectionSubTitle",
+      "slider-layout#sizeSlider",
+      "list-context.product-list#halfShelf"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "SectionsFlexCol"
+    }
+  },
+  "flex-layout.col#showMenMobile": {
+    "title": "Section",
+    "children": [
+      "rich-text#sectionSubTitle",
+      "slider-layout#sizeSlider",
+      "rich-text#sectionTitle",
+      "list-context.product-list#halfShelfMobile"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#sectionTitle": {
+    "title": "Section Title",
+    "props": {
+      "text": "### Men",
+      "blockClass": "sectionTitle",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#sectionSubTitle": {
+    "title": "Section Subtitle",
+    "props": {
+      "text": "Shop Men's by Size",
+      "blockClass": "sectionSubTitle",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "slider-layout#sizeSlider": {
+    "title": "Section Slider",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 7,
+        "tablet": 7,
+        "phone": 7
+      },
+      "infinite": false,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": "sizeSlider"
+    },
+    "children": [
+      "link#size1",
+      "link#size2",
+      "link#size3",
+      "link#size4",
+      "link#size5",
+      "link#size6",
+      "link#size7",
+      "link#size8",
+      "link#size9",
+      "link#size10",
+      "link#size11",
+      "link#size12"
+    ]
+  },
+  "slider-layout#sizeSliderWoman": {
+    "title": "Section Slider",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 7,
+        "tablet": 7,
+        "phone": 7
+      },
+      "infinite": false,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": "sizeSlider"
+    },
+    "children": [
+      "link#size1",
+      "link#size2",
+      "link#size3",
+      "link#size4",
+      "link#size5",
+      "link#size6",
+      "link#size7",
+      "link#size8"
+    ]
+  },
+  "link#size1": {
+    "props": {
+      "label": "6",
+      "href": "#",
+      "blockClass": "sizeLinkToSearch"
+    }
+  },
+  "link#size2": {
+    "props": {
+      "label": "6.5",
+      "href": "#",
+      "blockClass": "sizeLinkToSearch"
+    }
+  },
+  "link#size3": {
+    "props": {
+      "label": "7",
+      "href": "#",
+      "blockClass": "sizeLinkToSearch"
+    }
+  },
+  "link#size4": {
+    "props": {
+      "label": "8",
+      "href": "#",
+      "blockClass": "sizeLinkToSearch"
+    }
+  },
+  "link#size5": {
+    "props": {
+      "label": "9",
+      "href": "#",
+      "blockClass": "sizeLinkToSearch"
+    }
+  },
+  "link#size6": {
+    "props": {
+      "label": "10",
+      "href": "#",
+      "blockClass": "sizeLinkToSearch"
+    }
+  },
+  "link#size7": {
+    "props": {
+      "label": "10.5",
+      "href": "#",
+      "blockClass": "sizeLinkToSearch"
+    }
+  },
+  "link#size8": {
+    "props": {
+      "label": "11",
+      "href": "#",
+      "blockClass": "sizeLinkToSearch"
+    }
+  },
+  "link#size9": {
+    "props": {
+      "label": "12",
+      "href": "#",
+      "blockClass": "sizeLinkToSearch"
+    }
+  },
+  "link#size10": {
+    "props": {
+      "label": "13",
+      "href": "#",
+      "blockClass": "sizeLinkToSearch"
+    }
+  },
+  "link#size11": {
+    "props": {
+      "label": "14",
+      "href": "#",
+      "blockClass": "sizeLinkToSearch"
+    }
+  },
+  "link#size12": {
+    "props": {
+      "label": "15",
+      "href": "#",
+      "blockClass": "sizeLinkToSearch"
+    }
+  }
+}

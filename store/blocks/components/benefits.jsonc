@@ -1,0 +1,95 @@
+{
+  "flex-layout.row#benefitsRow": {
+    "title": "Benefits Bar",
+    "children": [
+      "flex-layout.row#wrapper"
+    ],
+    "props": {
+      "blockClass": "benefitsRow"
+    }
+  },
+  "flex-layout.row#wrapper": {
+    "children": [
+      "flex-layout.row#benefitsItem1",
+      "flex-layout.row#benefitsItem2",
+      "flex-layout.row#benefitsItem3"
+    ],
+    "props": {
+      "blockClass": "benefitsRow-wrapper",
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "flex-layout.row#benefitsItem1": {
+    "title": "Benefits Bar Item",
+    "children": [
+      "image#box",
+      "rich-text#delivery"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "blockClass": "benefitsItem"
+    }
+  },
+  "flex-layout.row#benefitsItem2": {
+    "title": "Benefits Bar Item",
+    "children": [
+      "image#truck",
+      "rich-text#shipping"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "blockClass": "benefitsItem"
+    }
+  },
+  "flex-layout.row#benefitsItem3": {
+    "title": "Benefits Bar Item",
+    "children": [
+      "image#clock",
+      "rich-text#hours"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "blockClass": "benefitsItem"
+    }
+  },
+  "image#box": {
+    "props": {
+      "src": "assets/svgs/deliveryBoxIcon.svg",
+      "blockClass": "benefitsIcon"
+    }
+  },
+  "image#truck": {
+    "props": {
+      "src": "assets/svgs/truckIcon.svg",
+      "blockClass": "benefitsIcon"
+    }
+  },
+  "image#clock": {
+    "props": {
+      "src": "assets/svgs/clockIcon.svg",
+      "blockClass": "benefitsIcon"
+    }
+  },
+  "rich-text#delivery": {
+    "props": {
+      "text": "**Free delivery** in orders over £50",
+      "blockClass": "benefitsText"
+    }
+  },
+  "rich-text#shipping": {
+    "props": {
+      "text": "**International** shipping",
+      "blockClass": "benefitsText"
+    }
+  },
+  "rich-text#hours": {
+    "props": {
+      "text": "**48 hours** delivery",
+      "blockClass": "benefitsText"
+    }
+  }
+}

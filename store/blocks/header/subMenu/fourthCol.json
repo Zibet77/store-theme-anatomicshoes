@@ -1,0 +1,34 @@
+{
+  "flex-layout.col#fourthCol": {
+    "children": ["link#shopBoots", "link#shopNew"],
+    "props": {
+      "blockClass": "menuImageLinks"
+    }
+  },
+  "link#shopBoots": {
+    "children": ["image#shopBoots"],
+    "props": {
+      "label": "Shop Boots",
+      "href": "/shop-boots",
+      "blockClass": "shopMenuLink"
+    }
+  },
+  "link#shopNew": {
+    "children": ["image#shopNew"],
+    "props": {
+      "label": "Shop New In",
+      "href": "/shop-boots",
+      "blockClass": "shopMenuLink"
+    }
+  },
+  "image#shopBoots": {
+    "props": {
+      "src": "assets/images/shopBootsMenu.png"
+    }
+  },
+  "image#shopNew": {
+    "props": {
+      "src": "assets/images/shopNewMenu.png"
+    }
+  }
+}

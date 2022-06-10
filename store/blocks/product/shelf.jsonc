@@ -1,0 +1,51 @@
+{
+  "flex-layout.row#customersView": {
+    "title": "Showcase",
+    "children": [
+      "flex-layout.col#customersView"
+    ],
+    "props": {
+      "blockClass": "rowAlsoView"
+    }
+  },
+  "flex-layout.col#customersView": {
+    "children": [
+      "rich-text#alsoView",
+      "list-context.product-list#productAlsoView"
+    ]
+  },
+  "list-context.product-list#productAlsoView": {
+    "title": "Showcase Settings",
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#alsoViewProduct"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#alsoViewProduct": {
+    "title": "Showcase Slider Settings",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": false,
+      "showNavigationArrows": "never",
+      "blockClass": "shelfContainer"
+    }
+  },
+  "rich-text#alsoView": {
+    "title": "Showcase Title",
+    "props": {
+      "text": "### Customer also viewed",
+      "blockClass": "alsoView",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "store.orderplaced": {
+    "blocks": ["order-placed"]
+  },
+
+  "store.account": {
+    "blocks": ["my-account"],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
+  },
+
+  "store.login": {
+    "blocks": ["flex-layout.row#login-wrapper"]
+  },
+  "flex-layout.row#login-wrapper": {
+    "children": ["login-content#default"],
+    "props": {
+      "blockClass": "login-wrapper"
+    }
+  },
+  "login-content#default": {
+    "props": {
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+
+  "product-summary-image": {
+    "props": {
+      "showBadge": false,
+      "hoverImage": {
+        "criteria": "label",
+        "label": "Pair"
+      }
+    }
+  },
+
+  "product-summary.shelf": {
+    "title": "Showcase Item",
+    "children": [
+      "product-specification-badges#flagAttributes",
+      "add-to-list-btn",
+      "product-summary-sku-selector",
+      "product-summary-image",
+      "product-summary-name",
+      "flex-layout.row#summaryInfo",
+      "sku-selector-new-modal"
+    ],
+    "props": {
+      "blockClass": "productCard"
+    }
+  },
+
+  "sku-selector-new-modal": {
+    "props": {
+      "label": "Add to basket"
+    },
+    "children": ["add-to-cart-button#skuModal"]
+  },
+
+  "add-to-cart-button#skuModal": {
+    "props": {
+      "text": "Add to basket",
+      "blockClass": "skuModalBtn"
+    }
+  },
+
+  "product-specification-badges#flagAttributes": {
+    "props": {
+      "specificationGroupName": "Attributes",
+      "blockClass": "badges-summary-product",
+      "orientation": "horizontal",
+      "specificationsOptions": [
+        {
+          "displayValue": "SPECIFICATION_VALUE",
+          "specificationName": "Tag"
+        }
+      ]
+    }
+  },
+
+  "product-summary.shelf#buyTogether": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-selling-price"
+    ],
+    "props": {
+      "blockClass": "buyTogetherCard"
+    }
+  },
+  "product-summary.shelf#buyInline": {
+    "children": ["flex-layout.row#buyInline"],
+    "props": {
+      "blockClass": "buyTogetherCard"
+    }
+  },
+  "flex-layout.row#buyInline": {
+    "children": ["product-summary-image", "flex-layout.col#buyInline"],
+    "props": {
+      "blockClass": "buyInlineRow",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#buyInline": {
+    "children": ["product-summary-name", "product-selling-price"],
+    "props": {
+      "blockClass": "buyInlineCol",
+      "preventVerticalStretch": true
+    }
+  },
+  "product-summary.shelf#listLayout": {
+    "children": ["flex-layout.row#inlineCard"],
+    "props": {
+      "blockClass": "inlineSummary"
+    }
+  },
+  "flex-layout.row#inlineCard": {
+    "children": [
+      "flex-layout.col#inlineCardLeft",
+      "flex-layout.col#inlineCardRight"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "inlineCard"
+    }
+  },
+  "flex-layout.col#inlineCardLeft": {
+    "children": [
+      "product-summary-sku-selector",
+      "product-summary-image#inline"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "inlineCardLeft"
+    }
+  },
+  "flex-layout.col#inlineCardRight": {
+    "children": [
+      "product-summary-name",
+      "flex-layout.row#summaryInfoInline",
+      "sku-selector-new-modal"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "horizontalAlign": "right"
+    }
+  },
+  "flex-layout.row#summaryInfo": {
+    "children": [
+      "product-summary-brand",
+      "product-selling-price",
+      "product-list-price"
+    ],
+    "props": {
+      "blockClass": "summaryInfo"
+    }
+  },
+  "flex-layout.row#summaryInfoInline": {
+    "children": ["product-selling-price", "product-list-price"],
+    "props": {
+      "blockClass": "summaryInfo"
+    }
+  },
+  "product-summary-sku-selector": {
+    "props": {
+      "visibleVariations": ["Colour"],
+      "showVariationsLabels": "none"
+    }
+  },
+  "product-summary-brand": {
+    "props": {
+      "displayMode": "text"
+    }
+  },
+  "product-summary-image#inline": {
+    "props": {
+      "blockClass": "imageInlineCard"
+    }
+  },
+  "add-to-cart-button#addToCartButton": {
+    "props": {
+      "blockClass": "addToCartButton",
+      "text": "Add to basket"
+    }
+  }
+  // "anatomic-sku-selector#addToCart-summary": {
+  //   "props": {
+  //     "visibleVariations": [
+  //       "Size UK",
+  //       "Size EU",
+  //       "Size US"
+  //       //replace it when on correct account
+  //     ],
+  //     "blockClass": "summary-add-to-cart"
+  //   },
+  //   "blocks": ["add-to-cart-button#addToCartButton"]
+  // }
+}

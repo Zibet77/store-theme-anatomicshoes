@@ -1,0 +1,24 @@
+{
+  "flex-layout.row#productRow": {
+    "children": [
+      "flex-layout.row#productLeft",
+      "flex-layout.row#productRight"
+    ],
+    "props": {
+      "blockClass": "productRow",
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.row#productRow--mobile": {
+    "children": [
+      "flex-layout.row#productLeft",
+      "flex-layout.row#productRight--mobile",
+      "flex-layout.row#addToCart"
+    ],
+    "props": {
+      "blockClass": "productRow",
+      "preventHorizontalStretch": true
+    }
+  }
+}
+

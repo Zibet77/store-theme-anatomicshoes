@@ -1,0 +1,96 @@
+{
+  "vtex.menu@2.x:menu#footerMenu1": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footerMenu",
+      "items": [
+        {
+          "id": "menu-item-about",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": false,
+            "tagTitle": "About us",
+            "text": "About us"
+          }
+        },
+        {
+          "id": "menu-item-orders",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/account",
+            "noFollow": false,
+            "tagTitle": "Your Orders",
+            "text": "Your Orders"
+          }
+        },
+        {
+          "id": "menu-item-info",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/shipping",
+            "noFollow": false,
+            "tagTitle": "Shipping Info",
+            "text": "Shipping Info"
+          }
+        }
+      ]
+    }
+  },
+  "vtex.menu@2.x:menu#footerMenu2": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footerMenu2",
+      "items": [
+        {
+          "id": "menu-item-about",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": false,
+            "tagTitle": "About us",
+            "text": "Return Policy"
+          }
+        },
+        {
+          "id": "menu-item-orders",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/account",
+            "noFollow": false,
+            "tagTitle": "Inside Anatomic",
+            "text": "Inside Anatomic"
+          }
+        },
+        {
+          "id": "menu-item-info",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/shipping",
+            "noFollow": false,
+            "tagTitle": "Contact & Support",
+            "text": "Contact & Support"
+          }
+        }
+      ]
+    }
+  }
+}

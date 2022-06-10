@@ -1,0 +1,24 @@
+.videoElement {
+  display: block;
+}
+
+.videoContainer--video-institutional {
+  max-width: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;  
+}
+
+.videoElement--video-institutional {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%; 
+}
+
+@media (max-width: 64rem) {
+  .videoContainer--video-institutional {
+    max-width: 100%;
+  } 
+}

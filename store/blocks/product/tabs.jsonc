@@ -1,0 +1,164 @@
+{
+  "tab-layout#productPage": {
+    "title": "Tab Session Desktop",
+    "children": [
+      "tab-list#product",
+      "tab-content#product"
+    ],
+    "props": {
+      "defaultActiveTabId": "product1",
+      "blockClass": "tabProduct"
+    }
+  },
+  "tab-list#product": {
+    "children":[
+      "tab-list.item#product1",
+      "tab-list.item#product2",
+      "tab-list.item#product3"
+    ]
+  },
+  "tab-content#product": {
+    "children": [
+      "tab-content.item#product1",
+      "tab-content.item#product2",
+      "tab-content.item#product3"
+    ]
+  },
+  "tab-list.item#product1": {
+    "title": "Tab I Title",
+    "props": {
+      "tabId": "product1",
+      "label": "Details",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-content.item#product1": {
+    "title": "Tab I Content",
+    "props": {
+      "tabId": "product1"
+    },
+    "children": [
+      "product-specifications"
+    ]
+  },
+  "tab-list.item#product2": {
+    "title": "Tab II Title",
+    "props": {
+      "tabId": "product2",
+      "label": "Shoe Care",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-content.item#product2": {
+    "title": "Tab II Content",
+    "props": {
+      "tabId": "product2"
+    },
+    "children": [
+      "list-context.product-list#product"
+    ]
+  },
+  "tab-list.item#product3": {
+    "title": "Tab III Title",
+    "props": {
+      "tabId": "product3",
+      "label": "Payment & Returns",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-content.item#product3": {
+    "title": "Tab III Content",
+    "props": {
+      "tabId": "product3"
+    },
+    "children": [
+      "rich-text#product-specifications-payment",
+      "flex-layout.row#product-specifications-payment"
+    ]
+  },
+  "rich-text#product-specifications-payment": {
+    "props": {
+      "text": "Pay with credit card",
+      "blockClass": "paymentText"
+    }
+  },
+  "flex-layout.row#product-specifications-payment": {
+    "props": {
+      "blockClass": "paymentImage"
+    },
+    "children": [
+      "image#payment-icon1",
+      "image#payment-icon2",
+      "image#payment-icon3",
+      "image#payment-icon4",
+      "image#payment-icon5"
+    ]
+  },
+  "image#payment-icon1": {
+    "props": {
+      "src": "assets/svgs/pdp-icon-visa.svg"
+    }
+  },
+  "image#payment-icon2": {
+    "props": {
+      "src": "assets/svgs/pdp-icon-mastercard.svg"
+    }
+  },
+  "image#payment-icon3": {
+    "props": {
+      "src": "assets/svgs/pdp-icon-union.svg"
+    }
+  },
+  "image#payment-icon4": {
+    "props": {
+      "src": "assets/svgs/pdp-icon-klarna.svg"
+    }
+  },
+  "image#payment-icon5": {
+    "props": {
+      "src": "assets/svgs/pdp-icon-paypal.svg"
+    }
+  },
+  "list-context.product-list#product": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#tabProduct"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "186"
+    }
+  },
+  "list-context.product-list#tabShelf": {
+    "title": "Shoe Care",
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#tabProduct"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "186"
+    }
+  },
+  "slider-layout#tabProduct": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": false,
+      "showNavigationArrows": "never",
+      "blockClass": "shelfContainerShoeCare"
+    }
+  },
+  "product-specifications": {
+    "props": {
+      "collapsible": "never"
+    }
+  }
+}

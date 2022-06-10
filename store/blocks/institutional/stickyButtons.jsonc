@@ -1,0 +1,45 @@
+{
+  "sticky-layout#institutional-menu": {
+    "children": [
+      "flex-layout.row#contact-menu-button"
+    ],
+    "props": {
+      "position": "bottom",
+      "blockClass": "searchStickyBtn"
+    }
+  },
+  "flex-layout.row#contact-menu-button": {
+    "children": [
+      "drawer#institutional-mob"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "drawer#institutional-mob": {
+    "children": [
+      "menu#drawer-institutional"
+    ],
+    "blocks": [
+      "drawer-trigger#institutional"
+    ],
+    "props": {
+      "blockClass": "institutionalMenu",
+      "isFullWidth": true
+    }
+  },
+  "drawer-trigger#institutional": {
+    "children": [
+      "rich-text#institutionalToggle"
+    ],
+    "props": {
+      "blockClass": "filterToggle"
+    }
+  },
+  "rich-text#institutionalToggle": {
+    "props": {
+      "text": "Contact us",
+      "blockClass": "filterToggleText"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "flex-layout.row#footerStriperRights": {
+    "children": [
+      "flex-layout.col#footerStriperRights"
+    ],
+    "props": {
+      "blockClass": "rightReservedContainer"
+    }
+  },
+  "flex-layout.row#footerStriperRights--product": {
+    "children": [
+      "flex-layout.col#footerStriperRights"
+    ],
+    "props": {
+      "blockClass": ["rightReservedContainer", "footer-product"]
+    }
+  },
+  "flex-layout.col#footerStriperRights": {
+    "title": "Copyright",
+    "children": [
+      "rich-text#rights",
+      "rich-text#footerParagraph",
+      "flex-layout.row#madeBy"
+    ]
+  },
+  "rich-text#rights": {
+    "title": "Copyright Text",
+    "props": {
+      "text": "2020 @ All Right Reserved to VTEX",
+      "blockClass": "rightsText",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#footerParagraph": {
+    "title": "Copyright Subtext",
+    "props": {
+      "text": "Amet minim mollit non deserunt ullamco est sit aliqua do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt amet.",
+      "blockClass": "footerParagraph",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#madeBy": {
+    "title": "Copyright Made By",
+    "children": [
+      "rich-text#madeBy",
+      "image#b8one",
+      "rich-text#poweredBy",
+      "image#vtex"
+    ],
+    "props": {
+      "blockClass": "madePoweredRow",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "rich-text#madeBy": {
+    "title": "Copyright Made By Text",
+    "props": {
+      "text": "Made by",
+      "blockClass": "madePowered"
+    }
+  },
+  "rich-text#poweredBy": {
+    "title": "Copyright Powered By Text",
+    "props": {
+      "text": "Powered by",
+      "blockClass": "madePowered"
+    }
+  },
+  "image#b8one": {
+    "title": "Copyright Made By Icon",
+    "props": {
+      "src": "assets/svgs/b8oneLogo.svg",
+      "blockClass": "b8oneLogo"
+    }
+  },
+  "image#vtex": {
+    "title": "Copyright Powered By Icon",
+    "props": {
+      "src": "assets/svgs/vtexLogo.svg",
+      "blockClass": "vtexLogo"
+    }
+  }
+}

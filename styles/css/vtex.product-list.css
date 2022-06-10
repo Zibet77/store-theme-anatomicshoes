@@ -1,0 +1,43 @@
+.deleteIcon {
+  display: none;
+  opacity: 0;
+}
+
+.removeButton::before {
+  content: url("assets/svgs/removeMinicart.svg");
+}
+
+.productName {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--blue-marine)
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--blue-marine)
+}
+
+.quantityDropdownContainer :global(.vtex-styleguide-9-x-container) {
+  border: none;
+  border-radius: 0px;
+  background: #EDF1F4;
+}
+
+.productImageAnchor {
+  display: block;
+}
+
+.productImageContainer {
+  height: 64px;
+  width: 64px!important;
+}
+
+.productImage {
+  height: 64px;
+  width: 64px;
+  object-fit: cover;
+  display: block;
+}

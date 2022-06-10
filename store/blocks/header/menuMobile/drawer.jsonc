@@ -1,0 +1,61 @@
+{
+  "drawer#menuMobile": {
+    "title": "Mega Menu",
+    "children": [
+      "flex-layout.row#drawerMobileRow"
+    ],
+    "props": {
+      "blockClass": "drawerMenuMobile",
+      "maxWidth": 324,
+      "isFullWidth": true
+    }
+  },
+  "flex-layout.row#drawerMobileRow": {
+    "children": [
+      "vtex.menu@2.x:menu#menu1",
+      "vtex.menu@2.x:menu#menu2",
+      "vtex.menu@2.x:menu#menu3",
+      "vtex.menu@2.x:menu#menu5",
+      "vtex.menu@2.x:menu#extraLinks",
+      "flex-layout.row#footerMobileRow",
+      "flex-layout.row#contactUsMenu"
+    ]
+  },
+  "vtex.menu@2.x:menu#menu1": {
+    "title": "Menu Item",
+    "children": [
+      "disclosure-layout#menu-mobile-item-1"
+    ],
+    "props": {
+      "title": "Menu Item Mens"
+    }
+  },
+  "vtex.menu@2.x:menu#menu2": {
+    "title": "Menu Item",
+    "children": [
+      "disclosure-layout#menu-mobile-item-2"
+    ],
+    "props": {
+      "title": "Menu Item Womans"
+    }
+  },
+  "vtex.menu@2.x:menu#menu3": {
+    "title": "Menu Item",
+    "children": [
+      "disclosure-layout#menu-mobile-item-3"
+    ],
+    "props": {
+      "title": "Menu Item Kids"
+    }
+  },
+
+  "vtex.menu@2.x:menu#menu5": {
+    "title": "Menu Item",
+    "children": [
+      "disclosure-layout#menu-mobile-item-5"
+    ],
+    "props": {
+      "title": "Menu Item Inside Anatomic"
+    }
+  }
+}

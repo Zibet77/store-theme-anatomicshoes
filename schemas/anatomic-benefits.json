@@ -1,0 +1,99 @@
+{
+  "title": "Anatomic",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Name",
+      "description": "Name"
+    },
+    "lastname": {
+      "type": "string",
+      "title": "Last Name",
+      "description": "Last Name"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "title": "E-mail"
+    },
+    "postcode": {
+      "type": "string",
+      "title": "postcode",
+      "description": "postcode"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone",
+      "description": "Phone"
+    },
+    "mens": {
+      "title": "Men's",
+      "type": "boolean"
+    },
+    "womens": {
+      "title": "Women's",
+      "type": "boolean"
+    },
+    "kids": {
+      "title": "Kid's",
+      "type": "boolean"
+    },
+    "birthday": {
+      "type": "string",
+      "title": "birthday"
+    },
+    "birthmonth": {
+      "type": "string",
+      "title": "birthmonth"
+    },
+    "birthyear": {
+      "type": "string",
+      "title": "birthyear"
+    }
+  },
+  "required": [
+    "name",
+    "lastname",
+    "email",
+    "postcode",
+    "phone",
+    "birthday",
+    "birthmonth",
+    "birthyear"
+  ],
+  "v-default-fields": [
+    "name",
+    "email",
+    "lastname",
+    "phone",
+    "postcode",
+    "womens",
+    "mens",
+    "kids"
+  ],
+  "v-indexed": ["name", "email"],
+  "v-security": {
+    "publicJsonSchema": true,
+    "allowGetAll": true,
+    "publicRead": [
+      "name",
+      "email",
+      "postcode",
+      "phone",
+      "womens",
+      "mens",
+      "kids"
+    ],
+    "publicWrite": [
+      "name",
+      "email",
+      "postcode",
+      "phone",
+      "womens",
+      "mens",
+      "kids"
+    ],
+    "publicFilter": ["email", "name"]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "vtex.menu@2.x:menu#megaMenu": {
+    "title": "Mega Menu",
+    "props": {
+      "orientation": "horizontal",
+      "blockClass": "megaMenu"
+    },
+    "children": [
+      "menu-item#category1",
+      "menu-item#category2",
+      "menu-item#category3",
+      "menu-item#category4",
+      "menu-item#custom1",
+      "menu-item#custom2",
+      "menu-item#custom3"
+    ]
+  },
+  "menu-item#category1": {
+    "props": {
+      "id": "menu-item-1",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Men's",
+        "text": "Men's"
+      },
+      "blockClass": "megaMenuItem"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#generic"]
+  },
+  "menu-item#category2": {
+    "props": {
+      "id": "menu-item-2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Women's",
+        "text": "Women's"
+      },
+      "blockClass": "megaMenuItem"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#generic"]
+  },
+  "menu-item#category3": {
+    "props": {
+      "id": "menu-item-3",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Kids",
+        "text": "Kids"
+      },
+      "blockClass": "megaMenuItem"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#generic"]
+  },
+  "menu-item#category4": {
+    "props": {
+      "id": "menu-item-3",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Sale",
+        "text": "Sale"
+      },
+      "blockClass": "megaMenuItem"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#generic"]
+  },
+  "menu-item#custom1": {
+    "props": {
+      "id": "menu-item-custom-1",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false
+      },
+      "blockClass": ["megaMenuItemCustom", "outlet"]
+    }
+  },
+  "menu-item#custom2": {
+    "props": {
+      "id": "menu-item-custom-2",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false
+      },
+      "blockClass": "megaMenuItemCustom"
+    }
+  },
+  "menu-item#custom3": {
+    "props": {
+      "id": "menu-item-custom-3",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Anatomic DNA",
+        "text": "Anatomic DNA"
+      },
+      "blockClass": ["megaMenuItemCustom", "menuInstitutional"]
+    },
+    "blocks": ["vtex.menu@2.x:submenu#institucional"]
+  }
+}

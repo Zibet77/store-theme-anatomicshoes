@@ -1,0 +1,191 @@
+{
+  "flex-layout.col#thirdCol": {
+    "children": [
+      "rich-text#shopBySize",
+      "flex-layout.col#sizeMenu"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center",
+      "blockClass": "menuSizeWrapper"
+    }
+  },
+  "rich-text#shopBySize": {
+    "props": {
+      "text": "Shop by Size",
+      "blockClass": "subMenuColumnTitle"
+    }
+  },
+  "flex-layout.col#sizeMenu": {
+    "children": [
+      "rich-text#sizeMenuReference",
+      "vtex.menu@2.x:menu#sizeMenu"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "sizeMenuWrapper"
+    }
+  },
+  "rich-text#sizeMenuReference": {
+    "props": {
+      "text": "UK",
+      "blockClass": "sizeMenuReference",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "vtex.menu@2.x:menu#sizeMenu": {
+    "props": {
+      "orientation": "horizontal",
+      "blockClass": "sizeMenu",
+      "items": [
+        {
+          "id": "submenu-item-size",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "6",
+            "text": "6"
+          }
+        },
+        {
+          "id": "submenu-item-size",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "6.5",
+            "text": "6.5"
+          }
+        },
+        {
+          "id": "submenu-item-size",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "7",
+            "text": "7"
+          }
+        },
+        {
+          "id": "submenu-item-size",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "8",
+            "text": "8"
+          }
+        },
+        {
+          "id": "submenu-item-size",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "9",
+            "text": "9"
+          }
+        },
+        {
+          "id": "submenu-item-size",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "10",
+            "text": "10"
+          }
+        },
+        {
+          "id": "submenu-item-size",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "10.5",
+            "text": "10.5"
+          }
+        },
+        {
+          "id": "submenu-item-size",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "11",
+            "text": "11"
+          }
+        },
+        {
+          "id": "submenu-item-size",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "12",
+            "text": "12"
+          }
+        },
+        {
+          "id": "submenu-item-size",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "13",
+            "text": "13"
+          }
+        },
+        {
+          "id": "submenu-item-size",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "14",
+            "text": "14"
+          }
+        },
+        {
+          "id": "submenu-item-size",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "15",
+            "text": "15"
+          }
+        }
+      ]
+    }
+  }
+}

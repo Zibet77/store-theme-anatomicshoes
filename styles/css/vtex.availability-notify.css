@@ -1,0 +1,65 @@
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.notiferContainer .content{
+  flex-flow: column nowrap;
+}
+
+.notiferContainer .submit :global(.vtex-button){
+  border-radius: 0px;
+  max-width: 180px;
+  height: 40px;
+  width: 100%;
+  border: 2px solid var(--blue-marine);
+  background: var(--blue-marine);
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  transition: all .3s ease;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: initial;
+}
+
+.notiferContainer .submit :global(.vtex-button):hover {
+  background: #182133;
+  border-color: #182133;
+}
+
+.notiferContainer .submit :global(.vtex__icon-spinner) {
+  color: #fff;
+}
+
+.notiferContainer .input :global(.vtex-input-prefix__group){
+  border-radius: 0px;
+}
+
+.notiferContainer .title {
+  font-size: 18px;
+  color: var(--blue-marine);
+}
+
+.notiferContainer .subscribeLabel {
+  font-size: 14px;
+  color: #5C666F;
+}
+
+
+@media(max-width: 64rem) {
+  .notiferContainer .submit :global(.vtex-button){
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media(min-width: 64rem) {
+  .notiferContainer {
+  padding-left: 0 !important;
+  }
+
+  .notiferContainer {
+      padding-left: 1rem;
+  }
+}

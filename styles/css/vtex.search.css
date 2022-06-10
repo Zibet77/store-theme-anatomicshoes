@@ -1,0 +1,80 @@
+.biggy-autocomplete-wrapper {
+  width: 320px!important;
+}
+
+.tileListItem {
+  display: block;
+  width: 100%;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(92, 102, 111, 0.12);
+}
+
+.element {
+  width: 100%;
+}
+
+.biggy-autocomplete {
+  padding: 0px 16px 24px;
+}
+
+.tileList {
+  border: none;
+}
+
+.tileListSeeMore {
+  height: auto;
+  line-height: initial;
+}
+
+.image {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+
+.productNameContainer {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--blue-marine);
+  text-transform: capitalize;
+  margin-bottom: 4px;
+}
+
+.productBrand {
+  color: var(--blue-marine);
+}
+
+.sellingPrice {
+  margin-right: 8px;
+}
+
+.sellingPrice .currencyContainer {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--blue-marine);
+}
+
+.listPrice .currencyContainer {
+  font-weight: 400;
+  font-size: 14px;
+  color:#91A0BF;
+}
+
+.tileListList {
+  margin-bottom: 0;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: row-reverse;
+}
+
+@media (max-width: 64rem) {
+  .biggy-autocomplete-wrapper {
+    width: 100vw!important;
+  }
+}

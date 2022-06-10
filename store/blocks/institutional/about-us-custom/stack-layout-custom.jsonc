@@ -1,0 +1,58 @@
+{
+  "stack-layout#pantone-299c": {
+    "children": [
+      "rich-text#block-text"
+    ],
+    "props": {
+      "blockClass": ["block__paragraph","bg__pantone-299c"]
+    }
+  },
+  "stack-layout#pantone-319c": {
+    "children": [
+      "rich-text#block-text"
+    ],
+    "props": {
+      "blockClass": ["block__paragraph","bg__pantone-319c"]
+    }
+  },
+  "stack-layout#pantone-715c": {
+    "children": [
+      "rich-text#block-text"
+    ],
+    "props": {
+      "blockClass": ["block__paragraph","bg__pantone-715c"]
+    }
+  },
+  "stack-layout#pantone-631c": {
+    "children": [
+      "rich-text#block-text"
+    ],
+    "props": {
+      "blockClass": ["block__paragraph","bg__pantone-631c"]
+    }
+  },
+  "stack-layout#pantone-344c": {
+    "children": [
+      "rich-text#block-text"
+    ],
+    "props": {
+      "blockClass": ["block__paragraph","bg__pantone-344c"]
+    }
+  },
+  "stack-layout#pantone-cool-gray-10c": {
+    "children": [
+      "rich-text#block-text"
+    ],
+    "props": {
+      "blockClass": ["block__paragraph","bg__pantone-cool-gray-10c"]
+    }
+  },
+  "stack-layout#white": {
+    "children": [
+      "rich-text#block-text"
+    ],
+    "props": {
+      "blockClass": ["block__paragraph","bg__white"]
+    }
+  }
+}

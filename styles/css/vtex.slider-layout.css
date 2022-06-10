@@ -1,0 +1,141 @@
+.caretIcon--heroCarousel {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sliderLeftArrow--heroCarousel::before {
+  content: url("assets/svgs/arrowRight.svg");
+}
+
+.sliderRightArrow--heroCarousel {
+  content: url("assets/svgs/arrowRight.svg");
+}
+
+.sliderLeftArrow--heroCarousel {
+  transform: rotate(180deg);
+  transform-origin: center;
+}
+
+.paginationDot--shelfContainer {
+  width: 24px!important;
+  height: 2px!important;
+  border-radius: 2px;
+  background: #DFE7ED;
+  display: block;
+  padding: 0;
+  transition: width .3s ease;
+}
+
+.paginationDotsContainer--shelfContainer {
+  bottom: -12px;
+}
+
+.paginationDot--shelfContainer--isActive {
+  width: 48px!important;
+  background: var(--blue-marine);
+}
+
+.paginationDot--shelfContainerShoeCare {
+  width: 24px!important;
+  height: 2px!important;
+  border-radius: 2px;
+  background: #DFE7ED;
+  display: block;
+  padding: 0;
+  transition: width .3s ease;
+}
+
+.paginationDotsContainer--shelfContainerShoeCare {
+  bottom: -12px;
+}
+
+.paginationDot--shelfContainerShoeCare--isActive {
+  width: 48px!important;
+  background: var(--blue-marine);
+}
+
+.caretIcon {
+  display: none;
+  opacity: 0;
+}
+
+.sliderLeftArrow--shelfContainer::before {
+  content: url("assets/svgs/arrowRight.svg");
+  transform: rotate(-180deg);
+  transform-origin: center;
+}
+
+.sliderRightArrow--shelfContainer::before {
+  content: url("assets/svgs/arrowRight.svg");
+}
+
+.sliderRightArrow--shelfContainer {
+  right: -20px;
+}
+
+.sliderLeftArrow--shelfContainer {
+  left: -20px;
+}
+
+.sliderLayoutContainer--sizeSlider {
+  max-width: 296px;
+  margin:  0px auto 32px;
+}
+
+.sliderArrows--sizeSlider {
+  width: 32px;
+  height: 32px;
+  display: block;
+  background: var(--blue-original)!important;
+}
+
+.sliderLeftArrow--sizeSlider::before {
+  content: url("assets/svgs/chevronRightWhite.svg");
+  transform-origin: center;
+  transform: rotate(-180deg);
+  display: block;
+  height: 16px;
+}
+
+.sliderLeftArrow--sizeSlider {
+  left: -50px;
+}
+
+.sliderRightArrow--sizeSlider::before {
+  content: url("assets/svgs/chevronRightWhite.svg");
+  display: block;
+  height: 16px;
+}
+
+.sliderRightArrow--sizeSlider {
+  right: -52px;
+}
+
+.sliderTrack--shelfContainerShoeCare {
+  margin-top: 30px;
+}
+
+@media(max-width: 64rem){
+  .sliderLayoutContainer--sizeSlider {
+    max-width: 100%;
+    padding: 0px 32px;
+  }
+
+  .sliderLeftArrow--sizeSlider,
+  .sliderRightArrow--sizeSlider {
+    margin: 0;
+  }
+
+  .sliderLeftArrow--sizeSlider {
+    left: 0;
+  }
+
+  .sliderRightArrow--sizeSlider {
+    right: 0;
+  }
+}
+
+.sliderLayoutContainer--shelfContainer{
+  display: grid;
+}

@@ -1,0 +1,22 @@
+.currencyContainer {
+  font-size: 18px;
+  color: var(--blue-marine);
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+}
+
+.listPriceValue .currencyContainer {
+  font-size: 14px;
+  color: #91A0BF;
+  margin-left: 8px;
+}
+
+@media(max-width: 64rem) {
+  .sellingPriceValue .currencyContainer {
+    font-size: 16px;
+  }
+
+  .listPriceValue .currencyContainer {
+    font-size: 12px;
+  }
+}

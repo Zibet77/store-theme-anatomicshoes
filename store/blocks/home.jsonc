@@ -1,0 +1,83 @@
+{
+  "store.home": {
+    "blocks": [
+      "responsive-layout.desktop#home",
+      "responsive-layout.mobile#home"
+    ]
+  },
+  "responsive-layout.desktop#home": {
+    "title": "Home Page Desktop",
+    "children": [
+      "newsletter-modal",
+      "experimental__visibility-layout#stripeStyle",
+      "list-context.image-list#hero",
+      "flex-layout.row#benefitsRow",
+      "flex-layout.row#showMen",
+      "__fold__",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#bestSellerShelfDesktop",
+      "flex-layout.row#toggleVisibilityShowcaseDesktop",
+      "flex-layout.row#categoryBanners",
+      "flex-layout.row#kidsSections",
+      "flex-layout.row#showWomen",
+      "flex-layout.row#toggleVisibilityShowcaseDesktop",
+      "flex-layout.row#twoBanners",
+      "flex-layout.row#videoAndImage",
+      "flex-layout.row#goodCompany"
+    ]
+  },
+  "flex-layout.row#toggleVisibilityShowcaseDesktop": {
+    "title": "Visibility Showcase Desktop",
+    "props": {
+      "blockClass": "toggleVisibilityShowcaseDesktop"
+    },
+    "children": ["experimental__visibility-layout#toggleVisibilityShowcase"]
+  },
+  "flex-layout.row#toggleVisibilityShowcaseMobile": {
+    "title": "VisibilityShowcase Mobile",
+    "props": {
+      "blockClass": "toggleVisibilityShowcaseMobile"
+    },
+    "children": ["experimental__visibility-layout#toggleVisibilityShowcase"]
+  },
+  "flex-layout.row#bestSellerShelfDesktop": {
+    "title": "Showcase Best Sellers Desktop",
+    "props": {
+      "blockClass": "toggleVisibilityShowcaseDesktop"
+    },
+    "children": ["flex-layout.row#bestSellerShelf"]
+  },
+  "flex-layout.row#bestSellerShelfMobile": {
+    "title": "Showcase Best Sellers Mobile",
+    "props": {
+      "blockClass": "toggleVisibilityShowcaseMobile"
+    },
+    "children": ["flex-layout.row#bestSellerShelf"]
+  },
+  "product-summary.shelf#toggleVisibilityShowcase": {
+    "props": {
+      "blockClass": "toggleVisibilityShowcase"
+    }
+  },
+  "responsive-layout.mobile#home": {
+    "title": "Home Page Mobile",
+    "children": [
+      "newsletter-modal",
+      "experimental__visibility-layout#stripeStyle",
+      "list-context.image-list#heroMobile",
+      "flex-layout.row#benefitsRow",
+      "flex-layout.row#showMenMobile",
+      "__fold__",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#bestSellerShelfMobile",
+      "flex-layout.row#toggleVisibilityShowcaseMobile",
+      "flex-layout.row#banners",
+      "flex-layout.row#kidsSectionsMobile",
+      "flex-layout.row#showWomenMobile",
+      "flex-layout.row#toggleVisibilityShowcaseMobile",
+      "flex-layout.row#twoBanners",
+      "flex-layout.row#videoAndImage",
+      "flex-layout.row#goodCompany"
+    ]
+  }
+}

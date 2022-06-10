@@ -1,0 +1,593 @@
+{
+  "store.custom#inst-about-us-video": {
+    "blocks": [
+      "responsive-layout.desktop#inst-about-us-video",
+      "responsive-layout.mobile#inst-about-us-video"
+    ]
+  },
+  "responsive-layout.desktop#inst-about-us-video": {
+    "children": [
+      "flex-layout.row#about-us-video-content",
+      "experimental__visibility-layout#twoBanners",
+      "experimental__visibility-layout#videoAndImage",
+      "experimental__visibility-layout#goodCompany"
+    ]
+  },
+  "responsive-layout.mobile#inst-about-us-video": {
+    "children": [
+      "flex-layout.row#about-us-video-content-mobile"
+    ]
+  },
+  "flex-layout.row#about-us-video-content": {
+    "children" : ["flex-layout.col#about-us-video-col"],
+    "props": {
+      "blockClass": "about-us-row"
+    }
+  },
+  "flex-layout.row#about-us-video-content-mobile": {
+    "children" : ["flex-layout.col#about-us-video-col-mobile"],
+    "props": {
+      "blockClass": "about-us-row"
+    }
+  },
+  "flex-layout.col#about-us-video-col": {
+    "children": [
+      "stack-layout#banner-stack",
+      "stack-layout#paragraph-stack",
+      "experimental__visibility-layout#rowBannersVideos1",
+      "experimental__visibility-layout#rowBannersVideos2",
+      "experimental__visibility-layout#rowBannersVideos3",
+      "experimental__visibility-layout#rowBannersVideos4",
+      "experimental__visibility-layout#rowBannersVideos5",
+      "experimental__visibility-layout#rowBannersVideos6",
+      "experimental__visibility-layout#rowBannersVideos7",
+      "experimental__visibility-layout#rowBannersVideos8",
+      "experimental__visibility-layout#rowBannersVideos9",
+      "experimental__visibility-layout#rowBannersVideos10",
+      "experimental__visibility-layout#rowBannersVideos11",
+      "experimental__visibility-layout#rowBannersVideos12"
+    ],
+    "props": {
+      "blockClass": "about-us"
+    }
+  },
+  "flex-layout.col#about-us-video-col-mobile": {
+    "children": [
+      "experimental__visibility-layout#banner-stack-mobile",
+      "experimental__visibility-layout#paragraph-stack",
+      "experimental__visibility-layout#rowBannersVideos1",
+      "experimental__visibility-layout#rowBannersVideos2",
+      "experimental__visibility-layout#rowBannersVideos3",
+      "experimental__visibility-layout#rowBannersVideos4",
+      "experimental__visibility-layout#rowBannersVideos5",
+      "experimental__visibility-layout#rowBannersVideos6",
+      "experimental__visibility-layout#rowBannersVideos7",
+      "experimental__visibility-layout#rowBannersVideos8",
+      "experimental__visibility-layout#rowBannersVideos9",
+      "experimental__visibility-layout#rowBannersVideos10",
+      "experimental__visibility-layout#rowBannersVideos11",
+      "experimental__visibility-layout#rowBannersVideos12"
+    ],
+    "props": {
+      "blockClass": "about-us"
+    }
+  },
+  "stack-layout#banner-stack": {
+    "children": [
+      "image#banner-background",
+      "flex-layout.row#menu-row",
+      "flex-layout.row#text-row"
+    ],
+    "props": {
+      "blockClass": "banner"
+    }
+  },
+  "stack-layout#banner-stack-mobile": {
+    "children": [
+      "image#banner-background",
+      "flex-layout.row#menu-row-mobile",
+      "flex-layout.row#text-row"
+    ],
+    "props": {
+      "blockClass": "banner"
+    }
+  },
+  "image#banner-background": {
+    "props": {
+      "src": "assets/images/about-us-banner.png",
+      "blockClass": "banner__image"
+    }
+  },
+  "flex-layout.row#menu-row": {
+    "children": [
+      "vtex.menu@2.x:menu#about-us-menu"
+    ],
+    "props": {
+      "blockClass": "banner__menu"
+    }
+  },
+  "flex-layout.row#menu-row-mobile": {
+    "children": [
+      "disclosure-layout#about-us-menu"
+    ],
+    "props": {
+    "blockClass": ["banner__menu", "banner__menu-mobile"]
+    }
+  },
+  "vtex.menu@2.x:menu#about-us-menu": {
+    "props": {
+      "items": [
+        {
+          "id": "menu-item-anatomic-dna",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Anatomic DNA",
+            "text": "Anatomic DNA"
+          }
+        },
+        {
+          "id": "menu-item-technology",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": false,
+            "tagTitle": "Technology",
+            "text": "Technology"
+          }
+        },
+        {
+          "id": "menu-item-materials",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Materials",
+            "text": "Materials"
+          }
+        },
+        {
+          "id": "menu-item-leathers",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Leathers",
+            "text": "Leathers"
+          }
+        },
+        {
+          "id": "menu-item-sustainability",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Sustainability",
+            "text": "Sustainability"
+          }
+        }
+      ]
+    }
+  },
+  "disclosure-layout#about-us-menu": {
+    "children": [
+      "disclosure-trigger#menu",
+      "disclosure-content#menu"
+    ]
+  },
+  "disclosure-trigger#menu": {
+    "children": [
+      "link.product#menu-primary"
+    ]
+  },
+  "disclosure-content#menu": {
+    "children": [
+      "link.product#menu-secundary-1",
+      "link.product#menu-secundary-2",
+      "link.product#menu-secundary-3",
+      "link.product#menu-secundary-4"
+    ]
+  },
+  "link.product#menu-primary": {
+    "props": {
+      "label": "Anatomic DNA",
+      "href": "/anatomicdna"
+
+    }
+  },
+  "link.product#menu-secundary-1": {
+    "props": {
+      "label": "Technology",
+      "href": "/technology"
+    }
+  },
+  "link.product#menu-secundary-2": {
+    "props": {
+      "label": "Materials",
+      "href": "/materials"
+    }
+  },
+  "link.product#menu-secundary-3": {
+    "props": {
+      "label": "Leathers",
+      "href": "/leathers"
+    }
+  },
+  "link.product#menu-secundary-4": {
+    "props": {
+      "label": "Sustainability",
+      "href": "/sustainability"
+    }
+  },
+  "flex-layout.row#text-row": {
+    "children": [
+      "flex-layout.col#text-column"
+    ]
+  },
+  "flex-layout.col#text-column": {
+    "children": [
+      "rich-text#banner-text-small",
+      "rich-text#banner-text-large",
+      "rich-text#banner-text-medium"
+    ]
+  },
+  "rich-text#banner-text-small": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Anatomic DNA",
+      "blockClass": "banner__text--small"
+    }
+  },
+  "rich-text#banner-text-large": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Who We Are",
+      "blockClass": "banner__text--large"
+    }
+  },
+  "rich-text#banner-text-medium": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Anatomic crafts good-looking, high quality shoes that provide the wearer with unbeatable comfort.",
+      "blockClass": "banner__text--medium"
+    }
+  },
+  "stack-layout#paragraph-stack": {
+    "children": [
+      "image#paragraph-background",
+      "rich-text#paragraph-text"
+    ],
+    "props": {
+      "blockClass": "paragraph"
+    }
+  },
+  "image#paragraph-background": {
+    "props": {
+      "src": "assets/images/paragraph-banner.png",
+      "blockClass": "paragraph__image"
+    }
+  },
+  "rich-text#paragraph-text": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**The secret behind unbeatable comfort** All Anatomic footwear is 100% handcrafted by highly skilled professional shoemakers, using the finest Brazilian materials. However, the real secret to comfort lies in the way the shoes are made and what they’re made of, based on the unique Anatomic Gel Technology® formula for natural foot movement.",
+      "blockClass": "paragraph__text"
+    }
+  },
+  "flex-layout.row#rowBannersVideos1": {
+    "children": [
+      "anatomic-image#block-image",
+      "stack-layout#block-paragraph-blue-marine"
+    ],
+    "props": {
+      "blockClass": "rowBanners"
+    }
+  },
+  "flex-layout.row#rowBannersVideos2": {
+    "children": [
+      "anatomic-image#block-image",
+      "stack-layout#block-paragraph-blue-original"
+    ],
+    "props": {
+      "blockClass": ["rowBanners", "reverse"]
+   }
+  },
+  "flex-layout.row#rowBannersVideos3": {
+    "children": [
+      "video#institutional",
+      "stack-layout#block-paragraph-custom-black-video"
+    ],
+    "props": {
+      "blockClass": "rowBanners"
+    }
+  },
+  "flex-layout.row#rowBannersVideos4": {
+    "children": [
+      "anatomic-image#block-image",
+      "stack-layout#block-paragraph-blue-marine"
+    ],
+    "props": {
+      "blockClass": ["rowBanners"]
+   }
+  },
+  "flex-layout.row#rowBannersVideos5": {
+    "children": [
+      "anatomic-image#block-image",
+      "stack-layout#block-paragraph-blue-original"
+    ],
+    "props": {
+      "blockClass": ["rowBanners", "reverse"]
+    }
+  },
+  "flex-layout.row#rowBannersVideos6": {
+    "children": [
+      "video#institutional",
+      "stack-layout#block-paragraph-custom-black-video"
+    ],
+    "props": {
+      "blockClass": ["rowBanners"]
+   }
+  },
+  "flex-layout.row#rowBannersVideos7": {
+    "children": [
+      "anatomic-image#block-image",
+      "stack-layout#block-paragraph-blue-marine"
+    ],
+    "props": {
+      "blockClass": "rowBanners"
+    }
+  },
+  "flex-layout.row#rowBannersVideos8": {
+    "children": [
+      "anatomic-image#block-image",
+      "stack-layout#block-paragraph-blue-original"
+    ],
+    "props": {
+      "blockClass": ["rowBanners", "reverse"]
+   }
+  },
+  "flex-layout.row#rowBannersVideos9": {
+    "children": [
+      "video#institutional",
+      "stack-layout#block-paragraph-custom-black-video"
+    ],
+    "props": {
+      "blockClass": "rowBanners"
+    }
+  },
+  "flex-layout.row#rowBannersVideos10": {
+    "children": [
+      "anatomic-image#block-image",
+      "stack-layout#block-paragraph-blue-marine"
+    ],
+    "props": {
+      "blockClass": ["rowBanners"]
+   }
+  },
+  "flex-layout.row#rowBannersVideos11": {
+    "children": [
+      "anatomic-image#block-image",
+      "stack-layout#block-paragraph-blue-original"
+    ],
+    "props": {
+      "blockClass": ["rowBanners", "reverse"]
+    }
+  },
+  "flex-layout.row#rowBannersVideos12": {
+    "children": [
+      "video#institutional",
+      "stack-layout#block-paragraph-custom-black-video"
+    ],
+    "props": {
+      "blockClass": ["rowBanners"]
+   }
+  },
+  "stack-layout#block-paragraph-blue-marine": {
+    "children": [
+      "rich-text#block-text-about-us-video"
+    ],
+    "props": {
+      "blockClass": ["block__paragraph","bg__blue-marine"]
+    }
+  },
+  "stack-layout#block-paragraph-blue-original": {
+    "children": [
+      "rich-text#block-text-about-us-video"
+    ],
+    "props": {
+      "blockClass": ["block__paragraph","bg__blue-original"]
+    }
+  },
+  "stack-layout#block-paragraph-custom-black-video": {
+    "children": [
+      "rich-text#block-text-about-us-video"
+    ],
+    "props": {
+      "blockClass": ["block__paragraph","bg__custom-black", "flex__wrapper"]
+    }
+  },
+  "anatomic-image#block-image": {
+    "props": {
+      "src": "assets/images/block-banner.png",
+      "blockClass": "block__image"
+    }
+  },
+  "rich-text#block-text-about-us-video": {
+    "props": {
+      "textAlignment":"CENTER",
+      "textPosition":"CENTER",
+      "text": "Anatomic Gel Technology® isn’t just about what the soles are made of (which is an exclusive, top secret recipe, just like Coca-Cola’s is), but about how the whole shoe is made. Our shoes are so incredibly comfortable to wear because of our Anatomic Gel Technology®, developed through 25 years of research. Its inventor told us, You need two very comfortable things in your life, because you’re either in one or in the other - your bed and your shoes. - We felt exactly the same way too. Our Anatomic & Co mens range of shoes include a sole that is 100% rubber and recyclable. Only the finest leathers are used in the shoe, making them very, very soft and highly breathable. Unlike many other shoe manufacturers, we don’t process or chemically treat the footwear.",
+      "blockClass": "block__text"
+    }
+  },
+
+  // Visibility Layout
+
+  "experimental__visibility-layout#banner-stack": {
+    "children": ["stack-layout#banner-stack"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#paragraph-stack": {
+    "children": ["stack-layout#paragraph-stack"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#rowBannersVideos1": {
+    "children": ["flex-layout.row#rowBannersVideos1"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#rowBannersVideos2": {
+    "children": ["flex-layout.row#rowBannersVideos2"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#rowBannersVideos3": {
+    "children": [
+      "video#institutional",
+      "stack-layout#block-paragraph-custom-black-video"
+    ],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#rowBannersVideos4": {
+    "children": ["flex-layout.row#rowBannersVideos4"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#rowBannersVideos5": {
+    "children": ["flex-layout.row#rowBannersVideos5"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#rowBannersVideos6": {
+    "children": [
+      "video#institutional",
+      "stack-layout#block-paragraph-custom-black-video"
+    ],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#rowBannersVideos7": {
+    "children": ["flex-layout.row#rowBannersVideos7"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#rowBannersVideos8": {
+    "children": ["flex-layout.row#rowBannersVideos8"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#rowBannersVideos9": {
+    "children": [
+      "video#institutional",
+      "stack-layout#block-paragraph-custom-black-video"
+    ],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#rowBannersVideos10": {
+    "children": ["flex-layout.row#rowBannersVideos10"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#rowBannersVideos11": {
+    "children": ["flex-layout.row#rowBannersVideos11"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#rowBannersVideos12": {
+    "children": [
+      "video#institutional",
+      "stack-layout#block-paragraph-custom-black-video"
+    ],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#twoBanners": {
+    "children": ["flex-layout.row#twoBanners"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#videoAndImage": {
+    "children": ["flex-layout.row#videoAndImage"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#goodCompany": {
+    "children": ["flex-layout.row#goodCompany"],
+    "props": {
+      "visible": true
+    }
+  },
+
+  "experimental__visibility-layout#banner-stack-mobile": {
+    "children": ["stack-layout#banner-stack-mobile"],
+    "props": {
+      "visible": true
+    }
+  },
+  "anatomic-image#block-image": {
+    "props": {
+      "src": "assets/images/block-banner.png",
+      "blockClass": "block__image"
+    }
+  },
+  "rich-text#block-text-about-us-video": {
+    "props": {
+      "textAlignment":"CENTER",
+      "textPosition":"CENTER",
+      "text": "Anatomic Gel Technology® isn’t just about what the soles are made of (which is an exclusive, top secret recipe, just like Coca-Cola’s is), but about how the whole shoe is made. Our shoes are so incredibly comfortable to wear because of our Anatomic Gel Technology®, developed through 25 years of research. Its inventor told us, You need two very comfortable things in your life, because you’re either in one or in the other - your bed and your shoes. - We felt exactly the same way too. Our Anatomic & Co mens range of shoes include a sole that is 100% rubber and recyclable. Only the finest leathers are used in the shoe, making them very, very soft and highly breathable. Unlike many other shoe manufacturers, we don’t process or chemically treat the footwear.",
+      "blockClass": "block__text"
+    }
+  },
+  "video#institutional": {
+    "props": {
+      "width": "100%",
+      "height": "350px",
+      "loop": false,
+      "autoPlay": false,
+      "playsInline": true,
+      "muted": false,
+      "src": "https://www.youtube.com/watch?v=70oU3UimUp4",
+      "blockClass": ["video", "video-institutional"]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "flex-layout.row#contactUsMenu": {
+    "title": "Menu Contact Us",
+    "children": [
+      "rich-text#contactTitleMenu",
+      "rich-text#contactLabelMenu",
+      "rich-text#contactPhoneMenu",
+      "rich-text#contactEmailMenu"
+    ],
+    "props": {
+      "blockClass": "contactUsMenu"
+    }
+  },
+  "rich-text#contactTitleMenu": {
+    "title": "Menu Contact Us Title",
+    "props": {
+      "text": "#### Contact",
+      "blockClass": "contactTitleMenu",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#contactLabelMenu": {
+    "title": "Menu Contact Us Label",
+    "props": {
+      "text": "Contact us",
+      "blockClass": "contactLabelMenu",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#contactPhoneMenu": {
+    "title": "Menu Contact Us Phone",
+    "props": {
+      "text": "[0203 115 0002](tel:+02031150002)",
+      "blockClass": "contactPhoneMenu",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#contactEmailMenu": {
+    "title": "Menu Contact Us E-mail",
+    "props": {
+      "text": "[customerservice@anatomicshoes.com](mailto:customerservice@anatomicshoes.com)",
+      "blockClass": "contactEmailMenu",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  }
+}

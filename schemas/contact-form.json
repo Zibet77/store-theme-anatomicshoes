@@ -1,0 +1,40 @@
+{
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Name",
+      "description": "Name"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "title": "E-mail"
+    },
+    "telephone": {
+      "type": "string",
+      "title": "Phone",
+      "description": "Phone"
+    },
+    "order": {
+      "type": "string",
+      "title": "Order",
+      "description": "Order"
+    },
+    "message": {
+      "type": "string",
+      "title": "message",
+      "description": "message"
+    }
+  },
+  "required": ["email", "message", "name", "telephone"],
+  "v-cache": false,
+  "v-indexed": ["name", "email"],
+  "v-default-fields": ["email", "message", "name", "telephone"],
+  "v-security": {
+    "publicJsonSchema": true,
+    "allowGetAll": true,
+    "publicRead": ["email", "message", "name", "telephone", "order"],
+    "publicWrite": ["email", "message", "name", "telephone", "order"],
+    "publicFilter": ["email", "name"]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "store.custom#institutional": {
+    "blocks": [
+      "responsive-layout.desktop#inst-template",
+      "responsive-layout.mobile#inst-template"
+    ]
+  },
+  "responsive-layout.desktop#inst-template": {
+    "children": [
+      "flex-layout.row#genericInstitutional",
+      "flex-layout.row#goodCompanyInstitutional"
+    ]
+  },
+  "responsive-layout.mobile#inst-template": {
+    "children": [
+      "flex-layout.row#genericInstitutional",
+      "flex-layout.row#goodCompanyInstitutional"
+    ]
+  },
+  "rich-text#institutional-breadcrumb": {
+    "props": {
+      "blockClass": "storeLocatorBreadcrumb",
+      "text": "[Anatomic Shoes / ](/) **Lorem Ipsum**",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  },
+  "flex-layout.row#genericInstitutional": {
+    "children": ["flex-layout.col#genericInstitutional"],
+    "props": {
+      "blockClass": "genericInstitutional"
+    }
+  },
+  "flex-layout.col#genericInstitutional": {
+    "children": [
+      "rich-text#institutional-breadcrumb",
+      "rich-text#genericInstitutional"
+    ]
+  },
+  "rich-text#genericInstitutional": {
+    "props": {
+      "text": "",
+      "textAlignment": "left",
+      "textPosition": "left",
+      "blockClass": "institutional"
+    }
+  },
+  "flex-layout.row#goodCompanyInstitutional": {
+    "children": ["flex-layout.col#goodCompany"],
+    "props": {
+      "blockClass": "goodCompanyInstitutional"
+    }
+  }
+}

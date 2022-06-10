@@ -1,0 +1,254 @@
+@media (min-width: 64rem){
+  .drawer--filterDrawer {
+    width: 100%!important;
+    max-width: 350px!important;
+    background: #F8FAFC;
+  }
+  .drawer--sortDrawer {
+    width: 100%!important;
+    max-width: 350px!important;
+    background: #F8FAFC;
+  }
+
+  .openIconContainer--institutionalMenu {
+    position: absolute;
+    left: -64px;
+  }
+
+}
+
+.drawer--filterDrawer {
+  z-index: 999999;
+}
+
+.menuIcon {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.openIconContainer:not(.openIconContainer--sortDrawer):not(.openIconContainer--filterDrawer)::before {
+  content: url("assets/svgs/menuIcon.svg");
+}
+
+/* Institutional */
+
+.drawer--institutionalMenu {
+  background-color: #F8FAFC;
+}
+
+.childrenContainer--institutionalMenu {
+  flex-direction: column;
+}
+
+.drawer--institutionalMenu .closeIconContainer--institutionalMenu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.drawer--institutionalMenu .drawerHeader :global(.vtex-flex-layout-0-x-flexRow--main-header-mobile),
+.drawer--institutionalMenu .drawerHeader :global(.vtex-flex-layout-0-x-flexRow--stripesRow) {
+  display: none;
+}
+
+.drawer--institutionalMenu .closeIconButton {
+  bottom: -64px;
+  position: absolute;
+  right: 16px;
+}
+
+.closeIconButton--institutionalMenu::before {
+  content: url(https://anatomicshoes.vtexassets.com/assets/vtex/assets-builder/anatomicshoes.theme/0.0.1/svgs/closeMinicart___f5adc83….svg);
+  display: block;
+}
+
+.openIconContainer:not(.openIconContainer--sortDrawer):not(.openIconContainer--filterDrawer).openIconContainer--institutionalMenu::before {
+  content: url("assets/svgs/menuIcon-inst-desk.svg");
+}
+
+.drawerHeader--institutionalMenu .closeIcon {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.openIconContainer--sortDrawer::before {
+  content: none!important;
+}
+
+
+.openIconContainer--filterDrawer,
+.openIconContainer--sortDrawer {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.openIconContainer--filterDrawer {
+   background: #0992C9;
+}
+
+.openIconContainer--sortDrawer {
+  background: var(--blue-marine);
+}
+
+.drawerTriggerContainer--sortToggle,
+.drawerTriggerContainer--filterToggle {
+  display: flex;
+  align-items: center;
+}
+
+.drawerTriggerContainer--filterToggle::after {
+  content: url("assets/svgs/filterIcon.svg");
+  margin-left: 8px;
+}
+
+.drawerTriggerContainer--sortToggle::after {
+  content: url("assets/svgs/sortIcon.svg");
+  margin-left: 8px;
+  transform: translateY(1px);
+}
+
+.closeIconContainer--filterDrawer {
+  border-bottom: 1px solid rgba(92, 102, 111, 0.12);
+}
+
+.closeIconContainer--filterDrawer,
+.closeIconContainer--sortDrawer {
+  display: flex;
+  align-items: center;
+  padding: 0px 16px;
+  height: 80px;
+}
+
+.closeIconContainer--sortDrawer::before {
+  content: "Sort by";
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 500;
+  font-family: Inter, sans-serif;
+  color: var(--blue-marine);
+  order: 1;
+}
+
+.closeIconContainer--sortDrawer::after {
+  content: url("assets/svgs/sortIconBlue.svg");
+  display: block;
+  margin-left: 8px;
+  order: 1;
+}
+
+.closeIconButton--filterDrawer,
+.closeIconButton--sortDrawer {
+  margin-left: auto;
+  padding: 8px;
+  order: 3;
+}
+
+.closeIcon {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.drawerHeader--institutionalMenu .closeIconButton::before {
+  content: url(https://anatomicshoes.vtexassets.com/assets/vtex/assets-builder/anatomicshoes.theme/0.0.1/svgs/closeMinicart___f5adc83….svg);
+  display: block;
+}
+
+
+@media (max-width: 64rem) {
+
+  .openIconContainer--institutionalMenu {
+    align-items: center;
+    background: var(--blue-original);
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    position: static;
+  }
+
+  .openIconContainer--institutionalMenu::before {
+    display: none;
+  }
+
+  .overlay--institutionalMenu {
+    display: none;
+  }
+
+  .drawer--institutionalMenu  {
+    max-width: none !important;
+    top: 150px;
+    width: 100% !important;
+    z-index: 13;
+  }
+
+  .drawer--institutionalMenu .drawerHeader :global(.vtex-flex-layout-0-x-flexRow--main-header-mobile),
+  .drawer--institutionalMenu .drawerHeader :global(.vtex-flex-layout-0-x-flexRow--stripesRow) {
+    display: block;
+  }
+}
+
+.closeIconButton--filterDrawer::before,
+.closeIconButton--sortDrawer::before {
+  content: url("assets/svgs/closeMinicart.svg");
+  display: block;
+}
+
+.closeIconContainer--filterDrawer::before {
+  content: "Filter";
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 500;
+  font-family: Inter, sans-serif;
+  color: var(--blue-marine);
+  order: 1;
+}
+
+.closeIconContainer--filterDrawer::after {
+  content: url("assets/svgs/filterIconBlue.svg");
+  display: block;
+  margin-left: 8px;
+  order: 1;
+}
+
+@media (max-width: 64rem){
+  .closeIconButton--drawerMenuMobile {
+    margin-left: auto;
+  }
+
+  .drawer--drawerMenuMobile {
+    overflow: hidden;
+    background: #F8FAFC;
+  }
+
+  .closeIconButton--drawerMenuMobile::before {
+    content: url("assets/svgs/closeMinicart.svg")
+  }
+
+  .childrenContainer--drawerMenuMobile :global(.vtex-flex-layout-0-x-flexRow--footerMobileRow1){
+    padding: 32px 16px;
+  }
+
+  .drawerContent--drawerMenuMobile {
+    padding-top: 48px;
+  }
+
+  .closeIconContainer--drawerMenuMobile {
+    background: #F8FAFC;
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    height: 48px;
+    top: 0;
+  }
+
+  .openIconContainer--drawerMenuMobile {
+    padding: 0;
+    margin-right: 12px;
+  }
+
+}

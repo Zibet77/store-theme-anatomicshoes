@@ -1,0 +1,49 @@
+{
+  "flex-layout.row#bestSellerShelf": {
+    "children": [
+      "flex-layout.col#bestSellerShelfCol"
+    ],
+    "props": {
+      "blockClass": "rowBestSeller"
+    }
+  },
+  "flex-layout.col#bestSellerShelfCol": {
+    "children": [
+      "rich-text#shelfSectionTitle",
+      "list-context.product-list#bestSellers"
+    ]
+  },
+  "rich-text#shelfSectionTitle": {
+    "title": "Title",
+    "props": {
+      "text": "### Best Sellers",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "shelfSectionTitle"
+    }
+  },
+  "list-context.product-list#bestSellers": {
+    "title": "Colletion",
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#bestSellers"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#bestSellers": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": false,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "shelfContainer"
+    }
+  }
+}

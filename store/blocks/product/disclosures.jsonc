@@ -1,0 +1,107 @@
+{
+  "flex-layout.row#disclosuresProduct": {
+    "title": "Tab Session Mobile",
+    "children": [
+      "disclosure-layout-group#product"
+    ],
+    "props": {
+      "blockClass": "disclosuresProduct"
+    }
+  },
+  "disclosure-layout-group#product": {
+    "children":[
+      "disclosure-layout#details",
+      "disclosure-layout#shoeCare",
+      "disclosure-layout#payments"
+    ]
+  },
+  "disclosure-layout#details": {
+    "children": [
+      "disclosure-trigger#detailsTrigger",
+      "disclosure-content#detailsContent"
+    ]
+  },
+  "disclosure-trigger#detailsTrigger": {
+    "title": "Tab I Title",
+    "children": [
+      "rich-text#triggerDetails"
+    ],
+    "props": {
+      "blockClass": "disclosuresProductTrigger"
+    }
+  },
+  "disclosure-content#detailsContent": {
+    "title": "Tab I Content",
+    "children": [
+      "product-specifications"
+    ]
+  },
+  "disclosure-layout#shoeCare": {
+    "children": [
+      "disclosure-trigger#shoesTrigger",
+      "disclosure-content#shoesContent"
+    ]
+  },
+  "disclosure-trigger#shoesTrigger": {
+    "title": "Tab II Title",
+    "children": [
+      "rich-text#triggerShoeCare"
+    ],
+    "props": {
+      "blockClass": "disclosuresProductTrigger"
+    }
+  },
+  "disclosure-content#shoesContent": {
+    "title": "Tab II Content",
+
+    "children": [
+      "list-context.product-list#product"
+    ],
+    "props": {
+      "blockClass": "shoesContent"
+    }
+  },
+  "disclosure-layout#payments": {
+    "children": [
+      "disclosure-trigger#paymentsTrigger",
+      "disclosure-content#paymentsContent"
+    ]
+  },
+  "disclosure-trigger#paymentsTrigger": {
+    "title": "Tab III Title",
+    "children": [
+      "rich-text#triggerPayment"
+    ],
+    "props": {
+      "blockClass": ["disclosuresProductTrigger", "last-of-type"]
+    }
+  },
+  "disclosure-content#paymentsContent": {
+    "title": "Tab III Content",
+    "props": {
+      "blockClass": "paymentElement"
+    },
+    "children": [
+      "rich-text#product-specifications-payment",
+      "flex-layout.row#product-specifications-payment"
+    ]
+  },
+  "rich-text#triggerDetails": {
+    "props": {
+      "text": "Details",
+      "blockClass": "disclosureTrigger"
+    }
+  },
+  "rich-text#triggerShoeCare": {
+    "props": {
+      "text": "Shoe Care",
+      "blockClass": "disclosureTrigger"
+    }
+  },
+  "rich-text#triggerPayment": {
+    "props": {
+      "text": "Payment & Returns",
+      "blockClass": "disclosureTrigger"
+    }
+  }
+}

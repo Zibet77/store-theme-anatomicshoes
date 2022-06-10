@@ -1,0 +1,17 @@
+{
+  "flex-layout.row#productLeft": {
+    "title": "Product Left Block",
+    "children": [
+      "product-images"
+    ],
+    "props": {
+      "blockClass": "leftCol"
+    }
+  },
+  "product-images": {
+    "title": "Product Images",
+    "props": {
+      "showNavigationArrows": false
+    }
+  }
+}

@@ -1,0 +1,464 @@
+{
+  "store.custom#international-delivery": {
+    "blocks": [
+      "responsive-layout.desktop#international-delivery",
+      "responsive-layout.mobile#international-delivery"
+    ]
+  },
+  "responsive-layout.desktop#international-delivery": {
+    "title": "International Delivery Desktop",
+    "children": [
+      "flex-layout.row#content--international-delivery",
+      "experimental__visibility-layout#goodCompany--international-delivery"
+    ]
+  },
+  "responsive-layout.mobile#international-delivery": {
+    "title": "International Delivery Mobile",
+    "children": [
+      "flex-layout.row#institutional-breadcrumb--international-delivery",
+      "flex-layout.row#content-mobile--international-delivery",
+      "experimental__visibility-layout#goodCompany--international-delivery"
+    ]
+  },
+  "flex-layout.row#institutional-breadcrumb--international-delivery": {
+    "title": "Breadcrumb",
+    "children": ["rich-text#institutional-breadcrumb-left--international-delivery", "image#breadcrumb-icon--international-delivery", "rich-text#institutional-breadcrumb-right--international-delivery"],
+    "props": {
+      "blockClass": ["breadcrumb--international-delivery"]
+    }
+  },
+  "rich-text#institutional-breadcrumb-left--international-delivery": {
+    "title": "Pre Link Breadcrumb",
+    "props": {
+      "blockClass": ["storeLocatorBreadcrumb", "storeLocatorBreadcrumb--international-delivery"],
+      "text": "[Anatomic Shoes](/)",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  },
+  "image#breadcrumb-icon--international-delivery": {
+    "title": "Icone Breadcrumb",
+    "props": {
+      "src": "/arquivos/breadcrumb-icon.svg"
+    }
+  },
+  "rich-text#institutional-breadcrumb-right--international-delivery": {
+    "title": "Post Link Breadcrumb",
+    "props": {
+      "blockClass": ["storeLocatorBreadcrumb", "storeLocatorBreadcrumb--international-delivery"],
+      "text": "**Lorem Ipsum dolor**",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  },
+  "flex-layout.row#content--international-delivery": {
+    "children" : ["flex-layout.col#international-delivery-col"],
+    "props": {
+      "blockClass": "international-delivery-row"
+    }
+  },
+  "flex-layout.row#content-mobile--international-delivery": {
+    "children" : ["flex-layout.col#international-delivery-col-mobile"],
+    "props": {
+      "blockClass": "international-delivery-row"
+    }
+  },
+  "flex-layout.col#international-delivery-col": {
+    "children": [
+      "experimental__visibility-layout#top-bar--international-company",
+      "experimental__visibility-layout#banner-stack-desktop--international-delivery",
+      "experimental__visibility-layout#paragraph-stack--international-delivery",
+      "experimental__visibility-layout#rowBanners--international-delivery"
+    ],
+    "props": {
+      "blockClass": "international-delivery"
+    }
+  },
+  "flex-layout.col#international-delivery-col-mobile": {
+    "children": [
+      "experimental__visibility-layout#banner-stack-mobile--international-delivery",
+      "experimental__visibility-layout#paragraph-stack--international-delivery",
+      "experimental__visibility-layout#rowBanners--international-delivery"
+    ],
+    "props": {
+      "blockClass": "international-delivery"
+    }
+  },
+  "stack-layout#banner-stack-desktop--international-delivery": {
+    "title": "Menu Desktop",
+    "children": [
+      "image#banner-background-desktop--international-delivery",
+      "flex-layout.row#text-row--international-delivery"
+    ],
+    "props": {
+      "blockClass": "banner"
+    }
+  },
+  "stack-layout#banner-stack-mobile--international-delivery": {
+    "title": "Menu Mobile",
+    "children": [
+      "image#banner-background-mobile--international-delivery",
+      "flex-layout.row#text-row--international-delivery"
+    ],
+    "props": {
+      "blockClass": "banner"
+    }
+  },
+  "image#banner-background-mobile--international-delivery": {
+    "title": "Banner",
+    "props": {
+      "src": "/arquivos/international-delivery-banner-mobile.png",
+      "blockClass": "banner__image-international-delivery"
+    }
+  },
+  "image#banner-background-desktop--international-delivery": {
+    "title": "Banner",
+    "props": {
+      "src": "/arquivos/international-delivery-banner-desktop.png",
+      "blockClass": "banner__image"
+    }
+  },
+  "disclosure-layout#international-delivery-menu": {
+    "children": [
+      "disclosure-trigger#menu--international-delivery",
+      "disclosure-content#menu--international-delivery"
+    ]
+  },
+  "disclosure-trigger#menu--international-delivery": {
+    "children": [
+      "link.product#menu-primary--international-delivery"
+    ]
+  },
+  "disclosure-content#menu--international-delivery": {
+    "title": "Menu Dropdown",
+    "children": [
+      "link.product#menu-secundary-1--international-delivery",
+      "link.product#menu-secundary-2--international-delivery",
+      "link.product#menu-secundary-3--international-delivery",
+      "link.product#menu-secundary-4--international-delivery"
+    ]
+  },
+  "link.product#menu-primary--international-delivery": {
+    "title": "Anatomic DNA Title",
+    "props": {
+      "label": "Anatomic DNA",
+      "href": "/anatomicdna"
+
+    }
+  },
+  "link.product#menu-secundary-1--international-delivery": {
+    "title": "Technology Title",
+    "props": {
+      "label": "Technology",
+      "href": "/technology"
+    }
+  },
+  "link.product#menu-secundary-2--international-delivery": {
+    "title": "Materials Title",
+    "props": {
+      "label": "Materials",
+      "href": "/materials"
+    }
+  },
+  "link.product#menu-secundary-3--international-delivery": {
+    "title": "Leathers Title",
+    "props": {
+      "label": "Leathers",
+      "href": "/leathers"
+    }
+  },
+  "link.product#menu-secundary-4--international-delivery": {
+    "title": "Sustainability Title",
+    "props": {
+      "label": "Sustainability",
+      "href": "/sustainability"
+    }
+  },
+  "flex-layout.row#text-row--international-delivery": {
+    "children": [
+      "flex-layout.col#text-column--international-delivery"
+    ]
+  },
+  "flex-layout.col#text-column--international-delivery": {
+    "children": [
+      "rich-text#banner-text-large--international-delivery",
+      "rich-text#banner-text-medium--international-delivery"
+    ]
+  },
+  "rich-text#banner-text-large--international-delivery": {
+    "title": "Banner Title",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "International Delivery",
+      "blockClass": "banner__text--large-international-delivery"
+    }
+  },
+  "rich-text#banner-text-medium--international-delivery": {
+    "title": "Banner Subtitle",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "blockClass": "banner__text--medium-international-delivery"
+    }
+  },
+  "stack-layout#paragraph-stack--international-delivery": {
+    "children": [
+      "rich-text#title--international-delivery",
+      "rich-text#paragraph-text--international-delivery",
+      "rich-text#subtitle--international-delivery",
+      "flex-layout.row#block-table-image--international-delivery"
+    ],
+    "props": {
+      "blockClass": "paragraph"
+    }
+  },
+  "rich-text#title--international-delivery": {
+    "title": "Title Table",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Import Duties:",
+      "blockClass": "paragraph__title-international-delivery"
+    }
+  },
+  "rich-text#paragraph-text--international-delivery": {
+    "title": "Text Table",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "If your order is delivered outside the European Union you may be liable to import duties from customs. You will be responsible for paying all import duties and local taxes upon receipt of your order. We have no control over these charges, please contact your local customs office for further information.",
+      "blockClass": "paragraph__text-international-delivery"
+    }
+  },
+  "rich-text#subtitle--international-delivery": {
+    "title": "Subtitle Table",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "International delivery options",
+      "blockClass": "paragraph__subtitle-international-delivery"
+    }
+  },
+  "flex-layout.row#block-table-image--international-delivery": {
+    "children": ["anatomic-image#table-image--international-delivery"],
+    "props": {
+      "src": "/arquivos/block-banner.png",
+      "blockClass": "block__flex-image-table"
+    }
+  },
+  "anatomic-image#table-image--international-delivery": {
+    "title": "Size Table",
+    "props": {
+      "src": "/arquivos/sizes-table.png",
+      "blockClass": "block__image-table"
+    }
+  },
+  "flex-layout.row#rowBanners-international-delivery": {
+    "children": [
+      "stack-layout#block-left-international-delivery",
+      "stack-layout#block-paragraph-international-delivery"
+    ],
+    "props": {
+      "blockClass": "rowBanners"
+    }
+  },
+  "stack-layout#block-paragraph-international-delivery": {
+    "children": [
+      "rich-text#block-title-international-delivery",
+      "rich-text#block-text-international-delivery"
+    ],
+    "props": {
+      "blockClass": "block__paragraph-international-delivery"
+    }
+  },
+  "anatomic-image#block-image-international-delivery": {
+    "title": "Banner Lateral",
+    "props": {
+      "src": "assets/images/block-banner-international-delivery-desktop.png",
+      "blockClass": "block__image-international-delivery"
+    }
+  },
+  "rich-text#block-title-international-delivery": {
+    "title": "Title Lateral",
+    "props": {
+      "textAlignment":"LEFT",
+      "textPosition":"LEFT",
+      "text": "Tracking Number",
+      "blockClass": "block__title-international-delivery"
+    }
+  },
+  "rich-text#block-text-international-delivery": {
+    "title": "Text Lateral",
+    "props": {
+      "textAlignment":"LEFT",
+      "textPosition":"LEFT",
+      "text": "You will receive your tracking number after your parcel has been dispatched. To ensure you receive tracking information, please pay attention when providing your contact details at the checkout. <br/> Providing us with SMS or E-MAIL means you will receive delivery updates for your order. <br /><br /> ------------------------------------------------------------ <br /><br /> If your order is delivered to you and it is damaged, deficient of items shown on the delivery note or failing to match the items ordered by you, then such details must be notified by you to us within seven working days of receipt. <br/><br/> If we receive no such notification the customer will be deemed to have accepted the items as satisfactory. We cannot be held liable for any consequential loss caused by late delivery or failure to deliver by the appointed carrier.",
+      "blockClass": "block__text-international-delivery"
+    }
+  },
+  "stack-layout#block-left-international-delivery": {
+    "children": [
+      "anatomic-image#block-image-international-delivery",
+      "flex-layout.row#block-left-international-delivery"
+    ],
+    "props": {
+      "blockClass": "block-left__paragraph-international-delivery"
+    }
+  },
+  "flex-layout.row#block-left-international-delivery": {
+    "children": [
+      "rich-text#block-left-title-international-delivery",
+      "rich-text#block-left-text-international-delivery"
+    ],
+    "props": {
+      "blockClass": "row-block-left__paragraph-international-delivery"
+    }
+  },
+  "rich-text#block-left-title-international-delivery": {
+    "title": "Title Lateral Left",
+    "props": {
+      "textAlignment":"LEFT",
+      "textPosition":"LEFT",
+      "text": "Additional Information",
+      "blockClass": "block-left__title-international-delivery"
+    }
+  },
+  "rich-text#block-left-text-international-delivery": {
+    "title": "Text Lateral Left",
+    "props": {
+      "textAlignment":"LEFT",
+      "textPosition":"LEFT",
+      "text": "All our international deliveries are tracked and require a signature, the service we use is UPS and it should reach you in 3 to 7 workings days. All goods are subject to availability. We normally despatch your order within 48 hours if you place it before 2 PM, however, this may differ on festive periods or sale times. We will not despatch orders on weekends and UK Bank Holidays. We will send you an email to confirm despatch of your order.",
+      "blockClass": "block-left__text-international-delivery"
+    }
+  },
+
+  // Good Company International Delivery
+  "flex-layout.row#goodCompany--international-company": {
+    "children": [
+      "flex-layout.col#goodCompany--international-company"
+    ],
+    "props": {
+      "blockClass": ["goodCompany", "goodCompany--internationalDelivery"]
+    }
+  },
+  "flex-layout.col#goodCompany--international-company": {
+    "children": [
+      "rich-text#goodCompany--international-company",
+      "rich-text#goodCompanyParagraph--international-company"
+    ]
+  },
+  "rich-text#goodCompany--international-company": {
+    "title": "Good Company Title",
+    "props": {
+      "text": "In Good Company",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["pseudoBlue--international-company", "goodTitle", "goodTitle--international-company"]
+    }
+  },
+  "rich-text#goodCompanyParagraph--international-company": {
+    "title": "Good Company Text",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "We don't just make shoes, we make people feel more sociable, by producing comfortable shoes that give them the fit and = freedom they want.",
+      "blockClass": ["goodParagraph", "goodParagraph--international-company"]
+    }
+  },
+  "flex-layout.col#top-bar--international-company": {
+    "children": [
+      "rich-text#top-bar-title--international-company",
+      "flex-layout.row#options--international-company"
+    ],
+    "props": {
+      "blockClass": "topBar--international-company"
+    }
+  },
+  "rich-text#top-bar-title--international-company": {
+    "title": "Top Bar Title",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "20% Off Selected Styles",
+      "blockClass": "textTopBar--international-company"
+    }
+  },
+  "flex-layout.row#options--international-company": {
+    "children": [
+      "rich-text#women--international-company",
+      "rich-text#men--international-company"
+    ],
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "20% Off Selected Styles",
+      "blockClass": "linksRow--international-company"
+    }
+  },
+  "rich-text#women--international-company": {
+    "title": "Women's Link",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[Shop Women's](https://anatomicshoesqa.myvtex.com/women)",
+      "blockClass": "linkWomen--international-company"
+    }
+  },
+  "rich-text#men--international-company": {
+    "title": "Men's Link",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[Shop Men's](https://anatomicshoesqa.myvtex.com/men)",
+      "blockClass": "linkMen--international-company"
+    }
+  },
+
+  // Visibility Layout
+  "experimental__visibility-layout#top-bar--international-company": {
+    "title": "Top Bar Desktop Visible",
+    "children": ["flex-layout.col#top-bar--international-company"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#banner-stack-desktop--international-delivery": {
+    "title": "Menu Desktop Visible",
+    "children": ["stack-layout#banner-stack-desktop--international-delivery"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#banner-stack-mobile--international-delivery": {
+    "title": "Menu Mobile Visible",
+    "children": ["stack-layout#banner-stack-mobile--international-delivery"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#paragraph-stack--international-delivery": {
+    "title": "Box Table Visible",
+    "children": ["stack-layout#paragraph-stack--international-delivery"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#rowBanners--international-delivery": {
+    "title": "Box Lateral Banner",
+    "children": ["flex-layout.row#rowBanners-international-delivery"],
+    "props": {
+      "visible": true
+    }
+  },
+  "experimental__visibility-layout#goodCompany--international-delivery": {
+    "title": "Good Company",
+    "children": ["flex-layout.row#goodCompany--international-company"],
+    "props": {
+      "visible": true,
+      "blockClass": "goodCompany--international-delivery"
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "flex-layout.row#kidsSections": {
+    "title": "Kids Section",
+    "children": [
+      "flex-layout.row#kidsSection",
+      "stack-layout#kidsBanner"
+    ],
+    "props": {
+      "blockClass": ["grid", "col2", "shelfAndImage", "reverseMobile"],
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.row#kidsSection": {
+    "children": [
+      "flex-layout.col#kidsSection"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "kidsSectionLeftRow"
+    }
+  },
+  "flex-layout.col#kidsSection": {
+    "children": [
+      "rich-text#sectionTitle",
+      "rich-text#sectionSubTitle",
+      "slider-layout#sizeSlider",
+      "list-context.product-list#halfShelf"
+    ],
+    "props": {
+      "blockClass": "SectionsFlexCol",
+      "preventVerticalStretch": true
+    }
+  },
+  "stack-layout#kidsBanner": {
+    "children": [
+      "image#promoImageKids",
+      "flex-layout.row#viewOne"
+    ],
+    "props": {
+      "blockClass": "kidStackLayout"
+    }
+  },
+  "image#promoImageKids": {
+    "props": {
+      "src": "assets/images/kidsBanner.png",
+      "blockClass": "promoImage"
+    }
+  },
+  "flex-layout.row#viewOne": {
+    "children": [
+      "flex-layout.col#viewOne"
+    ]
+  },
+  "flex-layout.col#viewOne": {
+    "children": [
+      "rich-text#kidsTitle",
+      "rich-text#kidsSubTitle",
+      "link#shopBoys",
+      "link#shopGirls"
+    ]
+  },
+  "rich-text#kidsTitle": {
+    "props": {
+      "text": "Kids",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "kidsTitle"
+    }
+  },
+  "rich-text#kidsSubTitle": {
+    "props": {
+      "text": "shoes",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "kidsSubTitle"
+    }
+  },
+  "link#shopBoys": {
+    "props": {
+      "label": "shop boys",
+      "href": "/boys",
+      "blockClass": "kidsBoyLinkBtn"
+    }
+  },
+  "link#shopGirls": {
+    "props": {
+      "label": "shop girls",
+      "href": "/girls",
+      "blockClass": "kidsGirlLinkBtn"
+    }
+  },
+  //mobile
+  "flex-layout.row#kidsSectionsMobile": {
+    "title": "Kids Section",
+    "children": [
+      "list-context.product-list#halfShelf",
+      "rich-text#sectionTitle",
+      "slider-layout#sizeSlider",
+      "rich-text#sectionSubTitle",
+      "stack-layout#kidsBannerMobile"
+    ],
+    "props": {
+      "blockClass": ["grid", "col2", "shelfAndImage", "reverseMobile"],
+      "preventHorizontalStretch": true
+    }
+  },
+  "stack-layout#kidsBannerMobile": {
+    "children": [
+      "image#promoImageKidsMobile"
+      // "flex-layout.row#viewOneMobile"
+    ],
+    "props": {
+      "blockClass": "kidStackLayout"
+    }
+  },
+  "flex-layout.row#viewOneMobile": {
+    "children": [
+      "flex-layout.col#viewOneMobile"
+    ]
+  },
+  "flex-layout.col#viewOneMobile": {
+    "children": [
+      "link#shopBoys",
+      "link#shopGirls"
+    ]
+  },
+  "image#promoImageKidsMobile": {
+    "title": "Section Image",
+    "props": {
+      "src": "assets/images/kidsBannerMobile.png",
+      "blockClass": "promoImage"
+    }
+  }
+}

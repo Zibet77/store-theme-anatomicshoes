@@ -1,0 +1,1039 @@
+{
+  "store.custom#sizing-guide": {
+    "blocks": [
+      "responsive-layout.desktop#sizing-guide",
+      "responsive-layout.mobile#sizing-guide"
+    ]
+  },
+  "responsive-layout.mobile#sizing-guide": {
+      "title": "International Delivery Mobile",
+      "children": [
+        "flex-layout.row#institutional-breadcrumb--international-delivery",
+        "flex-layout.row#sizing-guide-content-mobile",
+        "experimental__visibility-layout#goodCompany"
+      ]
+  },
+
+  "flex-layout.row#sizing-guide-content-mobile": {
+      "children" : ["flex-layout.col#sizing-guide-col-mobile"],
+      "props": {
+        "blockClass": "international-delivery-row"
+      }
+  },
+
+  "flex-layout.col#sizing-guide-col-mobile": {
+      "children": [
+        "experimental__visibility-layout#sizing-guide-banner-stack-mobile",
+        "experimental__visibility-layout#sizing-guide-paragraph-stack",
+        "experimental__visibility-layout#sizing-guide-banners-mobile",
+        "experimental__visibility-layout#sizing-guide-tables-content-mobile"
+      ],
+      "props": {
+        "blockClass": "international-delivery"
+      }
+  },
+
+  // Banner Principal Mobile - Topo
+  "experimental__visibility-layout#sizing-guide-banner-stack-mobile": {
+      "title": "Menu Mobile Visible",
+      "children": ["stack-layout#sizing-guide-banner-stack-mobile"],
+      "props": {
+          "visible": true
+      }
+      },
+
+      "stack-layout#sizing-guide-banner-stack-mobile": {
+      "title": "Menu Mobile",
+      "children": [
+          "image#sizing-guide-banner-background-mobile",
+          "flex-layout.row#sizing-guide-text-row"
+      ],
+      "props": {
+          "blockClass": "banner"
+      }
+      },
+      "image#sizing-guide-banner-background-mobile": {
+      "title": "Banner",
+      "props": {
+          "src": "/arquivos/sizing-guide-banner-desktop-mobile.png",
+          "blockClass": "banner__image-international-delivery"
+      }
+  },
+  // Banner Principal Mobile - Topo - fim
+
+  // The Sizing Guide com Banners Mobile
+  "experimental__visibility-layout#sizing-guide-banners-mobile": {
+      "title": "Box Lateral Banner",
+      "children": ["flex-layout.row#sizing-guide-banners-mobile"],
+      "props": {
+          "visible": true
+      }
+  },
+
+  "flex-layout.row#sizing-guide-banners-mobile": {
+      "children": [
+        "flex-layout.col#sizing-guide-banners",
+        "stack-layout#sizing-guide-banners-mobile"
+      ],
+      "props": {
+        "blockClass": "rowBanners-mobile"
+      }
+  },
+  "stack-layout#sizing-guide-banners-mobile": {
+      "children": [
+          "image#sizing-guide-banners"
+      ],
+      "props": {
+          "blockClass": "block-left__paragraph-international-delivery"
+      }
+  },
+  "image#sizing-guide-banners-mobile": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-banner-mobile.png"
+      }
+  },
+  // The Sizing Guide com Banners Mobile - fim
+
+  // Tabelas mobile
+  "experimental__visibility-layout#sizing-guide-tables-content-mobile": {
+      "title": "Box Lateral Banner",
+      "children": [
+          "flex-layout.row#sizing-guide-table-mens-mobile",
+          // "flex-layout.row#sizing-guide-table-womens",
+          "flex-layout.row#sizing-guide-table-kids-mobile",
+          "flex-layout.row#sizing-guide-table-belts-mobile",
+          "flex-layout.row#sizing-guide-table-mens-fitting-guide-mobile",
+          "flex-layout.row#sizing-guide-table-womens-fitting-guide-mobile",
+          "flex-layout.row#sizing-guide-table-kids-fitting-guide-mobile"
+      ],
+      "props": {
+          "visible": true
+      }
+  },
+  "flex-layout.row#sizing-guide-table-mens-mobile": {
+      "children": [
+          "flex-layout.col#sizing-guide-table-mens-mobile"
+      ],
+      "props": {
+          "horizontalAlign": "center",
+          "blockClass": "table-content-mens"
+      }
+  },
+  "flex-layout.col#sizing-guide-table-mens-mobile": {
+      "children": [
+          "rich-text#sizing-guide-title-mens",
+          "flex-layout.row#sizing-guide-table-mens-mobile-images",
+          "rich-text#sizing-guide-text-mens"
+      ],
+      "props": {
+        "blockClass": "table-content"
+      }
+  },
+  "flex-layout.row#sizing-guide-table-mens-mobile-images": {
+      "children": [
+          "flex-layout.col#sizing-guide-table-mens-mobile-images"
+      ],
+      "props": {
+        "blockClass": "table-content-mobile-images-row"
+      }
+  },
+  "flex-layout.col#sizing-guide-table-mens-mobile-images": {
+      "children": [
+          "image#sizing-guide-table-mens-mobile-1",
+          "image#sizing-guide-table-mens-mobile-2",
+          "image#sizing-guide-table-mens-mobile-3"
+      ],
+      "props": {
+        "blockClass": "table-content-mobile-images"
+      }
+  },
+  "image#sizing-guide-table-mens-mobile-1": {
+      "title": "Banner Men's",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-mens-mobile-1.png",
+        "blockClass": "image-mens-mobile"
+      }
+  },
+  "image#sizing-guide-table-mens-mobile-2": {
+      "title": "Banner Men's",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-mens-mobile-2.png",
+        "blockClass": ["image-mens-mobile", "image-mens-mobile-image-midle"]
+      }
+  },
+  "image#sizing-guide-table-mens-mobile-3": {
+      "title": "Banner Men's",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-mens-mobile-3.png",
+        "blockClass": "image-mens-mobile"
+      }
+  },
+
+  "flex-layout.row#sizing-guide-table-kids-mobile": {
+      "children": [
+          "flex-layout.col#sizing-guide-table-kids-mobile"
+      ],
+      "props": {
+          "horizontalAlign": "center",
+          "blockClass": "table-content-mens"
+      }
+  },
+  "flex-layout.col#sizing-guide-table-kids-mobile": {
+      "children": [
+          "rich-text#sizing-guide-title-kids-mobile",
+          "image#sizing-guide-table-kids-header-mobile",
+          "image#sizing-guide-table-kids-mobile-1",
+          "image#sizing-guide-table-kids-mobile-2",
+          "image#sizing-guide-table-kids-mobile-3",
+          "image#sizing-guide-table-kids-mobile-4",
+          "image#sizing-guide-table-kids-mobile-5",
+          "image#sizing-guide-table-kids-mobile-6",
+          "image#sizing-guide-table-kids-mobile-7",
+          "image#sizing-guide-table-kids-mobile-8",
+          "image#sizing-guide-table-kids-mobile-9",
+          "image#sizing-guide-table-kids-mobile-10",
+          "image#sizing-guide-table-kids-mobile-11",
+          "image#sizing-guide-table-kids-mobile-12",
+          "image#sizing-guide-table-kids-mobile-13",
+          "image#sizing-guide-table-kids-mobile-14",
+          "image#sizing-guide-table-kids-mobile-15",
+          "image#sizing-guide-table-kids-mobile-16",
+          "image#sizing-guide-table-kids-mobile-17",
+          "image#sizing-guide-table-kids-mobile-18",
+          "rich-text#sizing-guide-text-kids-mobile"
+      ],
+      "props": {
+        "blockClass": "table-content",
+        "preventVerticalStretch": true,
+        "horizontalAlign": "center"
+      }
+  },
+  "rich-text#sizing-guide-title-kids-mobile": {
+      "title": "Text Table",
+      "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "Kid’s",
+          "blockClass": "paragraph__title-sizing-guide"
+      }
+  },
+  "image#sizing-guide-table-kids-header-mobile": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "assets/images/sizing-guide-table-kids-header-mobile.png",
+        "blockClass": "sizing-guide-table-kids"
+      }
+  },
+  "image#sizing-guide-table-kids-mobile-1": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-kids-mobile-1.png",
+        "blockClass": "sizing-guide-table-kids"
+      }
+  },
+  "image#sizing-guide-table-kids-mobile-2": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-kids-mobile-2.png",
+        "blockClass": "sizing-guide-table-kids"
+      }
+  },
+  "image#sizing-guide-table-kids-mobile-3": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-kids-mobile-3.png",
+        "blockClass": "sizing-guide-table-kids"
+      }
+  },
+  "image#sizing-guide-table-kids-mobile-4": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-kids-mobile-4.png",
+        "blockClass": "sizing-guide-table-kids"
+      }
+  },
+  "image#sizing-guide-table-kids-mobile-5": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-kids-mobile-5.png",
+        "blockClass": "sizing-guide-table-kids"
+      }
+  },
+  "image#sizing-guide-table-kids-mobile-6": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-kids-mobile-6.png",
+        "blockClass": "sizing-guide-table-kids"
+      }
+  },
+  "image#sizing-guide-table-kids-mobile-7": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-kids-mobile-7.png",
+        "blockClass": "sizing-guide-table-kids"
+      }
+  },
+  "image#sizing-guide-table-kids-mobile-8": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-kids-mobile-8.png",
+        "blockClass": "sizing-guide-table-kids"
+      }
+  },
+  "image#sizing-guide-table-kids-mobile-9": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-kids-mobile-9.png",
+        "blockClass": "sizing-guide-table-kids"
+      }
+  },
+  "image#sizing-guide-table-kids-mobile-10": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-kids-mobile-10.png",
+        "blockClass": "sizing-guide-table-kids"
+      }
+  },
+  "image#sizing-guide-table-kids-mobile-11": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-kids-mobile-11.png",
+        "blockClass": "sizing-guide-table-kids"
+      }
+  },
+  "image#sizing-guide-table-kids-mobile-12": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-kids-mobile-12.png",
+        "blockClass": "sizing-guide-table-kids"
+      }
+  },
+  "image#sizing-guide-table-kids-mobile-13": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-kids-mobile-13.png",
+        "blockClass": "sizing-guide-table-kids"
+      }
+  },
+  "image#sizing-guide-table-kids-mobile-14": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-kids-mobile-14.png",
+        "blockClass": "sizing-guide-table-kids"
+      }
+  },
+  "image#sizing-guide-table-kids-mobile-15": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-kids-mobile-15.png",
+        "blockClass": "sizing-guide-table-kids"
+      }
+  },
+  "image#sizing-guide-table-kids-mobile-16": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-kids-mobile-16.png",
+        "blockClass": "sizing-guide-table-kids"
+      }
+  },
+  "image#sizing-guide-table-kids-mobile-17": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-kids-mobile-17.png",
+        "blockClass": "sizing-guide-table-kids"
+      }
+  },
+  "image#sizing-guide-table-kids-mobile-18": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-kids-mobile-18.png",
+        "blockClass": "sizing-guide-table-kids"
+      }
+  },
+  "rich-text#sizing-guide-text-kids-mobile": {
+      "title": "Text Table",
+      "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "*This converson chart is approximate, sizes may vary depending on manufacturer. Please note that in the first two years of age there is a very rapid growth and your will need to measure your child's feet more regularly.",
+          "blockClass": "paragraph__text-sizing-guide"
+      }
+  },
+
+  "flex-layout.row#sizing-guide-table-belts-mobile": {
+      "children": [
+          "flex-layout.col#sizing-guide-table-belts-mobile"
+      ],
+      "props": {
+          "horizontalAlign": "center",
+          "blockClass": "table-content-mens"
+      }
+  },
+  "flex-layout.col#sizing-guide-table-belts-mobile": {
+      "children": [
+          "rich-text#sizing-guide-title-belts-mobile",
+          "image#sizing-guide-table-belts-mobile"
+      ],
+      "props": {
+        "blockClass": "table-content",
+        "preventVerticalStretch": true,
+        "horizontalAlign": "center"
+      }
+  },
+  "rich-text#sizing-guide-title-belts-mobile": {
+      "title": "Text Table",
+      "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "BELTS",
+          "blockClass": "paragraph__title-sizing-guide"
+      }
+  },
+  "image#sizing-guide-table-belts-mobile": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-belts-mobile.png"
+      }
+  },
+
+
+  "flex-layout.row#sizing-guide-table-mens-fitting-guide-mobile": {
+      "children": [
+          "flex-layout.col#sizing-guide-table-mens-fitting-guide-mobile"
+      ],
+      "props": {
+          "horizontalAlign": "center",
+          "blockClass": "table-content-mens"
+      }
+  },
+  "flex-layout.col#sizing-guide-table-mens-fitting-guide-mobile": {
+      "children": [
+          "rich-text#sizing-guide-title-mens-fitting-guide-mobile",
+          "image#sizing-guide-table-mens-fitting-guide-mobile",
+          "rich-text#sizing-guide-title-mens-fitting-guide-mobile-text"
+      ],
+      "props": {
+        "blockClass": "table-content",
+        "preventVerticalStretch": true,
+        "horizontalAlign": "center"
+      }
+  },
+  "rich-text#sizing-guide-title-mens-fitting-guide-mobile": {
+      "title": "Text Table",
+      "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "Men’s Fitting guide",
+          "blockClass": "paragraph__title-sizing-guide"
+      }
+  },
+  "image#sizing-guide-table-mens-fitting-guide-mobile": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-fitting-kids-mobile.png"
+      }
+  },
+  "rich-text#sizing-guide-title-mens-fitting-guide-mobile-text": {
+      "title": "Text Table",
+      "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "Please note that conversion tables are always only approximate.",
+          "blockClass": "paragraph__text-message-sizing-guide"
+      }
+  },
+
+
+  "flex-layout.row#sizing-guide-table-womens-fitting-guide-mobile": {
+      "children": [
+          "flex-layout.col#sizing-guide-table-womens-fitting-guide-mobile"
+      ],
+      "props": {
+          "horizontalAlign": "center",
+          "blockClass": "table-content-mens"
+      }
+  },
+  "flex-layout.col#sizing-guide-table-womens-fitting-guide-mobile": {
+      "children": [
+          "rich-text#sizing-guide-title-womens-fitting-guide-mobile",
+          "image#sizing-guide-table-womens-fitting-guide-mobile",
+          "rich-text#sizing-guide-title-womens-fitting-guide-mobile-text"
+      ],
+      "props": {
+        "blockClass": "table-content",
+        "preventVerticalStretch": true,
+        "horizontalAlign": "center"
+      }
+  },
+  "rich-text#sizing-guide-title-womens-fitting-guide-mobile": {
+      "title": "Text Table",
+      "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "Women’s Fitting guide",
+          "blockClass": "paragraph__title-sizing-guide"
+      }
+  },
+  "image#sizing-guide-table-womens-fitting-guide-mobile": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-fitting-womens-mobile.png"
+      }
+  },
+  "rich-text#sizing-guide-title-womens-fitting-guide-mobile-text": {
+      "title": "Text Table",
+      "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "Please note that conversion tables are always only approximate.",
+          "blockClass": "paragraph__text-message-sizing-guide"
+      }
+  },
+
+
+  "flex-layout.row#sizing-guide-table-kids-fitting-guide-mobile": {
+      "children": [
+          "flex-layout.col#sizing-guide-table-kids-fitting-guide-mobile"
+      ],
+      "props": {
+          "horizontalAlign": "center",
+          "blockClass": "table-content-mens"
+      }
+  },
+  "flex-layout.col#sizing-guide-table-kids-fitting-guide-mobile": {
+      "children": [
+          "rich-text#sizing-guide-table-kids-fitting-guide-mobile",
+          "image#sizing-guide-table-kids-fitting-guide-mobile",
+          "rich-text#sizing-guide-title-kids-fitting-guide-mobile-text"
+      ],
+      "props": {
+        "blockClass": "table-content",
+        "preventVerticalStretch": true,
+        "horizontalAlign": "center"
+      }
+  },
+  "rich-text#sizing-guide-table-kids-fitting-guide-mobile": {
+      "title": "Text Table",
+      "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "Kid’s Fitting guide",
+          "blockClass": "paragraph__title-sizing-guide"
+      }
+  },
+  "image#sizing-guide-table-kids-fitting-guide-mobile": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-fitting-kids-mobile.png"
+      }
+  },
+  "rich-text#sizing-guide-title-kids-fitting-guide-mobile-text": {
+      "title": "Text Table",
+      "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "Please note that conversion tables are always only approximate.",
+          "blockClass": "paragraph__text-message-sizing-guide"
+      }
+  },
+  // Tabelas mobile - fim
+
+
+  "responsive-layout.desktop#sizing-guide": {
+      "title": "International Delivery Desktop",
+      "children": [
+        "flex-layout.row#sizing-guide-content",
+        "experimental__visibility-layout#goodCompany"
+      ]
+  },
+  "flex-layout.row#sizing-guide-content": {
+      "children" : ["flex-layout.col#sizing-guide-col"],
+      "props": {
+        "blockClass": "sizing-guide-row"
+      }
+  },
+
+  "flex-layout.col#sizing-guide-col": {
+      "children": [
+        "experimental__visibility-layout#top-bar--sizing-guide",
+        "experimental__visibility-layout#sizing-guide-banner-desktop",
+        "experimental__visibility-layout#sizing-guide-paragraph-stack",
+        "experimental__visibility-layout#sizing-guide-banners",
+        "experimental__visibility-layout#sizing-guide-tables-content"
+      ],
+      "props": {
+        "blockClass": "sizing-guide"
+      }
+  },
+
+  // Visibility Layout
+  "experimental__visibility-layout#top-bar--sizing-guide": {
+      "title": "Top Bar Desktop Visible",
+      "children": ["flex-layout.col#top-bar--international-company"],
+      "props": {
+        "visible": true
+      }
+  },
+
+  // Banner Principal - Topo
+  "experimental__visibility-layout#sizing-guide-banner-desktop": {
+      "title": "Menu Desktop Visible",
+      "children": ["stack-layout#sizing-guide-banner-stack-desktop"],
+      "props": {
+          "visible": true
+      }
+  },
+  "stack-layout#sizing-guide-banner-stack-desktop": {
+      "title": "Menu Desktop",
+      "children": [
+        "image#sizing-guide-banner-background-desktop",
+        "flex-layout.row#sizing-guide-text-row"
+      ],
+      "props": {
+        "blockClass": "banner"
+      }
+  },
+  "image#sizing-guide-banner-background-desktop": {
+      "title": "Banner",
+      "props": {
+        "src": "/arquivos/sizing-guide-banner-desktop.png",
+        "blockClass": "banner__image"
+      }
+  },
+  "flex-layout.row#sizing-guide-text-row": {
+      "children": [
+        "flex-layout.col#sizing-guide-text-column"
+      ]
+    },
+    "flex-layout.col#sizing-guide-text-column": {
+      "children": [
+        "rich-text#sizing-guide-banner-text-large",
+        "rich-text#sizing-guide-banner-text-medium"
+      ]
+    },
+    "rich-text#sizing-guide-banner-text-large": {
+      "title": "Banner Title",
+      "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "text": "The Sizing Guide",
+        "blockClass": "banner__text--large-sizing-guide"
+      }
+    },
+    "rich-text#sizing-guide-banner-text-medium": {
+      "title": "Banner Subtitle",
+      "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "blockClass": "banner__text--medium-sizing-guide"
+      }
+    },
+  // Banner Principal - Topo - fim
+
+  // Primeiro Box de texto
+  "experimental__visibility-layout#sizing-guide-paragraph-stack": {
+      "title": "Box Table Visible",
+      "children": ["flex-layout.row#sizing-guide-paragraph"],
+      "props": {
+          "visible": true
+      }
+  },
+  "flex-layout.row#sizing-guide-paragraph": {
+      "children": [
+        "flex-layout.col#sizing-guide-banners-paragraph"
+      ],
+      "props": {
+          "blockClass": "row-paragraph"
+      }
+  },
+  "flex-layout.col#sizing-guide-banners-paragraph": {
+      "children": [
+          "rich-text#sizing-guide-title",
+          "rich-text#sizing-guide-paragraph-text"
+      ],
+      "props": {
+          "horizontalAlign": "center",
+          "verticalAlign": "middle"
+      }
+  },
+  "rich-text#sizing-guide-title": {
+      "title": "Title Table",
+      "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "ENSURING THE PERFECT FIT",
+          "blockClass": "paragraph__title-sizing-guide"
+      }
+  },
+  "rich-text#sizing-guide-paragraph-text": {
+      "title": "Text Table",
+      "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "Use our international sizing chart to convert your shoe size between UK, European and US sizing. Our men's shoes and boots come in European sizes with most styles in sizes 40 to 46 and others in 39 to 50.",
+          "blockClass": "paragraph__text-sizing-guide"
+      }
+  },
+  // Primeiro Box de texto
+
+  // The Sizing Guide com Banners
+  "experimental__visibility-layout#sizing-guide-banners": {
+      "title": "Box Lateral Banner",
+      "children": ["flex-layout.row#sizing-guide-banners"],
+      "props": {
+          "visible": true
+      }
+  },
+
+  "flex-layout.row#sizing-guide-banners": {
+      "children": [
+        "flex-layout.col#sizing-guide-banners",
+        "stack-layout#sizing-guide-banners"
+      ],
+      "props": {
+        "blockClass": "rowBanners"
+      }
+  },
+  "flex-layout.col#sizing-guide-banners": {
+      "children": [
+          "rich-text#sizing-guide-banners-title",
+          "rich-text#sizing-guide-banners-text"
+      ],
+      "props": {
+        "blockClass": "sizing-guide-banners-table-content",
+        "preventVerticalStretch": true,
+        "horizontalAlign": "center",
+        "verticalAlign": "middle"
+      }
+  },
+
+  "rich-text#sizing-guide-banners-title": {
+      "title": "Title Lateral Left",
+      "props": {
+          "textAlignment":"LEFT",
+          "textPosition":"LEFT",
+          "text": "The Sizing Guide",
+          "blockClass": ["pseudoBlue--sizing-guide", "goodTitle", "goodTitle--international-company"]
+      }
+  },
+  "rich-text#sizing-guide-banners-text": {
+      "title": "Text Lateral Left",
+      "props": {
+          "textAlignment":"LEFT",
+          "textPosition":"LEFT",
+          "text": "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "blockClass": "block-left__text-sizing-guide"
+      }
+  },
+  "stack-layout#sizing-guide-banners": {
+      "children": [
+          "image#sizing-guide-banners"
+      ],
+      "props": {
+          "blockClass": "block-left__paragraph-international-delivery"
+      }
+  },
+  "image#sizing-guide-banners": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-banner.png"
+      }
+  },
+  // The Sizing Guide com Banners - fim
+
+  // Tabelas
+  "experimental__visibility-layout#sizing-guide-tables-content": {
+      "title": "Box Lateral Banner",
+      "children": [
+          "flex-layout.row#sizing-guide-table-mens",
+          "flex-layout.row#sizing-guide-table-womens",
+          "flex-layout.row#sizing-guide-table-kids",
+          "flex-layout.row#sizing-guide-table-belts",
+          "flex-layout.row#sizing-guide-table-mens-fitting-guide",
+          "flex-layout.row#sizing-guide-table-womens-fitting-guide",
+          "flex-layout.row#sizing-guide-table-kids-fitting-guide"
+      ],
+      "props": {
+          "visible": true
+      }
+  },
+  "flex-layout.row#sizing-guide-table-mens": {
+      "children": [
+          "flex-layout.col#sizing-guide-table-mens"
+      ],
+      "props": {
+          "horizontalAlign": "center",
+          "blockClass": "table-content-mens"
+      }
+  },
+  "flex-layout.col#sizing-guide-table-mens": {
+      "children": [
+          "rich-text#sizing-guide-title-mens",
+          "image#sizing-guide-table-mens",
+          "rich-text#sizing-guide-text-mens"
+      ],
+      "props": {
+        "blockClass": "table-content",
+        "preventVerticalStretch": true
+      }
+  },
+  "rich-text#sizing-guide-title-mens": {
+      "title": "Text Table",
+      "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "Men’s",
+          "blockClass": "paragraph__title-sizing-guide"
+      }
+  },
+  "image#sizing-guide-table-mens": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-mens.png"
+      }
+  },
+  "rich-text#sizing-guide-text-mens": {
+      "title": "Text Table",
+      "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "If you’re about to purchase your first pair of Anatomic & Co. shoes, we recommend you select your normal sizing but if you are in-between sizes, we recommend ordering the smaller size.",
+          "blockClass": "paragraph__text-sizing-guide"
+      }
+  },
+
+
+  "flex-layout.row#sizing-guide-table-womens": {
+      "children": [
+          "flex-layout.col#sizing-guide-table-womens"
+      ],
+      "props": {
+          "horizontalAlign": "center",
+          "blockClass": "table-content-mens"
+      }
+  },
+  "flex-layout.col#sizing-guide-table-womens": {
+      "children": [
+          "rich-text#sizing-guide-title-womens",
+          "image#sizing-guide-table-womens"
+      ],
+      "props": {
+        "blockClass": "table-content",
+        "preventVerticalStretch": true
+      }
+  },
+  "rich-text#sizing-guide-title-womens": {
+      "title": "Text Table",
+      "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "Women’s",
+          "blockClass": "paragraph__title-sizing-guide"
+      }
+  },
+  "image#sizing-guide-table-womens": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-womens.png"
+      }
+  },
+
+
+  "flex-layout.row#sizing-guide-table-kids": {
+      "children": [
+          "flex-layout.col#sizing-guide-table-kids"
+      ],
+      "props": {
+          "horizontalAlign": "center",
+          "blockClass": "table-content-mens"
+      }
+  },
+  "flex-layout.col#sizing-guide-table-kids": {
+      "children": [
+          "rich-text#sizing-guide-title-kids",
+          "image#sizing-guide-table-kids-header",
+          "image#sizing-guide-table-kids",
+          "rich-text#sizing-guide-text-kids"
+      ],
+      "props": {
+        "blockClass": "table-content",
+        "preventVerticalStretch": true
+      }
+  },
+  "rich-text#sizing-guide-title-kids": {
+      "title": "Text Table",
+      "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "Kid’s",
+          "blockClass": "paragraph__title-sizing-guide"
+      }
+  },
+  "image#sizing-guide-table-kids-header": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-kids-header.png"
+      }
+  },
+  "image#sizing-guide-table-kids": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-kids.png"
+      }
+  },
+  "rich-text#sizing-guide-text-kids": {
+      "title": "Text Table",
+      "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "*This converson chart is approximate, sizes may vary depending on manufacturer. Please note that in the first two years of age there is a very rapid growth and your will need to measure your child's feet more regularly.",
+          "blockClass": "paragraph__text-sizing-guide"
+      }
+  },
+
+
+  "flex-layout.row#sizing-guide-table-belts": {
+      "children": [
+          "flex-layout.col#sizing-guide-table-belts"
+      ],
+      "props": {
+          "horizontalAlign": "center",
+          "blockClass": "table-content-mens"
+      }
+  },
+  "flex-layout.col#sizing-guide-table-belts": {
+      "children": [
+          "rich-text#sizing-guide-title-belts",
+          "image#sizing-guide-table-belts"
+      ],
+      "props": {
+        "blockClass": "table-content",
+        "preventVerticalStretch": true
+      }
+  },
+  "rich-text#sizing-guide-title-belts": {
+      "title": "Text Table",
+      "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "BELTS",
+          "blockClass": "paragraph__title-sizing-guide"
+      }
+  },
+  "image#sizing-guide-table-belts": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-belts.png"
+      }
+  },
+
+
+  "flex-layout.row#sizing-guide-table-mens-fitting-guide": {
+      "children": [
+          "flex-layout.col#sizing-guide-table-mens-fitting-guide"
+      ],
+      "props": {
+          "horizontalAlign": "center",
+          "blockClass": "table-content-mens"
+      }
+  },
+  "flex-layout.col#sizing-guide-table-mens-fitting-guide": {
+      "children": [
+          "rich-text#sizing-guide-title-mens-fitting-guide",
+          "image#sizing-guide-table-mens-fitting-guide"
+      ],
+      "props": {
+        "blockClass": "table-content",
+        "preventVerticalStretch": true
+      }
+  },
+  "rich-text#sizing-guide-title-mens-fitting-guide": {
+      "title": "Text Table",
+      "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "Men’s Fitting guide",
+          "blockClass": "paragraph__title-sizing-guide"
+      }
+  },
+  "image#sizing-guide-table-mens-fitting-guide": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-fitting-kids.png"
+      }
+  },
+
+
+  "flex-layout.row#sizing-guide-table-womens-fitting-guide": {
+      "children": [
+          "flex-layout.col#sizing-guide-table-womens-fitting-guide"
+      ],
+      "props": {
+          "horizontalAlign": "center",
+          "blockClass": "table-content-mens"
+      }
+  },
+  "flex-layout.col#sizing-guide-table-womens-fitting-guide": {
+      "children": [
+          "rich-text#sizing-guide-title-womens-fitting-guide",
+          "image#sizing-guide-table-womens-fitting-guide"
+      ],
+      "props": {
+        "blockClass": "table-content",
+        "preventVerticalStretch": true
+      }
+  },
+  "rich-text#sizing-guide-title-womens-fitting-guide": {
+      "title": "Text Table",
+      "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "Women’s Fitting guide",
+          "blockClass": "paragraph__title-sizing-guide"
+      }
+  },
+  "image#sizing-guide-table-womens-fitting-guide": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-fitting-womens.png"
+      }
+  },
+
+
+  "flex-layout.row#sizing-guide-table-kids-fitting-guide": {
+      "children": [
+          "flex-layout.col#sizing-guide-table-kids-fitting-guide"
+      ],
+      "props": {
+          "horizontalAlign": "center",
+          "blockClass": "table-content-mens"
+      }
+  },
+  "flex-layout.col#sizing-guide-table-kids-fitting-guide": {
+      "children": [
+          "rich-text#sizing-guide-table-kids-fitting-guide",
+          "image#sizing-guide-table-kids-fitting-guide"
+      ],
+      "props": {
+        "blockClass": "table-content",
+        "preventVerticalStretch": true
+      }
+  },
+  "rich-text#sizing-guide-table-kids-fitting-guide": {
+      "title": "Text Table",
+      "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "Kid’s Fitting guide",
+          "blockClass": "paragraph__title-sizing-guide"
+      }
+  },
+  "image#sizing-guide-table-kids-fitting-guide": {
+      "title": "Icone Breadcrumb",
+      "props": {
+        "src": "/arquivos/sizing-guide-table-fitting-kids.png"
+      }
+  }
+}

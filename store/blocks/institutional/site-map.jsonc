@@ -1,0 +1,351 @@
+{
+  "store.custom#site-map": {
+    "blocks": [
+      "flex-layout.row#sitemap-wrapper"
+    ]
+  },
+  "flex-layout.row#sitemap-wrapper":{
+    "children": [
+      "flex-layout.col#sitemap-content"
+    ]
+  },
+  "flex-layout.col#sitemap-content":{
+    "children": [
+      "flex-layout.row#sitemap-breadcrumb",
+      "flex-layout.row#sitemap-title",
+      "flex-layout.col#first-section",
+      "flex-layout.col#second-section",
+      "flex-layout.col#third-section",
+      "flex-layout.col#fourth-section",
+      "flex-layout.col#last-section"
+    ]
+  },
+  "flex-layout.row#sitemap-breadcrumb":{
+    "children": [
+      "link#sitemap-breadcrumb",
+      "image#chevron-right",
+      "link#sitemap-second-breadcrumb"
+    ],
+    "props":{
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "blockClass": "breadcrumb"
+    }
+  },
+  "link#sitemap-breadcrumb":{
+    "props": {
+      "href": "/",
+      "label": "Anatomic Shoes",
+      "blockClass": "breadcrumb-home"
+    }
+  },
+  "image#chevron-right":{
+    "props": {
+      "src": "assets/images/chevron-right.png"
+    }
+  },
+  "link#sitemap-second-breadcrumb":{
+    "props": {
+      "href": "/sitemap",
+      "label": "Site Map",
+      "blockClass": "breadcrumb"
+    }
+  },
+  "flex-layout.row#sitemap-title": {
+    "children": [
+      "rich-text#sitemap-title",
+      "rich-text#sitemap-title-second"
+    ],
+    "props":{
+      "preventHorizontalStretch": true,
+      "blockClass": ["sitemap-title", "sitemap-section", "sitemap-first-section"]
+    }
+  },
+  "rich-text#sitemap-title":{
+    "props":{
+      "text": "Site",
+      "blockClass": "sitemap-title"
+    }
+  },
+  "rich-text#sitemap-title-second":{
+    "props":{
+      "text": "Map",
+      "blockClass": ["sitemap-title","square-background"]
+    }
+  },
+  "flex-layout.col#first-section":{
+    "children": [
+      "rich-text#category-title",
+      "flex-layout.row#mens-links-wrapper"
+    ],
+    "props":{
+      "blockClass": "sitemap-section"
+    }
+  },
+
+  "flex-layout.row#mens-links-wrapper":{
+    "children": [
+      "flex-layout.col#first-men-links",
+      "flex-layout.col#second-men-links",
+      "flex-layout.col#third-men-links",
+      "flex-layout.col#fourth-men-links"
+    ],
+    "props":{
+      "blockClass": "sitemap-links-wrapper",
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.col#first-men-links":{
+    "children": [
+      "rich-text#links-title",
+      "menu#links"
+    ]
+  },
+  "flex-layout.col#second-men-links":{
+    "children": [
+      "rich-text#links-title",
+      "menu#links"
+    ]
+  },
+  "flex-layout.col#third-men-links":{
+    "children": [
+      "rich-text#links-title",
+      "menu#links"
+    ]
+  },
+  "flex-layout.col#fourth-men-links":{
+    "children": [
+      "rich-text#links-title",
+      "menu#links"
+    ]
+  },
+  "flex-layout.col#second-section":{
+    "children": [
+      "rich-text#category-title",
+      "flex-layout.row#womens-links-wrapper"
+    ],
+    "props":{
+      "blockClass": "sitemap-section"
+    }
+  },
+  "flex-layout.row#womens-links-wrapper":{
+    "children": [
+      "flex-layout.col#first-women-links",
+      "flex-layout.col#second-women-links",
+      "flex-layout.col#third-women-links"
+    ],
+    "props":{
+      "blockClass": "sitemap-links-wrapper",
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.col#first-women-links":{
+    "children": [
+      "rich-text#links-title",
+      "menu#links"
+    ]
+  },
+  "flex-layout.col#second-women-links":{
+    "children": [
+      "rich-text#links-title",
+      "menu#links"
+    ]
+  },
+  "flex-layout.col#third-women-links":{
+    "children": [
+      "rich-text#links-title",
+      "menu#links"
+    ]
+  },
+  "flex-layout.col#third-section":{
+    "children": [
+      "rich-text#category-title",
+      "flex-layout.row#kids-links-wrapper"
+    ],
+    "props":{
+      "blockClass": "sitemap-section"
+    }
+  },
+  "flex-layout.row#kids-links-wrapper":{
+    "children": [
+      "flex-layout.col#first-kid-links",
+      "flex-layout.col#second-kid-links",
+      "flex-layout.col#third-kid-links",
+      "flex-layout.col#fourth-kid-links"
+    ],
+    "props":{
+      "blockClass": "sitemap-links-wrapper",
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.col#first-kid-links":{
+    "children": [
+      "rich-text#links-title",
+      "menu#links"
+    ],
+    "props":{
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#second-kid-links":{
+    "children": [
+      "rich-text#links-title",
+      "menu#links"
+    ],
+    "props":{
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#third-kid-links":{
+    "children": [
+      "rich-text#links-title",
+      "menu#links"
+    ],
+    "props":{
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#fourth-kid-links":{
+    "children": [
+      "rich-text#links-title",
+      "menu#links",
+      "rich-text#links-second-title",
+      "menu#links-second"
+    ],
+    "props":{
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#fourth-section":{
+    "children": [
+      "flex-layout.row#accessories-links-wrapper"
+    ],
+    "props":{
+      "blockClass": "sitemap-section"
+    }
+  },
+  "flex-layout.row#accessories-links-wrapper":{
+    "children": [
+      "flex-layout.col#first-accessories-links",
+      "flex-layout.col#second-accessories-links"
+    ],
+    "props":{
+      "blockClass": "sitemap-links-wrapper",
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.col#first-accessories-links":{
+    "children": [
+      "rich-text#links-title",
+      "menu#links"
+    ],
+    "props":{
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#second-accessories-links":{
+    "children": [
+      "rich-text#links-title",
+      "menu#links"
+    ],
+    "props":{
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#category-title":{
+    "props":{
+      "text": "Category Title",
+      "blockClass": "sitemap-category-title"
+    }
+  },
+  "rich-text#links-title":{
+    "props":{
+      "text": "Link Title",
+      "blockClass": "sitemap-link-title"
+    }
+  },
+  "rich-text#links-second-title":{
+    "props":{
+      "text": "Link Title",
+      "blockClass": "sitemap-link-title"
+    }
+  },
+
+  "menu#links": {
+    "props": {
+      "blockClass": "sitemap-menu-item",
+      "items": [
+        {
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "link",
+            "text": "Customizable link"
+          }
+        }
+      ]
+    }
+  },
+  "menu#links-second": {
+    "props": {
+      "blockClass": "sitemap-menu-item",
+      "items": [
+        {
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "link",
+            "text": "Customizable link"
+          }
+        }
+      ]
+    }
+  },
+  "flex-layout.col#last-section":{
+    "children": [
+      "flex-layout.row#last-section-title",
+      "rich-text#last-section-text"
+    ],
+    "props":{
+      "blockClass": "sitemap-section"
+    }
+  },
+  "rich-text#last-section-text":{
+    "props":{
+      "text": "We don't just make shoes, we make people feel more sociable, by producing comfortable shoes that give them the fit and = freedom they want.",
+      "blockClass": "sitemap-last-section-text"
+    }
+  },
+  "flex-layout.row#last-section-title": {
+    "children": [
+      "rich-text#last-section-title",
+      "rich-text#last-section-title-second"
+    ],
+    "props":{
+      "preventHorizontalStretch": true,
+      "blockClass": "sitemap-title"
+    }
+  },
+  "rich-text#last-section-title":{
+    "props":{
+      "text": "In",
+      "blockClass": "sitemap-title"
+    }
+  },
+  "rich-text#last-section-title-second":{
+    "props":{
+      "text": "Good Company",
+      "blockClass": ["sitemap-title","square-background"]
+    }
+  }
+}

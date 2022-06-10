@@ -1,0 +1,73 @@
+{
+  "header-layout.mobile": {
+    "title": "Header Mobile",
+    "children": [
+      "sticky-layout#mobile",
+      "link#whatsapp"
+    ]
+  },
+  "sticky-layout#mobile": {
+    "children": [
+      "flex-layout.row#mobile",
+      "flex-layout.row#stripes"
+    ],
+    "props": {
+      "blockClass": "mobileStickyHeader"
+    }
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      "drawer#menuMobile",
+      "logo",
+      "disclosure-layout#searchBarMobile",
+      "login",
+      "link#location",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "disclosure-layout#searchBarMobile": {
+    "title": "Search Bar",
+    "children": [
+      "disclosure-trigger#searchIcon",
+      "disclosure-content#searchBar"
+    ],
+    "props": {
+      "blockClass": "searchBarMobileContainer"
+    }
+  },
+  "disclosure-trigger#searchIcon": {
+    "children": [
+      "image#searchIcon"
+    ],
+    "props": {
+      "blockClass": "searchBarMobileTrigger"
+    }
+  },
+  "image#searchIcon": {
+    "title": "Search Bar Icon",
+    "props": {
+      "src": "assets/svgs/searchIcon.svg"
+    }
+  },
+  "disclosure-content#searchBar": {
+    "children": [
+      "search-bar#mobile"
+    ],
+    "props": {
+      "blockClass": "searchBarMobileContent"
+    }
+  },
+  "search-bar#mobile": {
+    "title": "Search Bar Text Area",
+    "blocks": ["autocomplete-result-list.v2#default"],
+    "props": {
+      "placeholder": "Looking for something?"
+    }
+  }
+}

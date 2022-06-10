@@ -1,0 +1,101 @@
+{
+  "form#contact": {
+    "props": {
+      "entity": "CF",
+      "schema": "Anatomic"
+    },
+    "children": [
+      "rich-text#form-title-contact",
+      "rich-text#form-title-subtitle-contact",
+      "form-input.text#name-contact",
+      "form-input.text#telephone-contact",
+      "form-input.text#email-contact",
+      "rich-text#form-enquiry-details",
+      "form-input.text#order-number",
+      "flex-layout.row#contact-form-message",
+      "form-submit#contact"
+    ],
+    "blocks": ["form-success#contact"]
+  },
+  "form-success#contact": {
+    "children": [
+      "rich-text#successSubmit-contact"
+    ]
+  },
+  "rich-text#successSubmit-contact": {
+    "props": {
+      "text": "## Thank you\nSoon, we will contact you.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["formSuccess", "pseudoBlue"]
+    }
+  },
+  "rich-text#form-title-contact": {
+    "props": {
+      "blockClass": ["pseudoBlue", "contactFormTitle"],
+      "text": "Contact Information",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#form-title-subtitle-contact": {
+    "props": {
+      "blockClass": ["contactFormSubtitle"],
+      "text": "All fields marked with an asterisk (*) are required",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "form-input.text#name-contact": {
+    "props": {
+      "pointer": "#/properties/name",
+      "placeholder": "Full Name*"
+    }
+  },
+  "form-input.text#telephone-contact": {
+    "props": {
+      "pointer": "#/properties/telephone",
+      "placeholder": "Telephone*"
+    }
+  },
+  "form-input.text#email-contact": {
+    "props": {
+      "pointer": "#/properties/email",
+      "placeholder": "E-mail*"
+    }
+  },
+  "rich-text#form-enquiry-details": {
+    "props": {
+      "blockClass": ["formSubtitle", "enquiryDetails"],
+      "text": "ENQUIRY DETAILS",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "form-input.text#order-number": {
+    "props": {
+      "pointer": "#/properties/order",
+      "placeholder": "Order number (if applicable)"
+    }
+  },
+
+  "flex-layout.row#contact-form-message": {
+    "children": [
+      "form-input.text#message"
+    ],
+    "props": {
+      "blockClass": "formMessageRow"
+    }
+  },
+  "form-input.text#message": {
+    "props": {
+      "pointer": "#/properties/message",
+      "placeholder": "Message *"
+    }
+  },
+  "form-submit#contact": {
+    "props": {
+      "label": "Submit"
+    }
+  }
+}

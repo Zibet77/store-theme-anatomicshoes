@@ -1,0 +1,98 @@
+{
+  "vtex.menu@2.x:submenu#institucional": {
+    "children": [
+      "flex-layout.row#submenuInstitutional"
+    ],
+    "props": {
+      "isOpen": true,
+      "blockClass": "submenuInstitutional"
+    }
+  },
+  "flex-layout.row#submenuInstitutional": {
+    "children": [
+      "link#institutionalLink1",
+      "link#institutionalLink2",
+      "link#institutionalLink3",
+      "link#institutionalLink4",
+      "link#institutionalLink5",
+      "link#institutionalLink6",
+      "rich-text#hashText"
+    ],
+    "props": {
+      "blockClass": "submenuInstitutionalRow",
+      "preventHorizontalStretch": true
+    }
+  },
+  "link#institutionalLink1": {
+    "children": [
+      "image#institutionalThumb"
+    ],
+    "props": {
+      "label": "Anatomic DNA",
+      "href": "/dna",
+      "blockClass": "institutionalThumbLink"
+    }
+  },
+  "link#institutionalLink2": {
+    "children": [
+      "image#institutionalThumb"
+    ],
+    "props": {
+      "label": "Anatomic DNA",
+      "href": "/dna",
+      "blockClass": "institutionalThumbLink"
+    }
+  },
+  "link#institutionalLink3": {
+    "children": [
+      "image#institutionalThumb"
+    ],
+    "props": {
+      "label": "Anatomic DNA",
+      "href": "/dna",
+      "blockClass": "institutionalThumbLink"
+    }
+  },
+  "link#institutionalLink4": {
+    "children": [
+      "image#institutionalThumb"
+    ],
+    "props": {
+      "label": "Anatomic DNA",
+      "href": "/dna",
+      "blockClass": "institutionalThumbLink"
+    }
+  },
+  "link#institutionalLink5": {
+    "children": [
+      "image#institutionalThumb"
+    ],
+    "props": {
+      "label": "Anatomic DNA",
+      "href": "/dna",
+      "blockClass": "institutionalThumbLink"
+    }
+  },
+    "link#institutionalLink6": {
+      "children": [
+        "image#institutionalThumb"
+      ],
+      "props": {
+        "label": "Anatomic DNA",
+        "href": "/dna",
+        "blockClass": "institutionalThumbLink"
+      }
+    },
+  "image#institutionalThumb": {
+    "props": {
+      "src": "assets/images/bannerInstitutional.png",
+      "blockClass": "institutionalThumb"
+    }
+  },
+  "rich-text#hashText": {
+    "props": {
+      "text": "#ComfortAwaits",
+      "blockClass": "hashText"
+    }
+  }
+}

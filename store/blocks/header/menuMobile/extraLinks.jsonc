@@ -1,0 +1,41 @@
+{
+  "vtex.menu@2.x:menu#extraLinks": {
+    "props": {
+      "blockClass": "menuExtraLinks",
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#editorial",
+      "menu-item#outlet"
+    ]
+  },
+  "menu-item#editorial": {
+    "props": {
+      "id": "menu-extra-links",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Editorial",
+        "text": "Editorial"
+      }
+    }
+  },
+  "menu-item#outlet": {
+    "props": {
+      "id": "menu-extra-links",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Outlet",
+        "text": "Outlet"
+      },
+      "blockClass": "outlet"
+    }
+  }
+}

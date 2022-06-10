@@ -1,0 +1,23 @@
+{
+  "list-context.product-list#searchSingleShelf": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#singleShelf"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "maxItems": 1
+    }
+  },
+  "slider-layout#singleShelf": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "searchSingleShelf"
+    }
+  }
+}

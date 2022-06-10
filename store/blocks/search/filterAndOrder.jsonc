@@ -1,0 +1,41 @@
+{
+  "flex-layout.row#filterAndOrder": {
+    "children": [
+      "disclosure-layout-group#searchPage"
+    ]
+  },
+  "disclosure-layout-group#searchPage": {
+    "children": [
+      "disclosure-layout#filter"
+      // "disclosure-layout#orderBy"
+    ]
+  },
+  "disclosure-layout#filter": {
+    "children": [
+      "disclosure-trigger#filter",
+      "disclosure-content#filter"
+    ]
+  },
+  "disclosure-content#filter": {
+    "children": [
+      "flex-layout.col#filter"
+    ],
+    "props": {
+      "blockClass": "filterDisclosureContent"
+    }
+  },
+  "disclosure-trigger#filter": {
+    "children": [
+      "rich-text#filterTrigger"
+    ],
+    "props": {
+      "blockClass": "filterDisclosureTrigger"
+    }
+  },
+  "rich-text#filterTrigger": {
+    "props": {
+      "text": "Show Filter",
+      "blockClass": "filterTrigger"
+    }
+  }
+}

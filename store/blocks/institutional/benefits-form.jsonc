@@ -1,0 +1,197 @@
+{
+  "form": {
+    "props": {
+      "entity": "AB",
+      "schema": "Anatomic"
+    },
+    "children": [
+      "rich-text#form-title",
+      "rich-text#form-title-subtitle",
+      "form-input.text#email",
+      "flex-layout.row#benefits-form-1",
+      "flex-layout.row#benefits-form-2",
+      "rich-text#form-warning",
+      "rich-text#form-interest",
+      "flex-layout.row#benefits-form-3",
+      "rich-text#form-birthday",
+      "rich-text#form-birthday-subtitle",
+      "flex-layout.row#benefits-form-4",
+      "form-submit"
+    ],
+    "blocks": ["form-success"]
+  },
+  "form-success": {
+    "children": [
+      "rich-text#successSubmit"
+    ]
+  },
+  "rich-text#successSubmit": {
+    "props": {
+      "text": "## Thank you\nSoon, we will contact you.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["formSuccess", "pseudoBlue"]
+    }
+  },
+  "rich-text#form-warning": {
+    "props": {
+      "blockClass": "formWarning",
+      "text": "We'll only call if we need assistance with future orders.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#form-title": {
+    "props": {
+      "blockClass": ["formTitle", "pseudoBlue"],
+      "text": "E-mail Singup",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#form-title-subtitle": {
+    "props": {
+      "blockClass": "formSubtitle",
+      "text": "Enter your info below and join now!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "form-input.text#email": {
+    "props": {
+      "pointer": "#/properties/email",
+      "placeholder": "E-mail address"
+    }
+  },
+  "flex-layout.row#benefits-form-1": {
+    "children": [
+      "form-input.text#name",
+      "form-input.text#last-name"
+    ],
+    "props": {
+      "blockClass": "formElemRow",
+      "colSizing": "auto"
+    }
+  },
+  "form-input.text#name": {
+    "props": {
+      "pointer": "#/properties/name",
+      "placeholder": "First Name"
+    }
+  },
+  "form-input.text#last-name": {
+    "props": {
+      "pointer": "#/properties/lastname",
+      "placeholder": "Last Name"
+    }
+  },
+  "flex-layout.row#benefits-form-2": {
+    "children": [
+      "form-input.text#phone",
+      "form-input.text#postcode"
+    ],
+    "props": {
+      "blockClass": "formElemRow",
+      "colSizing": "auto"
+    }
+  },
+  "form-input.text#phone": {
+    "props": {
+      "pointer": "#/properties/phone",
+      "placeholder": "Phone Number"
+    }
+  },
+  "form-input.text#postcode": {
+    "props": {
+      "pointer": "#/properties/postcode",
+      "placeholder": "Postcode*"
+    }
+  },
+  "rich-text#form-interest": {
+    "props": {
+      "blockClass": "formSubtitle",
+      "text": "What styles are you interested in?",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#benefits-form-3": {
+    "children": [
+      "form-input.checkbox#mens",
+      "form-input.checkbox#womens",
+      "form-input.checkbox#kids"
+    ],
+    "props": {
+      "blockClass": "formInterestRow",
+      "preventHorizontalStretch": true
+    }
+  },
+  "form-input.checkbox#mens": {
+    "props": {
+      "pointer": "#/properties/mens",
+      "label": "Men's"
+    }
+  },
+  "form-input.checkbox#womens": {
+    "props": {
+      "pointer": "#/properties/womens",
+      "label": "Women's"
+    }
+  },
+  "form-input.checkbox#kids": {
+    "props": {
+      "pointer": "#/properties/kids",
+      "label": "Kid's"
+    }
+  },
+  "rich-text#form-birthday": {
+    "props": {
+      "blockClass": ["formBirthday", "pseudoBlue"],
+      "text": "Birthday?",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#form-birthday-subtitle": {
+    "props": {
+      "blockClass": "formSubtitle",
+      "text": "Receive birthday treats by sharing your date of birth!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#benefits-form-4": {
+    "children": [
+      "form-input.text#birthday",
+      "form-input.text#birthmonth",
+      "form-input.text#birthyear"
+    ],
+    "props": {
+      "blockClass": "formBirthdayRow",
+      "colSizing": "auto"
+    }
+  },
+  "form-input.text#birthday": {
+    "props": {
+      "pointer": "#/properties/birthday",
+      "placeholder": "DD"
+    }
+  },
+  "form-input.text#birthmonth": {
+    "props": {
+      "pointer": "#/properties/birthmonth",
+      "placeholder": "MM"
+    }
+  },
+  "form-input.text#birthyear": {
+    "props": {
+      "pointer": "#/properties/birthyear",
+      "placeholder": "YY"
+    }
+  },
+  "form-submit": {
+    "props": {
+      "label": "Submit"
+    }
+  }
+}

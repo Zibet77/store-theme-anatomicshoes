@@ -133,7 +133,7 @@
 
   "flex-layout.col#searchHeaderLeftMobile": {
     "children": [
-      "flex-layout.row#titleAndGrid",
+      "flex-layout.row#titleAndGridCustomQuery",
       "rich-text#departmentSeoText",
       "vtex.menu@2.x:menu#categoryHeaderItems"
     ],
@@ -160,7 +160,7 @@
     }
   },
   "flex-layout.row#titleAndGrid": {
-    "children": ["search-title.v2", "gallery-layout-switcher"],
+    "children": [/*"search-title.v2",*/ "rich-text#departmentTitle", "gallery-layout-switcher"],
     "props": {
       "blockClass": "titleAndView",
       "preventHorizontalStretch": true,

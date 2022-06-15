@@ -1686,9 +1686,9 @@ ajv@^6.12.3:
   version "0.1.0"
   resolved "http://anatomicshoes.vtexassets.com/_v/public/typings/v1/anatomicshoes.store-locator@0.1.0/public/@types/anatomicshoes.store-locator#84cbea00989c4b0b585ab70ad8641c5906115b02"
 
-"anatomicshoes.theme@https://edi2--anatomicshoes.myvtex.com/_v/private/typings/linked/v1/anatomicshoes.theme@4.2.0+build1654879740/public/@types/anatomicshoes.theme":
+"anatomicshoes.theme@https://edi--anatomicshoes.myvtex.com/_v/private/typings/linked/v1/anatomicshoes.theme@4.2.0+build1655308173/public/@types/anatomicshoes.theme":
   version "4.2.0"
-  resolved "https://edi2--anatomicshoes.myvtex.com/_v/private/typings/linked/v1/anatomicshoes.theme@4.2.0+build1654879740/public/@types/anatomicshoes.theme#82fc6ba2ec1992eb565127df421f9d26876b9496"
+  resolved "https://edi--anatomicshoes.myvtex.com/_v/private/typings/linked/v1/anatomicshoes.theme@4.2.0+build1655308173/public/@types/anatomicshoes.theme#93b9f710755fd42de08dfa1ed85d56fb05016012"
 
 ansi-escapes@^4.2.1:
   version "4.3.2"
@@ -5305,9 +5305,9 @@ verror@1.10.0:
   version "3.159.5"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.159.5/public/@types/vtex.store-components#c7e602c724573bc13311fe0621186bef20a8d17a"
 
-"vtex.store-drawer@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-drawer@0.16.1/public/@types/vtex.store-drawer":
-  version "0.16.1"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-drawer@0.16.1/public/@types/vtex.store-drawer#08f723e5cdd01e23be642b4fdbc1225f600ce107"
+"vtex.store-drawer@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-drawer@0.16.2/public/@types/vtex.store-drawer":
+  version "0.16.2"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-drawer@0.16.2/public/@types/vtex.store-drawer#3e3a0e07babcf623922f1eb0c85185bcd12b8002"
 
 "vtex.store-footer@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-footer@2.25.0/public/@types/vtex.store-footer":
   version "2.25.0"

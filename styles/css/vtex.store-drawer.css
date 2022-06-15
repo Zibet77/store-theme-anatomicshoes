@@ -159,6 +159,9 @@
   display: block;
 }
 
+.opened--drawerMenuMobile {
+  z-index: 99999999 !important;
+}
 
 @media (max-width: 64rem) {
 

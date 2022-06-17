@@ -160,7 +160,7 @@
     }
   },
   "flex-layout.row#titleAndGrid": {
-    "children": ["search-title.v2",/*"rich-text#departmentTitle",*/ "gallery-layout-switcher"],
+    "children": [/*"search-title.v2",*/"rich-text#departmentTitle", "gallery-layout-switcher"],
     "props": {
       "blockClass": "titleAndView",
       "preventHorizontalStretch": true,

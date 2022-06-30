@@ -11,6 +11,10 @@
   z-index: 999;
 }
 
+#client-phone {
+  border: solid !important;
+}
+
 .box {
   border: solid 12px #34425e;
 }

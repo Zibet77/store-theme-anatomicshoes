@@ -3843,6 +3843,26 @@ svg.pkpmodal-pickup-point-best-marker-image path:not([fill="white"]) {
   .gift-card-provider-group-loyalty-program {
   border-bottom: 1px solid #eeeeee;
 }
+
+/*edi*/
+.client-phone input::before {
+  content: "Please do not include symbols (e.g. +) or area codes (e.g. 009) when entering your number. Our system will identify the international number based on the address provided.";
+  font-size: 12px;
+  color: black;
+}
+
+.client-phone label::after {
+  content: "Please do not include symbols (e.g. +) or area codes (e.g. 009) when entering your number. Our system will identify the international number based on the address provided." !important;
+  font-size: 10px !important;
+  color: black;
+}
+
+.client-phone label {
+  flex-direction: column !important;
+  display: flex !important;
+
+}
+
 .orderform-template-holder #payment-data .payment-discounts-list table {
   width: 100%;
 }

@@ -71,7 +71,8 @@
   },
   "peerDependencies": {
     "vtex.wish-list": "1.x",
-    "vtex.currency-selector": "1.x"
+    "vtex.currency-selector": "1.x",
+    "vtex.connector-paypal-commerce-platform": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

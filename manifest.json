@@ -1,7 +1,7 @@
 {
   "vendor": "anatomicshoes",
   "name": "theme",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "builders": {
     "react": "3.x",
     "styles": "2.x",

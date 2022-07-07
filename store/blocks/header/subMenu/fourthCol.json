@@ -28,7 +28,8 @@
   },
   "image#shopNew": {
     "props": {
-      "src": "assets/images/shopNewMenu.png"
+      "src": "assets/images/shopNewMenu.png",
+      "blockClass": "image-menu"
     }
   }
 }

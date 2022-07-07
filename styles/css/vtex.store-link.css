@@ -164,6 +164,10 @@
   text-decoration: none;
 }
 
+.childrenContainer--shopMenuLink :global(.vtex-store-components-3-x-imageElement){
+  max-width: 200px;
+}
+
 .childrenContainer--shopMenuLink {
   margin-bottom: 8px;
 }

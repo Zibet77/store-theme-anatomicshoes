@@ -15,6 +15,10 @@
   margin-bottom: 16px;
 }
 
+.styledLinkContent--footerMenu .styledLinkIcon--footerMenu {
+  display: none;
+}
+
 .menuContainer--footerMenu2,
 .menuContainer--footerMenu {
   padding-right: 64px;
